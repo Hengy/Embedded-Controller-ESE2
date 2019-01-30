@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=R1 Old Footprint=RESC0603X28X15ML05T05 New Footprint=RESC1608X55X30LL15T15
+Change Component Comment : Designator=R1 Old Comment=47K New Comment=100K
+Change component parameters: Designator = "R1"; Footprint = "RESC1608X55X30LL15T15"; UniqueID = "\XMMFPFXU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "ERJ-3EKF1002V"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=rs232 Member=Component C5 100nF
+Added Room: Name=CANbus
+Added Room: Name=microcontroller
+Added Room: Name=rs232

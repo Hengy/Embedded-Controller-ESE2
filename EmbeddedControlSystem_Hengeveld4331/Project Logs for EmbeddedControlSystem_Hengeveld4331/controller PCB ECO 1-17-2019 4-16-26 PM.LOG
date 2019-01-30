@@ -1,0 +1,14 @@
+Added Component: Designator=U?(TSSOP16_4P40X5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DeviceName"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "ICL3232ECV-16Z"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "ICL3232"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER_PART_NUMBER"; Value = "ICL3232ECV16Z"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TSSOP16_4P40X5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "ICL3232ECV-16Z-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VENDOR"; Value = "Intersil"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=CANbus Member=Component U? MCP2515T-I/ST
+Added Member To Class: ClassName=CANbus Member=Component U? MCP2542WFD-H/SN
+Added Member To Class: ClassName=CANbus Member=Component U? MCP2542WFD-H/SN
+Added Member To Class: ClassName=rs232 Member=Component U? ICL3232ECV-16Z
