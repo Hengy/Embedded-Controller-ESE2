@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -191,10 +191,49 @@ OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
 
+[Generic_SmartPDF]
+AutoOpenFile=-1
+AutoOpenOutJob=0
+
+[Generic_SmartPDFSettings]
+ProjectMode=-1
+ZoomPrecision=50
+AddNetsInformation=-1
+AddNetPins=-1
+AddNetNetLabels=-1
+AddNetPorts=-1
+ShowComponentParameters=-1
+GlobalBookmarks=0
+ExportBOM=0
+TemplateFilename=
+TemplateStoreRelative=-1
+PCB_PrintColor=1
+SCH_PrintColor=0
+PrintQuality=-3
+SCH_ShowNoErc=-1
+SCH_ShowParameter=-1
+SCH_ShowProbes=-1
+SCH_ShowBlankets=-1
+SCH_NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle
+SCH_ShowNote=-1
+SCH_ShowNoteCollapsed=-1
+SCH_ExpandLogicalToPhysical=0
+SCH_VariantName=[No Variations]
+SCH_ExpandComponentDesignators=-1
+SCH_ExpandNetlabels=0
+SCH_ExpandPorts=0
+SCH_ExpandSheetNumber=0
+SCH_ExpandDocumentNumber=0
+SCH_HasExpandLogicalToPhysicalSheets=-1
+SaveSettingsToOutJob=0
+
+[Generic_EDE]
+OutputDir=Project Outputs for EmbeddedControlSystem_Hengeveld4331
+
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -300,7 +339,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -374,7 +413,7 @@ PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -396,7 +435,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -468,7 +507,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -505,7 +544,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -685,7 +724,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -729,7 +768,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -780,7 +819,7 @@ OutputDefault9=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1613,7 +1652,7 @@ UpdateVariants=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=PHASE0|NetColor=$00FF6EFF
+Net1=NetName=DC_MTRB2|NetColor=$00FF6EFF
 Net2=NetName=LCD_CNTRST|NetColor=$006EFF6E
 Net3=NetName=N00084|NetColor=$00FF6E6E
 Net4=NetName=DATA5|NetColor=$006EFF6E
@@ -1623,8 +1662,8 @@ Net7=NetName=N00079|NetColor=$006EFF6E
 Net8=NetName=NetR?_2|NetColor=clYellow
 Net9=NetName=DATA3|NetColor=$006EFF6E
 Net10=NetName=DIG_IN2|NetColor=$00FF6EFF
-Net11=NetName=IN2|NetColor=$00FF6E6E
-Net12=NetName=N00154[1..0]|NetColor=$00FF6EFF
+Net11=NetName=N00154[1..0]|NetColor=$00FF6EFF
+Net12=NetName=IN2|NetColor=$00FF6E6E
 Net13=NetName=DIG_IN1|NetColor=$00FF6EFF
 Net14=NetName=DATA|NetColor=$006EFF6E
 Net15=NetName=NetU8_6|NetColor=$00FF6E6E
@@ -1656,8 +1695,8 @@ Net40=NetName=STP_A2|NetColor=$00FF6E6E
 Net41=NetName=STP_RST|NetColor=$00FF6E6E
 Net42=NetName=PWM|NetColor=$006EFF6E
 Net43=NetName=STP_ISENA|NetColor=$00FF6E6E
-Net44=NetName=ENC|NetColor=$00FF6EFF
-Net45=NetName=DC_MTRB1|NetColor=$00FF6EFF
+Net44=NetName=DC_MTRB1|NetColor=$00FF6EFF
+Net45=NetName=ENC|NetColor=$00FF6EFF
 Net46=NetName=N00251[1..0]|NetColor=$00FF6EFF
 Net47=NetName=PHASE1|NetColor=$00FF6EFF
 Net48=NetName=IN3|NetColor=$00FF6E6E
@@ -1704,9 +1743,9 @@ Net88=NetName=DATA2|NetColor=$006EFF6E
 Net89=NetName=DATA1|NetColor=$006EFF6E
 Net90=NetName=DATA4|NetColor=$006EFF6E
 Net91=NetName=N00000[1..0]|NetColor=$00FF6EFF
-Net92=NetName=STP_B1|NetColor=$00FF6E6E
-Net93=NetName=STP_B2|NetColor=$00FF6E6E
-Net94=NetName=DC_MTRB2|NetColor=$00FF6EFF
+Net92=NetName=PHASE0|NetColor=$00FF6EFF
+Net93=NetName=STP_B1|NetColor=$00FF6E6E
+Net94=NetName=STP_B2|NetColor=$00FF6E6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
