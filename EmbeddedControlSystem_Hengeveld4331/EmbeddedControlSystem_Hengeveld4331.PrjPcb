@@ -140,40 +140,6 @@ GenerateClassCluster=0
 DocumentUniqueId=QBDHBJJH
 
 [Document7]
-DocumentPath=servo.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=DIWNUMSK
-
-[Document8]
-DocumentPath=Input.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BTPIKFXV
-
-[Document9]
 DocumentPath=power supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HUMOACWU
 
-[Document10]
+[Document8]
 DocumentPath=LCD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -228,7 +194,7 @@ ConfigurationType=Source
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -334,7 +300,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -408,7 +374,7 @@ PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -430,7 +396,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -502,7 +468,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -539,7 +505,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -719,7 +685,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -763,7 +729,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -814,7 +780,7 @@ OutputDefault9=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=Samsung C430W Network
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1654,35 +1620,34 @@ Net4=NetName=DATA5|NetColor=$006EFF6E
 Net5=NetName=N00243[3..0]|NetColor=$00FF6EFF
 Net6=NetName=LIM1|NetColor=$00FF6EFF
 Net7=NetName=DIG_IN3|NetColor=$00FF6EFF
-Net8=NetName=NetR?_2|NetColor=clYellow
-Net9=NetName=DATA3|NetColor=$006EFF6E
-Net10=NetName=DIG_IN2|NetColor=$00FF6EFF
-Net11=NetName=IN2|NetColor=$00FF6E6E
-Net12=NetName=LIM0|NetColor=$00FF6EFF
-Net13=NetName=DIG_IN1|NetColor=$00FF6EFF
-Net14=NetName=DATA|NetColor=$006EFF6E
-Net15=NetName=IN1|NetColor=$00FF6E6E
-Net16=NetName=N00221[3..0]|NetColor=$00FF6E6E
-Net17=NetName=N00000[7..0]|NetColor=$006EFF6E
-Net18=NetName=BL|NetColor=$006EFF6E
-Net19=NetName=DIG_IN|NetColor=$00FF6EFF
-Net20=NetName=LIM|NetColor=$00FF6EFF
-Net21=NetName=N00226[1..0]|NetColor=$00FF6EFF
-Net22=NetName=DATA6|NetColor=$006EFF6E
-Net23=NetName=DIG_IN0|NetColor=$00FF6EFF
-Net24=NetName=Servo|NetColor=clYellow
-Net25=NetName=IN0|NetColor=$00FF6E6E
-Net26=NetName=DATA7|NetColor=$006EFF6E
-Net27=NetName=DATA0|NetColor=$006EFF6E
-Net28=NetName=IN|NetColor=$00FF6E6E
-Net29=NetName=N00271[7..0]|NetColor=$006EFF6E
-Net30=NetName=BL_PWM|NetColor=$006EFF6E
-Net31=NetName=N00000[3..0]|NetColor=$00FF6E6E
-Net32=NetName=DATA2|NetColor=$006EFF6E
-Net33=NetName=DATA1|NetColor=$006EFF6E
-Net34=NetName=DATA4|NetColor=$006EFF6E
-Net35=NetName=PWM|NetColor=$006EFF6E
-Net36=NetName=N00000[1..0]|NetColor=$00FF6EFF
+Net8=NetName=DATA3|NetColor=$006EFF6E
+Net9=NetName=DIG_IN2|NetColor=$00FF6EFF
+Net10=NetName=IN2|NetColor=$00FF6E6E
+Net11=NetName=LIM0|NetColor=$00FF6EFF
+Net12=NetName=DIG_IN1|NetColor=$00FF6EFF
+Net13=NetName=DATA|NetColor=$006EFF6E
+Net14=NetName=IN1|NetColor=$00FF6E6E
+Net15=NetName=N00221[3..0]|NetColor=$00FF6E6E
+Net16=NetName=N00000[7..0]|NetColor=$006EFF6E
+Net17=NetName=BL|NetColor=$006EFF6E
+Net18=NetName=DIG_IN|NetColor=$00FF6EFF
+Net19=NetName=LIM|NetColor=$00FF6EFF
+Net20=NetName=N00226[1..0]|NetColor=$00FF6EFF
+Net21=NetName=DATA6|NetColor=$006EFF6E
+Net22=NetName=DIG_IN0|NetColor=$00FF6EFF
+Net23=NetName=Servo|NetColor=clYellow
+Net24=NetName=IN0|NetColor=$00FF6E6E
+Net25=NetName=DATA7|NetColor=$006EFF6E
+Net26=NetName=DATA0|NetColor=$006EFF6E
+Net27=NetName=IN|NetColor=$00FF6E6E
+Net28=NetName=N00271[7..0]|NetColor=$006EFF6E
+Net29=NetName=BL_PWM|NetColor=$006EFF6E
+Net30=NetName=N00000[3..0]|NetColor=$00FF6E6E
+Net31=NetName=DATA2|NetColor=$006EFF6E
+Net32=NetName=DATA1|NetColor=$006EFF6E
+Net33=NetName=DATA4|NetColor=$006EFF6E
+Net34=NetName=PWM|NetColor=$006EFF6E
+Net35=NetName=N00000[1..0]|NetColor=$00FF6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
