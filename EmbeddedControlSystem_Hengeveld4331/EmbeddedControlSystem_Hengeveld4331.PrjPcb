@@ -233,7 +233,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -339,7 +339,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -413,7 +413,7 @@ PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -435,7 +435,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -507,7 +507,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -544,7 +544,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -724,7 +724,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -768,7 +768,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -819,7 +819,7 @@ OutputDefault9=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1652,7 +1652,7 @@ UpdateVariants=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=STP_B2|NetColor=$00FF6E6E
+Net1=NetName=DC_MTRB2|NetColor=$00FF6EFF
 Net2=NetName=LCD_CNTRST|NetColor=$006EFF6E
 Net3=NetName=N00084|NetColor=$00FF6E6E
 Net4=NetName=DATA5|NetColor=$006EFF6E
@@ -1662,8 +1662,8 @@ Net7=NetName=N00079|NetColor=$006EFF6E
 Net8=NetName=NetR?_2|NetColor=clYellow
 Net9=NetName=DATA3|NetColor=$006EFF6E
 Net10=NetName=IN2|NetColor=$00FF6E6E
-Net11=NetName=DIG_IN2|NetColor=$00FF6EFF
-Net12=NetName=N00154[1..0]|NetColor=$00FF6EFF
+Net11=NetName=N00154[1..0]|NetColor=$00FF6EFF
+Net12=NetName=DIG_IN2|NetColor=$00FF6EFF
 Net13=NetName=DIG_IN1|NetColor=$00FF6EFF
 Net14=NetName=DATA|NetColor=$006EFF6E
 Net15=NetName=NetU8_6|NetColor=$00FF6E6E
@@ -1741,13 +1741,13 @@ Net86=NetName=ENC0|NetColor=$00FF6EFF
 Net87=NetName=N00271[7..0]|NetColor=$006EFF6E
 Net88=NetName=BL_PWM|NetColor=$006EFF6E
 Net89=NetName=N00000[3..0]|NetColor=$00FF6E6E
-Net90=NetName=DATA2|NetColor=$006EFF6E
-Net91=NetName=DATA1|NetColor=$006EFF6E
-Net92=NetName=DATA4|NetColor=$006EFF6E
-Net93=NetName=N00000[1..0]|NetColor=$00FF6EFF
-Net94=NetName=PHASE0|NetColor=$00FF6EFF
-Net95=NetName=STP_B1|NetColor=$00FF6E6E
-Net96=NetName=DC_MTRB2|NetColor=$00FF6EFF
+Net90=NetName=STP_B2|NetColor=$00FF6E6E
+Net91=NetName=DATA2|NetColor=$006EFF6E
+Net92=NetName=DATA1|NetColor=$006EFF6E
+Net93=NetName=DATA4|NetColor=$006EFF6E
+Net94=NetName=N00000[1..0]|NetColor=$00FF6EFF
+Net95=NetName=PHASE0|NetColor=$00FF6EFF
+Net96=NetName=STP_B1|NetColor=$00FF6E6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
