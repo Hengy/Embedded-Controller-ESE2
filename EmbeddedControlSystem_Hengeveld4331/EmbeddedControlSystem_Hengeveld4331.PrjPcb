@@ -96,7 +96,7 @@ AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=0
-DoLibraryUpdate=1
+DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
@@ -130,7 +130,7 @@ AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=6
-DoLibraryUpdate=0
+DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
@@ -147,7 +147,7 @@ AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=4
-DoLibraryUpdate=1
+DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
@@ -164,7 +164,7 @@ AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=2
-DoLibraryUpdate=1
+DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
@@ -1182,16 +1182,16 @@ SelectedOnly=0
 UpdateVariants=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=ALTIUM-PHD_2_54_THT_DUAL_PIN_HEADER_6130XX21121-rev18b.IntLib
-ComponentDesignItemID0=61301821121
-ComponentSymbolReference0=61301821121
+ComponentLibraryIdentifier0=Hengeveld.SCHLIB
+ComponentDesignItemID0=74LVC2G14
+ComponentSymbolReference0=74LVC2G14
 ComponentUpdate0=0
 ComponentIsDeviceSheet0=0
 ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=ALTIUM-PHD_2_54_THT_DUAL_PIN_HEADER_6130XX21121-rev18b.IntLib
-ComponentDesignItemID1=61302021121
-ComponentSymbolReference1=61302021121
-ComponentUpdate1=0
+ComponentLibraryIdentifier1=Hengeveld.SCHLIB
+ComponentDesignItemID1=BU2032 Battery
+ComponentSymbolReference1=BU2032 Battery
+ComponentUpdate1=1
 ComponentIsDeviceSheet1=0
 ComponentLibIdentifierKind2=Library Name And Type
 ComponentLibraryIdentifier2=Hengeveld.SCHLIB
@@ -1201,8 +1201,8 @@ ComponentUpdate2=1
 ComponentIsDeviceSheet2=0
 ComponentLibIdentifierKind3=Library Name And Type
 ComponentLibraryIdentifier3=Hengeveld.SCHLIB
-ComponentDesignItemID3=DRV8843
-ComponentSymbolReference3=DRV8843
+ComponentDesignItemID3=DRV8884
+ComponentSymbolReference3=DRV8884
 ComponentUpdate3=1
 ComponentIsDeviceSheet3=0
 ComponentLibIdentifierKind4=Library Name And Type
@@ -1212,131 +1212,233 @@ ComponentSymbolReference4=ICL3232
 ComponentUpdate4=0
 ComponentIsDeviceSheet4=0
 ComponentLibIdentifierKind5=Library Name And Type
-ComponentLibraryIdentifier5=MicrochipMCPCAN.SCHLIB
-ComponentDesignItemID5=MCP2542WFD-H/SN
-ComponentSymbolReference5=MCP2542WFD-H/SN
+ComponentLibraryIdentifier5=Hengeveld.SCHLIB
+ComponentDesignItemID5=LCD Module
+ComponentSymbolReference5=LCD Module
 ComponentUpdate5=1
 ComponentIsDeviceSheet5=0
 ComponentLibIdentifierKind6=Library Name And Type
-ComponentLibraryIdentifier6=Samtec_2,54_mm_Pitch_Terminal_Strips.IntLib
-ComponentDesignItemID6=MTLW-102-05-T-S-172
-ComponentSymbolReference6=MTLW-102-05-T-S-172
-ComponentUpdate6=0
+ComponentLibraryIdentifier6=Hengeveld.SCHLIB
+ComponentDesignItemID6=MCP2542
+ComponentSymbolReference6=MCP2542
+ComponentUpdate6=1
 ComponentIsDeviceSheet6=0
-ComponentLibIdentifierKind7=Library Name Only
-ComponentLibraryIdentifier7=Altium Content Vault
-ComponentDesignItemID7=CMP-0687-00050-1
-ComponentSymbolReference7=NIC-CAP-P-2
-ComponentUpdate7=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=Hengeveld.SCHLIB
+ComponentDesignItemID7=Nucleo
+ComponentSymbolReference7=Nucleo
+ComponentUpdate7=1
 ComponentIsDeviceSheet7=0
-ComponentLibIdentifierKind8=Library Name Only
-ComponentLibraryIdentifier8=Altium Content Vault
-ComponentDesignItemID8=CMP-1024-00343-1
-ComponentSymbolReference8=SMTC-TSW-103-X-X-S-X
-ComponentUpdate8=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=Hengeveld.SCHLIB
+ComponentDesignItemID8=TPS562201
+ComponentSymbolReference8=TPS562201
+ComponentUpdate8=1
 ComponentIsDeviceSheet8=0
-ComponentLibIdentifierKind9=Library Name Only
-ComponentLibraryIdentifier9=Altium Content Vault
-ComponentDesignItemID9=CMP-1024-00356-1
-ComponentSymbolReference9=SMTC-TSW-104-08-X-S
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=Samtec_2,54_mm_Pitch_Terminal_Strips.IntLib
+ComponentDesignItemID9=MTLW-102-05-T-S-172
+ComponentSymbolReference9=MTLW-102-05-T-S-172
 ComponentUpdate9=0
 ComponentIsDeviceSheet9=0
 ComponentLibIdentifierKind10=Library Name Only
 ComponentLibraryIdentifier10=Altium Content Vault
-ComponentDesignItemID10=CMP-1024-00358-1
-ComponentSymbolReference10=SMTC-TSW-104-08-X-S
-ComponentUpdate10=0
+ComponentDesignItemID10=CMP-0273-00001-2
+ComponentSymbolReference10=ONSC-CAT6219-330TD-GT3-5
+ComponentUpdate10=1
 ComponentIsDeviceSheet10=0
 ComponentLibIdentifierKind11=Library Name Only
 ComponentLibraryIdentifier11=Altium Content Vault
-ComponentDesignItemID11=CMP-1061-00667-1
-ComponentSymbolReference11=ONSC-K1K2A3-3
+ComponentDesignItemID11=CMP-0687-00050-1
+ComponentSymbolReference11=NIC-CAP-P-2
 ComponentUpdate11=0
 ComponentIsDeviceSheet11=0
 ComponentLibIdentifierKind12=Library Name Only
 ComponentLibraryIdentifier12=Altium Content Vault
-ComponentDesignItemID12=CMP-1426-00011-1
-ComponentSymbolReference12=WE-LED_K1A2-2
-ComponentUpdate12=0
+ComponentDesignItemID12=CMP-0704-00041-2
+ComponentSymbolReference12=TI-INA219DCN8
+ComponentUpdate12=1
 ComponentIsDeviceSheet12=0
 ComponentLibIdentifierKind13=Library Name Only
 ComponentLibraryIdentifier13=Altium Content Vault
-ComponentDesignItemID13=CMP-2000-00704-1
-ComponentSymbolReference13=RES
-ComponentUpdate13=0
+ComponentDesignItemID13=CMP-0975-00021-1
+ComponentSymbolReference13=BOUR-POT-3
+ComponentUpdate13=1
 ComponentIsDeviceSheet13=0
 ComponentLibIdentifierKind14=Library Name Only
 ComponentLibraryIdentifier14=Altium Content Vault
-ComponentDesignItemID14=CMP-2000-03413-1
-ComponentSymbolReference14=RES
+ComponentDesignItemID14=CMP-1024-00343-1
+ComponentSymbolReference14=SMTC-TSW-103-X-X-S-X
 ComponentUpdate14=0
 ComponentIsDeviceSheet14=0
 ComponentLibIdentifierKind15=Library Name Only
 ComponentLibraryIdentifier15=Altium Content Vault
-ComponentDesignItemID15=CMP-2000-03816-1
-ComponentSymbolReference15=RES
+ComponentDesignItemID15=CMP-1024-00356-1
+ComponentSymbolReference15=SMTC-TSW-104-08-X-S
 ComponentUpdate15=0
 ComponentIsDeviceSheet15=0
 ComponentLibIdentifierKind16=Library Name Only
 ComponentLibraryIdentifier16=Altium Content Vault
-ComponentDesignItemID16=CMP-2000-05403-1
-ComponentSymbolReference16=CN-2S-2F-D9
+ComponentDesignItemID16=CMP-1024-00358-1
+ComponentSymbolReference16=SMTC-TSW-104-08-X-S
 ComponentUpdate16=0
 ComponentIsDeviceSheet16=0
 ComponentLibIdentifierKind17=Library Name Only
 ComponentLibraryIdentifier17=Altium Content Vault
-ComponentDesignItemID17=CMP-2003-00795-1
-ComponentSymbolReference17=RES
+ComponentDesignItemID17=CMP-1061-00667-1
+ComponentSymbolReference17=ONSC-K1K2A3-3
 ComponentUpdate17=0
 ComponentIsDeviceSheet17=0
 ComponentLibIdentifierKind18=Library Name Only
 ComponentLibraryIdentifier18=Altium Content Vault
-ComponentDesignItemID18=CMP-2003-04859-1
-ComponentSymbolReference18=RES
-ComponentUpdate18=0
+ComponentDesignItemID18=CMP-1238-00003-1
+ComponentSymbolReference18=ROHM-RES-2
+ComponentUpdate18=1
 ComponentIsDeviceSheet18=0
 ComponentLibIdentifierKind19=Library Name Only
 ComponentLibraryIdentifier19=Altium Content Vault
-ComponentDesignItemID19=CMP-2006-01974-1
-ComponentSymbolReference19=CAP
-ComponentUpdate19=0
+ComponentDesignItemID19=CMP-1258-00136-1
+ComponentSymbolReference19=NXP-NMOS-GSD-3_B
+ComponentUpdate19=1
 ComponentIsDeviceSheet19=0
 ComponentLibIdentifierKind20=Library Name Only
 ComponentLibraryIdentifier20=Altium Content Vault
-ComponentDesignItemID20=CMP-2006-02860-1
-ComponentSymbolReference20=CAP
-ComponentUpdate20=0
+ComponentDesignItemID20=CMP-1354-00077-1
+ComponentSymbolReference20=WE-IND-INDUCTOR-2
+ComponentUpdate20=1
 ComponentIsDeviceSheet20=0
 ComponentLibIdentifierKind21=Library Name Only
 ComponentLibraryIdentifier21=Altium Content Vault
-ComponentDesignItemID21=CMP-2006-03036-1
-ComponentSymbolReference21=CAP
+ComponentDesignItemID21=CMP-1426-00011-1
+ComponentSymbolReference21=WE-LED_K1A2-2
 ComponentUpdate21=0
 ComponentIsDeviceSheet21=0
 ComponentLibIdentifierKind22=Library Name Only
 ComponentLibraryIdentifier22=Altium Content Vault
-ComponentDesignItemID22=CMP-2006-03300-1
-ComponentSymbolReference22=CAP
-ComponentUpdate22=0
+ComponentDesignItemID22=CMP-2000-00181-1
+ComponentSymbolReference22=RES
+ComponentUpdate22=1
 ComponentIsDeviceSheet22=0
 ComponentLibIdentifierKind23=Library Name Only
 ComponentLibraryIdentifier23=Altium Content Vault
-ComponentDesignItemID23=CMP-2006-03321-1
-ComponentSymbolReference23=CAP
+ComponentDesignItemID23=CMP-2000-00704-1
+ComponentSymbolReference23=RES
 ComponentUpdate23=0
 ComponentIsDeviceSheet23=0
 ComponentLibIdentifierKind24=Library Name Only
 ComponentLibraryIdentifier24=Altium Content Vault
-ComponentDesignItemID24=CMP-2007-00392-1
-ComponentSymbolReference24=CAP
+ComponentDesignItemID24=CMP-2000-03413-1
+ComponentSymbolReference24=RES
 ComponentUpdate24=0
 ComponentIsDeviceSheet24=0
 ComponentLibIdentifierKind25=Library Name Only
 ComponentLibraryIdentifier25=Altium Content Vault
-ComponentDesignItemID25=CMP-2007-04370-1
-ComponentSymbolReference25=CAP
+ComponentDesignItemID25=CMP-2000-03816-1
+ComponentSymbolReference25=RES
 ComponentUpdate25=0
 ComponentIsDeviceSheet25=0
+ComponentLibIdentifierKind26=Library Name Only
+ComponentLibraryIdentifier26=Altium Content Vault
+ComponentDesignItemID26=CMP-2000-05403-1
+ComponentSymbolReference26=CN-2S-2F-D9
+ComponentUpdate26=0
+ComponentIsDeviceSheet26=0
+ComponentLibIdentifierKind27=Library Name Only
+ComponentLibraryIdentifier27=Altium Content Vault
+ComponentDesignItemID27=CMP-2000-06054-1
+ComponentSymbolReference27=CAP-NP-2
+ComponentUpdate27=1
+ComponentIsDeviceSheet27=0
+ComponentLibIdentifierKind28=Library Name Only
+ComponentLibraryIdentifier28=Altium Content Vault
+ComponentDesignItemID28=CMP-2000-07492-1
+ComponentSymbolReference28=CN-1P-M-R2
+ComponentUpdate28=0
+ComponentIsDeviceSheet28=0
+ComponentLibIdentifierKind29=Library Name Only
+ComponentLibraryIdentifier29=Altium Content Vault
+ComponentDesignItemID29=CMP-2003-00795-1
+ComponentSymbolReference29=RES
+ComponentUpdate29=0
+ComponentIsDeviceSheet29=0
+ComponentLibIdentifierKind30=Library Name Only
+ComponentLibraryIdentifier30=Altium Content Vault
+ComponentDesignItemID30=CMP-2003-04859-1
+ComponentSymbolReference30=RES
+ComponentUpdate30=0
+ComponentIsDeviceSheet30=0
+ComponentLibIdentifierKind31=Library Name Only
+ComponentLibraryIdentifier31=Altium Content Vault
+ComponentDesignItemID31=CMP-2006-01974-1
+ComponentSymbolReference31=CAP
+ComponentUpdate31=0
+ComponentIsDeviceSheet31=0
+ComponentLibIdentifierKind32=Library Name Only
+ComponentLibraryIdentifier32=Altium Content Vault
+ComponentDesignItemID32=CMP-2006-02860-1
+ComponentSymbolReference32=CAP
+ComponentUpdate32=0
+ComponentIsDeviceSheet32=0
+ComponentLibIdentifierKind33=Library Name Only
+ComponentLibraryIdentifier33=Altium Content Vault
+ComponentDesignItemID33=CMP-2006-03036-1
+ComponentSymbolReference33=CAP
+ComponentUpdate33=0
+ComponentIsDeviceSheet33=0
+ComponentLibIdentifierKind34=Library Name Only
+ComponentLibraryIdentifier34=Altium Content Vault
+ComponentDesignItemID34=CMP-2006-03057-1
+ComponentSymbolReference34=CAP
+ComponentUpdate34=1
+ComponentIsDeviceSheet34=0
+ComponentLibIdentifierKind35=Library Name Only
+ComponentLibraryIdentifier35=Altium Content Vault
+ComponentDesignItemID35=CMP-2006-03300-1
+ComponentSymbolReference35=CAP
+ComponentUpdate35=0
+ComponentIsDeviceSheet35=0
+ComponentLibIdentifierKind36=Library Name Only
+ComponentLibraryIdentifier36=Altium Content Vault
+ComponentDesignItemID36=CMP-2006-03321-1
+ComponentSymbolReference36=CAP
+ComponentUpdate36=0
+ComponentIsDeviceSheet36=0
+ComponentLibIdentifierKind37=Library Name Only
+ComponentLibraryIdentifier37=Altium Content Vault
+ComponentDesignItemID37=CMP-2006-04389-2
+ComponentSymbolReference37=CAP-NP-2
+ComponentUpdate37=1
+ComponentIsDeviceSheet37=0
+ComponentLibIdentifierKind38=Library Name Only
+ComponentLibraryIdentifier38=Altium Content Vault
+ComponentDesignItemID38=CMP-2007-00009-1
+ComponentSymbolReference38=CAP
+ComponentUpdate38=1
+ComponentIsDeviceSheet38=0
+ComponentLibIdentifierKind39=Library Name Only
+ComponentLibraryIdentifier39=Altium Content Vault
+ComponentDesignItemID39=CMP-2007-00392-1
+ComponentSymbolReference39=CAP
+ComponentUpdate39=0
+ComponentIsDeviceSheet39=0
+ComponentLibIdentifierKind40=Library Name Only
+ComponentLibraryIdentifier40=Altium Content Vault
+ComponentDesignItemID40=CMP-2007-04028-1
+ComponentSymbolReference40=CAP
+ComponentUpdate40=1
+ComponentIsDeviceSheet40=0
+ComponentLibIdentifierKind41=Library Name Only
+ComponentLibraryIdentifier41=Altium Content Vault
+ComponentDesignItemID41=CMP-2007-04370-1
+ComponentSymbolReference41=CAP
+ComponentUpdate41=0
+ComponentIsDeviceSheet41=0
+ComponentLibIdentifierKind42=Library Name Only
+ComponentLibraryIdentifier42=Altium Content Vault
+ComponentDesignItemID42=CMP-2007-04672-1
+ComponentSymbolReference42=CAP
+ComponentUpdate42=1
+ComponentIsDeviceSheet42=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1352,184 +1454,382 @@ RemoveModels=1
 UpdateCurrentModels=1
 ParameterName0=3D Model
 ParameterUpdate0=1
-ParameterName1=Catalog Drawings
+ParameterName1=Applications
 ParameterUpdate1=1
-ParameterName2=Category
+ParameterName2=Approvals
 ParameterUpdate2=1
-ParameterName3=Color
+ParameterName3=Board Standoff
 ParameterUpdate3=1
-ParameterName4=Comment
+ParameterName4=Capacitance
 ParameterUpdate4=1
-ParameterName5=Component Kind
+ParameterName5=Case Code (Imperial)
 ParameterUpdate5=1
-ParameterName6=ComponentLink1Description
+ParameterName6=Case Code (Metric)
 ParameterUpdate6=1
-ParameterName7=ComponentLink1URL
+ParameterName7=Case\/Package
 ParameterUpdate7=1
-ParameterName8=ComponentLink2Description
+ParameterName8=Case\Package
 ParameterUpdate8=1
-ParameterName9=ComponentLink2URL
+ParameterName9=Catalog Drawings
 ParameterUpdate9=1
-ParameterName10=ComponentLink3Description
+ParameterName10=Category
 ParameterUpdate10=1
-ParameterName11=ComponentLink3URL
+ParameterName11=Channel Type
 ParameterUpdate11=1
-ParameterName12=Connector Style
+ParameterName12=Ciss [typ] (pF)
 ParameterUpdate12=1
-ParameterName13=Connector Type
+ParameterName13=CMR (Typ)
 ParameterUpdate13=1
-ParameterName14=Contact Finish
+ParameterName14=CMRR(Min)(dB)
 ParameterUpdate14=1
-ParameterName15=Contact Finish Thickness
+ParameterName15=Code_JEDEC
 ParameterUpdate15=1
-ParameterName16=Contact Resistance
+ParameterName16=Color
 ParameterUpdate16=1
-ParameterName17=Contact Type
+ParameterName17=Colour
 ParameterUpdate17=1
-ParameterName18=Current Rating
+ParameterName18=Comment
 ParameterUpdate18=1
-ParameterName19=Datasheet URL
+ParameterName19=Common Mode Range(Max)(V)
 ParameterUpdate19=1
-ParameterName20=Datasheet Version
+ParameterName20=Common Mode Range(Min)(V)
 ParameterUpdate20=1
-ParameterName21=DatasheetVersion
+ParameterName21=Component Kind
 ParameterUpdate21=1
-ParameterName22=Description
+ParameterName22=ComponentLink1Description
 ParameterUpdate22=1
-ParameterName23=DeviceName
+ParameterName23=ComponentLink1URL
 ParameterUpdate23=1
-ParameterName24=DeviceSetName
+ParameterName24=ComponentLink2Description
 ParameterUpdate24=1
-ParameterName25=Diameter
+ParameterName25=ComponentLink2URL
 ParameterUpdate25=1
-ParameterName26=Direction
+ParameterName26=ComponentLink3Description
 ParameterUpdate26=1
-ParameterName27=Dynamic Catalog
+ParameterName27=ComponentLink3URL
 ParameterUpdate27=1
-ParameterName28=Endurance Time
+ParameterName28=Connector Style
 ParameterUpdate28=1
-ParameterName29=Family
+ParameterName29=Connector Type
 ParameterUpdate29=1
-ParameterName30=Featured Product
+ParameterName30=Contact Finish
 ParameterUpdate30=1
-ParameterName31=Features
+ParameterName31=Contact Finish Thickness
 ParameterUpdate31=1
-ParameterName32=Flange Feature
+ParameterName32=Contact Gender
 ParameterUpdate32=1
-ParameterName33=GateName_1
+ParameterName33=Contact Material
 ParameterUpdate33=1
-ParameterName34=Gender
+ParameterName34=Contact Mating Length
 ParameterUpdate34=1
-ParameterName35=Housing Material
+ParameterName35=Contact Plating
 ParameterUpdate35=1
-ParameterName36=Impedance
+ParameterName36=Contact Protection
 ParameterUpdate36=1
-ParameterName37=IR Max (uA)
+ParameterName37=Contact Shape
 ParameterUpdate37=1
-ParameterName38=Length
+ParameterName38=Contact Type
 ParameterUpdate38=1
-ParameterName39=Library Reference
+ParameterName39=Coss [typ] (pF)
 ParameterUpdate39=1
-ParameterName40=LibraryName
+ParameterName40=Current Rating
 ParameterUpdate40=1
-ParameterName41=Manufacturer
+ParameterName41=Datasheet URL
 ParameterUpdate41=1
-ParameterName42=Manufacturer URL
+ParameterName42=Datasheet Version
 ParameterUpdate42=1
-ParameterName43=MANUFACTURER_PART_NUMBER
+ParameterName43=DatasheetVersion
 ParameterUpdate43=1
-ParameterName44=Mating Products
+ParameterName44=Depth
 ParameterUpdate44=1
-ParameterName45=Mounting Technology
+ParameterName45=Description
 ParameterUpdate45=1
-ParameterName46=Mounting Type
+ParameterName46=DeviceName
 ParameterUpdate46=1
-ParameterName47=Number of Positions
+ParameterName47=DeviceSetName
 ParameterUpdate47=1
-ParameterName48=Number of Rows
+ParameterName48=Diameter
 ParameterUpdate48=1
-ParameterName49=Operating Temperature
+ParameterName49=Direction
 ParameterUpdate49=1
-ParameterName50=Orientation
+ParameterName50=Dynamic Catalog
 ParameterUpdate50=1
-ParameterName51=Other Names
+ParameterName51=Eco-Plan
 ParameterUpdate51=1
-ParameterName52=Package
+ParameterName52=Endurance Time
 ParameterUpdate52=1
-ParameterName53=PackageDescription
+ParameterName53=Family
 ParameterUpdate53=1
-ParameterName54=PackageReference
+ParameterName54=Featured Product
 ParameterUpdate54=1
-ParameterName55=PackageVersion
+ParameterName55=Features
 ParameterUpdate55=1
-ParameterName56=Packaging
+ParameterName56=Flammability Rating
 ParameterUpdate56=1
-ParameterName57=Packing
+ParameterName57=Flange Feature
 ParameterUpdate57=1
-ParameterName58=Part Number
+ParameterName58=Gain
 ParameterUpdate58=1
-ParameterName59=PartNumber
+ParameterName59=Gain Error (max)
 ParameterUpdate59=1
-ParameterName60=Pin Number
+ParameterName60=Gain(V/V)
 ParameterUpdate60=1
-ParameterName61=Pitch
+ParameterName61=Gasket
 ParameterUpdate61=1
-ParameterName62=PPK Max (W)
+ParameterName62=GateName_1
 ParameterUpdate62=1
-ParameterName63=Product Training Modules
+ParameterName63=Height
 ParameterUpdate63=1
-ParameterName64=Published Date
+ParameterName64=Height - Seated (Max)
 ParameterUpdate64=1
-ParameterName65=Publisher
+ParameterName65=High Speed Serial Data Connector
 ParameterUpdate65=1
-ParameterName66=Rated Capacitance
+ParameterName66=High Temperature Housing
 ParameterUpdate66=1
-ParameterName67=Rated Current
+ParameterName67=Housing Colour
 ParameterUpdate67=1
-ParameterName68=Rated Ripple Current (at 100kHz)
+ParameterName68=Housing Material
 ParameterUpdate68=1
-ParameterName69=Rated Voltage
+ParameterName69=ID [max] (A)
 ParameterUpdate69=1
-ParameterName70=RoHS
+ParameterName70=Impedance
 ParameterUpdate70=1
-ParameterName71=RoHS Information
+ParameterName71=Inductance
 ParameterUpdate71=1
-ParameterName72=Row Number
+ParameterName72=Input Offset (+/-)(Max)(uV)
 ParameterUpdate72=1
-ParameterName73=Series
+ParameterName73=Input Offset Drift (+/-)(Max)(uV/Degrees Celsius)
 ParameterUpdate73=1
-ParameterName74=Shell Material, Finish
+ParameterName74=Io Typ(A)
 ParameterUpdate74=1
-ParameterName75=Shell Size, Connector Layout
+ParameterName75=Iq Typ (mA)
 ParameterUpdate75=1
-ParameterName76=Standard Package
+ParameterName76=IR Max (uA)
 ParameterUpdate76=1
-ParameterName77=SymbolName_1
+ParameterName77=Keyed
 ParameterUpdate77=1
-ParameterName78=Temperature Range
+ParameterName78=LatestRevisionDate
 ParameterUpdate78=1
-ParameterName79=Termination
+ParameterName79=LatestRevisionNote
 ParameterUpdate79=1
-ParameterName80=Tolerance Rated Capacitance
+ParameterName80=Lead Spacing
 ParameterUpdate80=1
-ParameterName81=VENDOR
+ParameterName81=Lead Style
 ParameterUpdate81=1
-ParameterName82=Voltage Rating
+ParameterName82=Length
 ParameterUpdate82=1
-ParameterName83=Withstanding Voltage
+ParameterName83=Library Reference
 ParameterUpdate83=1
-ParameterName84=Working Voltage
+ParameterName84=LibraryName
 ParameterUpdate84=1
+ParameterName85=Limiting Element Voltage
+ParameterUpdate85=1
+ParameterName86=Manufacturer
+ParameterUpdate86=1
+ParameterName87=Manufacturer URL
+ParameterUpdate87=1
+ParameterName88=Mating Alignment
+ParameterUpdate88=1
+ParameterName89=Mating Connector Lock
+ParameterUpdate89=1
+ParameterName90=Mating Post Length
+ParameterUpdate90=1
+ParameterName91=Mating Products
+ParameterUpdate91=1
+ParameterName92=Max Current Rating
+ParameterUpdate92=1
+ParameterName93=Max Operating Temperature
+ParameterUpdate93=1
+ParameterName94=Min Operating Temperature
+ParameterUpdate94=1
+ParameterName95=Mount
+ParameterUpdate95=1
+ParameterName96=Mounting Technology
+ParameterUpdate96=1
+ParameterName97=Mounting Type
+ParameterUpdate97=1
+ParameterName98=Noise (uVrms)
+ParameterUpdate98=1
+ParameterName99=Number of Contacts
+ParameterUpdate99=1
+ParameterName100=Number of Positions
+ParameterUpdate100=1
+ParameterName101=Number of Rows
+ParameterUpdate101=1
+ParameterName102=Offset Voltage (max)
+ParameterUpdate102=1
+ParameterName103=Online Catalog
+ParameterUpdate103=1
+ParameterName104=Operating Supply Range
+ParameterUpdate104=1
+ParameterName105=Operating Temperature
+ParameterUpdate105=1
+ParameterName106=Orientation
+ParameterUpdate106=1
+ParameterName107=Other Names
+ParameterUpdate107=1
+ParameterName108=Output
+ParameterUpdate108=1
+ParameterName109=Output Type
+ParameterUpdate109=1
+ParameterName110=Overload Voltage
+ParameterUpdate110=1
+ParameterName111=Package
+ParameterUpdate111=1
+ParameterName112=Package / Case
+ParameterUpdate112=1
+ParameterName113=Package Description
+ParameterUpdate113=1
+ParameterName114=Package Quantity
+ParameterUpdate114=1
+ParameterName115=Package Reference
+ParameterUpdate115=1
+ParameterName116=Package Type
+ParameterUpdate116=1
+ParameterName117=PackageDescription
+ParameterUpdate117=1
+ParameterName118=PackageReference
+ParameterUpdate118=1
+ParameterName119=PackageVersion
+ParameterUpdate119=1
+ParameterName120=Packaging
+ParameterUpdate120=1
+ParameterName121=Packing
+ParameterUpdate121=1
+ParameterName122=Panel Mount Retention
+ParameterUpdate122=1
+ParameterName123=Part Number
+ParameterUpdate123=1
+ParameterName124=PartNumber
+ParameterUpdate124=1
+ParameterName125=PCB Mount Retention
+ParameterUpdate125=1
+ParameterName126=PCB Mounting Orientation
+ParameterUpdate126=1
+ParameterName127=PCB Thickness
+ParameterUpdate127=1
+ParameterName128=PCN Part Number
+ParameterUpdate128=1
+ParameterName129=Pins
+ParameterUpdate129=1
+ParameterName130=Pitch
+ParameterUpdate130=1
+ParameterName131=Polarity
+ParameterUpdate131=1
+ParameterName132=Power Rating@70 degC
+ParameterUpdate132=1
+ParameterName133=PPK Max (W)
+ParameterUpdate133=1
+ParameterName134=Product Training Modules
+ParameterUpdate134=1
+ParameterName135=PSRR (dB)
+ParameterUpdate135=1
+ParameterName136=Publisher
+ParameterUpdate136=1
+ParameterName137=Qr [typ] (nC)
+ParameterUpdate137=1
+ParameterName138=Quiescent Current (+/-)(Typ)(mA)
+ParameterUpdate138=1
+ParameterName139=Quiescent Current (Typ)
+ParameterUpdate139=1
+ParameterName140=Radiation Hardening
+ParameterUpdate140=1
+ParameterName141=Rated Capacitance
+ParameterUpdate141=1
+ParameterName142=Rated Power@70 degC
+ParameterUpdate142=1
+ParameterName143=Rated Ripple Current (at 100kHz)
+ParameterUpdate143=1
+ParameterName144=Rated Voltage
+ParameterUpdate144=1
+ParameterName145=Rating
+ParameterUpdate145=1
+ParameterName146=Ratings
+ParameterUpdate146=1
+ParameterName147=REACH SVHC
+ParameterUpdate147=1
+ParameterName148=Resistance
+ParameterUpdate148=1
+ParameterName149=Resistance Tolerance
+ParameterUpdate149=1
+ParameterName150=RoHS
+ParameterUpdate150=1
+ParameterName151=RoHS Information
+ParameterUpdate151=1
+ParameterName152=RoHSCompliant
+ParameterUpdate152=1
+ParameterName153=Row Spacing
+ParameterUpdate153=1
+ParameterName154=Selectively Loaded
+ParameterUpdate154=1
+ParameterName155=Series
+ParameterUpdate155=1
+ParameterName156=Shell Material, Finish
+ParameterUpdate156=1
+ParameterName157=Shell Size, Connector Layout
+ParameterUpdate157=1
+ParameterName158=Size / Dimension
+ParameterUpdate158=1
+ParameterName159=Small-Signal Bandwidth(Typ)(MHz)
+ParameterUpdate159=1
+ParameterName160=Stabilizers
+ParameterUpdate160=1
+ParameterName161=Standard Package
+ParameterUpdate161=1
+ParameterName162=SubFamily
+ParameterUpdate162=1
+ParameterName163=SymbolName_1
+ParameterUpdate163=1
+ParameterName164=Temperature Coefficient
+ParameterUpdate164=1
+ParameterName165=Temperature Range
+ParameterUpdate165=1
+ParameterName166=Termination
+ParameterUpdate166=1
+ParameterName167=Termination Post Length
+ParameterUpdate167=1
+ParameterName168=Thickness (Max)
+ParameterUpdate168=1
+ParameterName169=Tolerance
+ParameterUpdate169=1
+ParameterName170=Tolerance Rated Capacitance
+ParameterUpdate170=1
+ParameterName171=Type (Capacitors)
+ParameterUpdate171=1
+ParameterName172=VDO Typ (V)
+ParameterUpdate172=1
+ParameterName173=VDS [max] (V)
+ParameterUpdate173=1
+ParameterName174=VGSth [typ] (V)
+ParameterUpdate174=1
+ParameterName175=VI Max (V)
+ParameterUpdate175=1
+ParameterName176=Vo(V)
+ParameterUpdate176=1
+ParameterName177=Voltage - Rated
+ParameterUpdate177=1
+ParameterName178=Voltage Input Range (Bus)
+ParameterUpdate178=1
+ParameterName179=Voltage Rating
+ParameterUpdate179=1
+ParameterName180=Voltage Rating (DC)
+ParameterUpdate180=1
+ParameterName181=Vs(Max)(V)
+ParameterUpdate181=1
+ParameterName182=Vs(Min)(V)
+ParameterUpdate182=1
+ParameterName183=Width
+ParameterUpdate183=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
 ModelName0=0805_A
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=61301821121
+ModelName1=BOUR-3266W-3_V
 ModelUpdate1=1
 ModelType2=PCBLIB
-ModelName2=61302021121
+ModelName2=BU2032
 ModelUpdate2=1
 ModelType3=PCBLIB
 ModelName3=CAPC1608X87X35LL15T15
@@ -1544,107 +1844,203 @@ ModelType6=PCBLIB
 ModelName6=CAPC1608X90X35LL10T15
 ModelUpdate6=1
 ModelType7=PCBLIB
-ModelName7=CAPC1608X90X35ML10T15
+ModelName7=CAPC1608X90X35LL15T15
 ModelUpdate7=1
 ModelType8=PCBLIB
-ModelName8=CAPC1608X90X35NL10T15
+ModelName8=CAPC1608X90X35ML10T15
 ModelUpdate8=1
 ModelType9=PCBLIB
-ModelName9=CAPC1608X92X38LL15T08
+ModelName9=CAPC1608X90X35ML15T15
 ModelUpdate9=1
 ModelType10=PCBLIB
-ModelName10=CAPC1608X92X38ML15T08
+ModelName10=CAPC1608X90X35NL10T15
 ModelUpdate10=1
 ModelType11=PCBLIB
-ModelName11=CAPC1608X92X38NL15T08
+ModelName11=CAPC1608X90X35NL15T15
 ModelUpdate11=1
 ModelType12=PCBLIB
-ModelName12=CAPC2013X88X50LL20T25
+ModelName12=CAPC1608X92X38LL15T08
 ModelUpdate12=1
 ModelType13=PCBLIB
-ModelName13=CAPC2013X88X50ML20T25
+ModelName13=CAPC1608X92X38ML15T08
 ModelUpdate13=1
 ModelType14=PCBLIB
-ModelName14=CAPC2013X88X50NL20T25
+ModelName14=CAPC1608X92X38NL15T08
 ModelUpdate14=1
 ModelType15=PCBLIB
-ModelName15=CAPC2013X94X50LL20T25
+ModelName15=CAPC2013X140X50LL20T25
 ModelUpdate15=1
 ModelType16=PCBLIB
-ModelName16=CAPC2013X94X50ML20T25
+ModelName16=CAPC2013X140X50ML20T25
 ModelUpdate16=1
 ModelType17=PCBLIB
-ModelName17=CAPC2013X94X50NL20T25
+ModelName17=CAPC2013X140X50NL20T25
 ModelUpdate17=1
 ModelType18=PCBLIB
-ModelName18=NIC-CAPA2-6.3X5.8_V
+ModelName18=CAPC2013X88X50LL20T25
 ModelUpdate18=1
 ModelType19=PCBLIB
-ModelName19=ONSC-SOT-23-3-318-08_V
+ModelName19=CAPC2013X88X50ML20T25
 ModelUpdate19=1
 ModelType20=PCBLIB
-ModelName20=RESC1608X55X30LL15T15
+ModelName20=CAPC2013X88X50NL20T25
 ModelUpdate20=1
 ModelType21=PCBLIB
-ModelName21=RESC1608X55X30ML15T15
+ModelName21=CAPC2013X94X50LL20T25
 ModelUpdate21=1
 ModelType22=PCBLIB
-ModelName22=RESC1608X55X30NL15T15
+ModelName22=CAPC2013X94X50ML20T25
 ModelUpdate22=1
 ModelType23=PCBLIB
-ModelName23=RESC1609X50X30LL10T20
+ModelName23=CAPC2013X94X50NL20T25
 ModelUpdate23=1
 ModelType24=PCBLIB
-ModelName24=RESC1609X50X30ML10T20
+ModelName24=CAPC2113X100X50LL30T25
 ModelUpdate24=1
 ModelType25=PCBLIB
-ModelName25=RESC1609X50X30NL10T20
+ModelName25=CAPC2113X100X50ML30T25
 ModelUpdate25=1
 ModelType26=PCBLIB
-ModelName26=RESC1609X55X30LL10T20
+ModelName26=CAPC2113X100X50NL30T25
 ModelUpdate26=1
 ModelType27=PCBLIB
-ModelName27=RESC1609X55X30ML10T20
+ModelName27=CAPC2113X120X50LL20T30
 ModelUpdate27=1
 ModelType28=PCBLIB
-ModelName28=RESC1609X55X30NL10T20
+ModelName28=CAPC2113X120X50ML20T30
 ModelUpdate28=1
 ModelType29=PCBLIB
-ModelName29=RESC3116X70X45LL15T20
+ModelName29=CAPC2113X120X50NL20T30
 ModelUpdate29=1
 ModelType30=PCBLIB
-ModelName30=RESC3116X70X45ML15T20
+ModelName30=CAPC3225X220X20LL40
 ModelUpdate30=1
 ModelType31=PCBLIB
-ModelName31=RESC3116X70X45NL15T20
+ModelName31=CAPC3225X220X20ML40
 ModelUpdate31=1
 ModelType32=PCBLIB
-ModelName32=RESC3216X70X50LL05T20
+ModelName32=CAPC3225X220X20NL40
 ModelUpdate32=1
 ModelType33=PCBLIB
-ModelName33=RESC3216X70X50NL05T20
+ModelName33=DCN0008A_L
 ModelUpdate33=1
 ModelType34=PCBLIB
-ModelName34=SMTC-MTLW-102-05-X-S-172
+ModelName34=DCN0008A_M
 ModelUpdate34=1
 ModelType35=PCBLIB
-ModelName35=SMTC-TSW-103-08-X-S-RA
+ModelName35=DCN0008A_N
 ModelUpdate35=1
 ModelType36=PCBLIB
-ModelName36=SMTC-TSW-104-08-X-S
+ModelName36=LCD Module
 ModelUpdate36=1
 ModelType37=PCBLIB
-ModelName37=SOIC8_4P9X3P9MC
+ModelName37=MCHP-SOIC-SN8_N
 ModelUpdate37=1
 ModelType38=PCBLIB
-ModelName38=TE-1734354-1-9_V
+ModelName38=MCHP-SOT-23-OT6_N
 ModelUpdate38=1
 ModelType39=PCBLIB
-ModelName39=TI-PWP28-5720X1950TP_M
+ModelName39=NIC-CAPA2-6.3X5.8_V
 ModelUpdate39=1
 ModelType40=PCBLIB
-ModelName40=TSSOP-16
+ModelName40=NUCLEO
 ModelUpdate40=1
+ModelType41=PCBLIB
+ModelName41=NXP-SOT23_L
+ModelUpdate41=1
+ModelType42=PCBLIB
+ModelName42=NXP-SOT23_M
+ModelUpdate42=1
+ModelType43=PCBLIB
+ModelName43=NXP-SOT23_N
+ModelUpdate43=1
+ModelType44=PCBLIB
+ModelName44=ONSC-SOT-23-3-318-08_V
+ModelUpdate44=1
+ModelType45=PCBLIB
+ModelName45=ONSC-SOT23-5_L
+ModelUpdate45=1
+ModelType46=PCBLIB
+ModelName46=ONSC-SOT23-5_M
+ModelUpdate46=1
+ModelType47=PCBLIB
+ModelName47=ONSC-SOT23-5_N
+ModelUpdate47=1
+ModelType48=PCBLIB
+ModelName48=ONSC-SOT-363-6-419B-02_V
+ModelUpdate48=1
+ModelType49=PCBLIB
+ModelName49=RESC1608X55X30LL15T15
+ModelUpdate49=1
+ModelType50=PCBLIB
+ModelName50=RESC1608X55X30ML15T15
+ModelUpdate50=1
+ModelType51=PCBLIB
+ModelName51=RESC1608X55X30NL15T15
+ModelUpdate51=1
+ModelType52=PCBLIB
+ModelName52=RESC1609X50X30LL10T20
+ModelUpdate52=1
+ModelType53=PCBLIB
+ModelName53=RESC1609X50X30ML10T20
+ModelUpdate53=1
+ModelType54=PCBLIB
+ModelName54=RESC1609X50X30NL10T20
+ModelUpdate54=1
+ModelType55=PCBLIB
+ModelName55=RESC1609X55X30LL10T20
+ModelUpdate55=1
+ModelType56=PCBLIB
+ModelName56=RESC1609X55X30ML10T20
+ModelUpdate56=1
+ModelType57=PCBLIB
+ModelName57=RESC1609X55X30NL10T20
+ModelUpdate57=1
+ModelType58=PCBLIB
+ModelName58=RESC3116X70X45LL15T20
+ModelUpdate58=1
+ModelType59=PCBLIB
+ModelName59=RESC3116X70X45ML15T20
+ModelUpdate59=1
+ModelType60=PCBLIB
+ModelName60=RESC3116X70X45NL15T20
+ModelUpdate60=1
+ModelType61=PCBLIB
+ModelName61=RESC3216X70X50LL05T20
+ModelUpdate61=1
+ModelType62=PCBLIB
+ModelName62=RESC3216X70X50NL05T20
+ModelUpdate62=1
+ModelType63=PCBLIB
+ModelName63=ROHM-MCR100-2_V
+ModelUpdate63=1
+ModelType64=PCBLIB
+ModelName64=SMTC-MTLW-102-05-X-S-172
+ModelUpdate64=1
+ModelType65=PCBLIB
+ModelName65=SMTC-TSW-103-08-X-S-RA
+ModelUpdate65=1
+ModelType66=PCBLIB
+ModelName66=SMTC-TSW-104-08-X-S
+ModelUpdate66=1
+ModelType67=PCBLIB
+ModelName67=TE-1734354-1-9_V
+ModelUpdate67=1
+ModelType68=PCBLIB
+ModelName68=TECO-5-146280-2_V
+ModelUpdate68=1
+ModelType69=PCBLIB
+ModelName69=TI-PWP28-5720X1950TP_M
+ModelUpdate69=1
+ModelType70=PCBLIB
+ModelName70=TSSOP-16
+ModelUpdate70=1
+ModelType71=PCBLIB
+ModelName71=TSSOP-16 PPAD
+ModelUpdate71=1
+ModelType72=PCBLIB
+ModelName72=WE-LQS 6045
+ModelUpdate72=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
@@ -1652,102 +2048,103 @@ UpdateVariants=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=PHASE0|NetColor=$00FF6EFF
-Net2=NetName=LCD_CNTRST|NetColor=$006EFF6E
-Net3=NetName=N00084|NetColor=$00FF6E6E
-Net4=NetName=DATA5|NetColor=$006EFF6E
-Net5=NetName=DIG_IN3|NetColor=$00FF6EFF
-Net6=NetName=STP_SLP|NetColor=$00FF6E6E
-Net7=NetName=N00079|NetColor=$006EFF6E
-Net8=NetName=NetR?_2|NetColor=clYellow
-Net9=NetName=DIG_IN2|NetColor=$00FF6EFF
-Net10=NetName=IN2|NetColor=$00FF6E6E
-Net11=NetName=DATA3|NetColor=$006EFF6E
-Net12=NetName=N00154[1..0]|NetColor=$00FF6EFF
-Net13=NetName=DIG_IN1|NetColor=$00FF6EFF
-Net14=NetName=DATA|NetColor=$006EFF6E
-Net15=NetName=NetU8_6|NetColor=$00FF6E6E
-Net16=NetName=NetU8_4|NetColor=$00FF6E6E
-Net17=NetName=DATA15|NetColor=$00FF6EFF
-Net18=NetName=N00221[3..0]|NetColor=$00FF6E6E
-Net19=NetName=N00082|NetColor=$00FF6EFF
-Net20=NetName=N00085|NetColor=$00FF6E6E
-Net21=NetName=DC_MTRA2|NetColor=$00FF6EFF
-Net22=NetName=N00086|NetColor=clYellow
-Net23=NetName=DC_ISENA|NetColor=$00FF6EFF
-Net24=NetName=Net?_8|NetColor=$00FF6EFF
-Net25=NetName=DIG_IN|NetColor=$00FF6EFF
-Net26=NetName=LIM|NetColor=$00FF6E6E
-Net27=NetName=N00080|NetColor=$00FF6EFF
-Net28=NetName=DATA6|NetColor=$006EFF6E
-Net29=NetName=Net?_10|NetColor=$00FF6EFF
-Net30=NetName=N00083|NetColor=$00FF6E6E
-Net31=NetName=N00291[1..0]|NetColor=$00FF6E6E
-Net32=NetName=NetQ?_1|NetColor=$006EFF6E
-Net33=NetName=Servo|NetColor=clYellow
-Net34=NetName=IN0|NetColor=$00FF6E6E
-Net35=NetName=DATA7|NetColor=$006EFF6E
-Net36=NetName=N00078|NetColor=$006EFF6E
-Net37=NetName=N00246[1..0]|NetColor=$00FF6EFF
-Net38=NetName=I2C_SCL|NetColor=$000083FD
-Net39=NetName=DC_RST|NetColor=$00FF6EFF
-Net40=NetName=ENC1|NetColor=$00FF6EFF
-Net41=NetName=STP_A2|NetColor=$00FF6E6E
-Net42=NetName=STP_RST|NetColor=$00FF6E6E
-Net43=NetName=PWM|NetColor=$006EFF6E
-Net44=NetName=STP_ISENA|NetColor=$00FF6E6E
-Net45=NetName=ENC|NetColor=$00FF6EFF
-Net46=NetName=DC_MTRB1|NetColor=$00FF6EFF
-Net47=NetName=N00251[1..0]|NetColor=$00FF6EFF
-Net48=NetName=PHASE1|NetColor=$00FF6EFF
-Net49=NetName=IN3|NetColor=$00FF6E6E
-Net50=NetName=DC_PHASE0|NetColor=$00FF6EFF
-Net51=NetName=N00243[3..0]|NetColor=$00FF6EFF
-Net52=NetName=LIM1|NetColor=$00FF6E6E
-Net53=NetName=STP_ISENB|NetColor=$00FF6E6E
-Net54=NetName=DATA16|NetColor=$00FF6EFF
-Net55=NetName=DC_PHASE1|NetColor=$00FF6EFF
-Net56=NetName=N00081|NetColor=$00FF6EFF
-Net57=NetName=Net?_5|NetColor=$00FF6EFF
-Net58=NetName=Net?_16|NetColor=$00FF6EFF
-Net59=NetName=LIM0|NetColor=$00FF6E6E
-Net60=NetName=IN1|NetColor=$00FF6E6E
-Net61=NetName=DC_SLP|NetColor=$00FF6EFF
-Net62=NetName=STP_A1|NetColor=$00FF6E6E
-Net63=NetName=N00166[1..0]|NetColor=$00FF6E6E
-Net64=NetName=DC_MTRA1|NetColor=$00FF6EFF
-Net65=NetName=I2C_SDA|NetColor=$000083FD
-Net66=NetName=DC_VREF|NetColor=$00FF6EFF
-Net67=NetName=N00000[7..0]|NetColor=$006EFF6E
-Net68=NetName=STP_FLT|NetColor=$00FF6E6E
-Net69=NetName=N00151[1..0]|NetColor=$00FF6EFF
-Net70=NetName=BL|NetColor=$006EFF6E
-Net71=NetName=N00226[1..0]|NetColor=$00FF6EFF
-Net72=NetName=E|NetColor=$006EFF6E
-Net73=NetName=Net?_7|NetColor=$00FF6EFF
-Net74=NetName=Net?_17|NetColor=$00FF6EFF
-Net75=NetName=DIG_IN0|NetColor=$00FF6EFF
-Net76=NetName=RS|NetColor=$006EFF6E
-Net77=NetName=Net?_12|NetColor=$00FF6E6E
-Net78=NetName=NetP?_3|NetColor=clYellow
-Net79=NetName=DATA0|NetColor=$006EFF6E
-Net80=NetName=DC_ISENB|NetColor=$00FF6EFF
-Net81=NetName=N00249[1..0]|NetColor=$00FF6EFF
-Net82=NetName=Net?_18|NetColor=$00FF6EFF
-Net83=NetName=PHASE|NetColor=$00FF6EFF
-Net84=NetName=IN|NetColor=$00FF6E6E
-Net85=NetName=DC_FLT|NetColor=$00FF6EFF
-Net86=NetName=ENC0|NetColor=$00FF6EFF
-Net87=NetName=N00271[7..0]|NetColor=$006EFF6E
-Net88=NetName=BL_PWM|NetColor=$006EFF6E
-Net89=NetName=STP_B1|NetColor=$00FF6E6E
-Net90=NetName=N00000[3..0]|NetColor=$00FF6E6E
-Net91=NetName=STP_B2|NetColor=$00FF6E6E
-Net92=NetName=DATA2|NetColor=$006EFF6E
-Net93=NetName=DATA1|NetColor=$006EFF6E
-Net94=NetName=DATA4|NetColor=$006EFF6E
-Net95=NetName=N00000[1..0]|NetColor=$00FF6EFF
-Net96=NetName=DC_MTRB2|NetColor=$00FF6EFF
+Net1=NetName=DATA5|NetColor=$006EFF6E
+Net2=NetName=NetU8_6|NetColor=$00FF6E6E
+Net3=NetName=DIG_IN2|NetColor=$00FF6EFF
+Net4=NetName=DATA3|NetColor=$006EFF6E
+Net5=NetName=N00154[1..0]|NetColor=$00FF6EFF
+Net6=NetName=DIG_IN1|NetColor=$00FF6EFF
+Net7=NetName=N00221[3..0]|NetColor=$00FF6E6E
+Net8=NetName=DC_MTRA2|NetColor=$00FF6EFF
+Net9=NetName=DIG_IN|NetColor=$00FF6EFF
+Net10=NetName=LIM|NetColor=$00FF6E6E
+Net11=NetName=N00080|NetColor=$00FF6EFF
+Net12=NetName=Servo|NetColor=clYellow
+Net13=NetName=IN0|NetColor=$00FF6E6E
+Net14=NetName=DATA7|NetColor=$006EFF6E
+Net15=NetName=DC_RST|NetColor=$00FF6EFF
+Net16=NetName=STP_A2|NetColor=$00FF6E6E
+Net17=NetName=STP_RST|NetColor=$00FF6E6E
+Net18=NetName=Net?_19|NetColor=$00FF6E6E
+Net19=NetName=DC_PHASE0|NetColor=$00FF6EFF
+Net20=NetName=IN3|NetColor=$00FF6E6E
+Net21=NetName=DATA16|NetColor=$00FF6EFF
+Net22=NetName=DC_PHASE1|NetColor=$00FF6EFF
+Net23=NetName=N00081|NetColor=$00FF6EFF
+Net24=NetName=Net?_5|NetColor=$00FF6EFF
+Net25=NetName=I2C_SDA|NetColor=$000083FD
+Net26=NetName=DC_MTRA1|NetColor=$00FF6EFF
+Net27=NetName=IN1|NetColor=$00FF6E6E
+Net28=NetName=DC_SLP|NetColor=$00FF6EFF
+Net29=NetName=DC_VREF|NetColor=$00FF6EFF
+Net30=NetName=N00000[7..0]|NetColor=$006EFF6E
+Net31=NetName=N00151[1..0]|NetColor=$00FF6EFF
+Net32=NetName=BL|NetColor=$006EFF6E
+Net33=NetName=E|NetColor=$006EFF6E
+Net34=NetName=Net?_12|NetColor=$00FF6E6E
+Net35=NetName=DC_ISENB|NetColor=$00FF6EFF
+Net36=NetName=DATA0|NetColor=$006EFF6E
+Net37=NetName=ENC0|NetColor=$00FF6EFF
+Net38=NetName=N00000[3..0]|NetColor=$00FF6E6E
+Net39=NetName=DATA4|NetColor=$006EFF6E
+Net40=NetName=N00000[1..0]|NetColor=$00FF6EFF
+Net41=NetName=PHASE0|NetColor=$00FF6EFF
+Net42=NetName=DC_MTRB2|NetColor=$00FF6EFF
+Net43=NetName=LCD_CNTRST|NetColor=$006EFF6E
+Net44=NetName=N00084|NetColor=$00FF6E6E
+Net45=NetName=DIG_IN3|NetColor=$00FF6EFF
+Net46=NetName=STP_SLP|NetColor=$00FF6E6E
+Net47=NetName=N00079|NetColor=$006EFF6E
+Net48=NetName=NetR?_2|NetColor=clYellow
+Net49=NetName=NetU8_4|NetColor=$00FF6E6E
+Net50=NetName=IN2|NetColor=$00FF6E6E
+Net51=NetName=DATA|NetColor=$006EFF6E
+Net52=NetName=DATA15|NetColor=$00FF6EFF
+Net53=NetName=N00082|NetColor=$00FF6EFF
+Net54=NetName=N00085|NetColor=$00FF6E6E
+Net55=NetName=DC_ISENA|NetColor=$00FF6EFF
+Net56=NetName=N00086|NetColor=clYellow
+Net57=NetName=Net?_8|NetColor=$00FF6EFF
+Net58=NetName=Net?_10|NetColor=$00FF6EFF
+Net59=NetName=N00083|NetColor=$00FF6E6E
+Net60=NetName=N00291[1..0]|NetColor=$00FF6E6E
+Net61=NetName=DATA6|NetColor=$006EFF6E
+Net62=NetName=N00246[1..0]|NetColor=$00FF6EFF
+Net63=NetName=NetQ?_1|NetColor=$006EFF6E
+Net64=NetName=N00078|NetColor=$006EFF6E
+Net65=NetName=I2C_SCL|NetColor=$000083FD
+Net66=NetName=ENC1|NetColor=$00FF6EFF
+Net67=NetName=PWM|NetColor=$006EFF6E
+Net68=NetName=STP_ISENA|NetColor=$00FF6E6E
+Net69=NetName=DC_MTRB1|NetColor=$00FF6EFF
+Net70=NetName=ENC|NetColor=$00FF6EFF
+Net71=NetName=N00251[1..0]|NetColor=$00FF6EFF
+Net72=NetName=PHASE1|NetColor=$00FF6EFF
+Net73=NetName=N00243[3..0]|NetColor=$00FF6EFF
+Net74=NetName=LIM1|NetColor=$00FF6E6E
+Net75=NetName=STP_ISENB|NetColor=$00FF6E6E
+Net76=NetName=STP_A1|NetColor=$00FF6E6E
+Net77=NetName=LIM0|NetColor=$00FF6E6E
+Net78=NetName=N00166[1..0]|NetColor=$00FF6E6E
+Net79=NetName=STP_FLT|NetColor=$00FF6E6E
+Net80=NetName=N00226[1..0]|NetColor=$00FF6EFF
+Net81=NetName=Net?_7|NetColor=$00FF6EFF
+Net82=NetName=Net?_17|NetColor=$00FF6EFF
+Net83=NetName=DIG_IN0|NetColor=$00FF6EFF
+Net84=NetName=RS|NetColor=$006EFF6E
+Net85=NetName=NetP?_3|NetColor=clYellow
+Net86=NetName=N00249[1..0]|NetColor=$00FF6EFF
+Net87=NetName=PHASE|NetColor=$00FF6EFF
+Net88=NetName=Net?_18|NetColor=$00FF6E6E
+Net89=NetName=IN|NetColor=$00FF6E6E
+Net90=NetName=DC_FLT|NetColor=$00FF6EFF
+Net91=NetName=Net?_20|NetColor=$00FF6E6E
+Net92=NetName=N00271[7..0]|NetColor=$006EFF6E
+Net93=NetName=BL_PWM|NetColor=$006EFF6E
+Net94=NetName=STP_B1|NetColor=$00FF6E6E
+Net95=NetName=STP_B2|NetColor=$00FF6E6E
+Net96=NetName=DATA2|NetColor=$006EFF6E
+Net97=NetName=DATA1|NetColor=$006EFF6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
