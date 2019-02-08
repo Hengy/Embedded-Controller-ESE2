@@ -38,6 +38,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=TestPoints.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=12
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MOOYTVRK
+
+[Document2]
 DocumentPath=Top sheet.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -54,7 +71,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VXHHWRCD
 
-[Document2]
+[Document3]
 DocumentPath=IO Expansioin.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -71,7 +88,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TZDITTII
 
-[Document3]
+[Document4]
 DocumentPath=microcontroller.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LYUYLMNT
 
-[Document4]
+[Document5]
 DocumentPath=rs232.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EWFTKNBD
 
-[Document5]
+[Document6]
 DocumentPath=CANbus.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NOZBISUU
 
-[Document6]
+[Document7]
 DocumentPath=DC Motor Driver.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IYIFDOXO
 
-[Document7]
+[Document8]
 DocumentPath=Stepper Motor Driver.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QBDHBJJH
 
-[Document8]
+[Document9]
 DocumentPath=power supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HUMOACWU
 
-[Document9]
+[Document10]
 DocumentPath=LCD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GAUNYYBZ
 
-[Document10]
+[Document11]
 DocumentPath=SD card.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZDCHGFDX
 
-[Document11]
+[Document12]
 DocumentPath=Temperature.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +309,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -398,7 +415,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -472,7 +489,7 @@ PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -494,7 +511,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -566,7 +583,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -603,7 +620,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -783,7 +800,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -827,7 +844,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -878,7 +895,7 @@ OutputDefault9=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=Samsung C430W (192.168.0.155)
+TargetPrinter=\\psstu01ds\Pca3146
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -2259,50 +2276,49 @@ Net88=NetName=NetU3_4|NetColor=$00FF6EFF
 Net89=NetName=PB1|NetColor=$00FF6E6E
 Net90=NetName=NetU1_4|NetColor=$00FFCCCC
 Net91=NetName=DB5|NetColor=$0000BE00
-Net92=NetName=NetP?_2|NetColor=$00BDDF05
-Net93=NetName=DATA6|NetColor=$0000BE00
-Net94=NetName=CTS_OUT|NetColor=$009999FF
-Net95=NetName=NetU2_20|NetColor=$00FF6EFF
-Net96=NetName=I2C_SCL|NetColor=$00BDDF05
-Net97=NetName=PA0|NetColor=$009999FF
-Net98=NetName=NetP?_14|NetColor=$00FFFF6E
-Net99=NetName=NetP2_8|NetColor=$00B0B0B0
-Net100=NetName=PB12|NetColor=$00FFFF6E
-Net101=NetName=NetU3_6|NetColor=$00FF6EFF
-Net102=NetName=STP_STEP|NetColor=$00FF6E6E
-Net103=NetName=PA8|NetColor=$00FF6EFF
-Net104=NetName=Net3_20|NetColor=$00FF6E6E
-Net105=NetName=SPI_SS_SD|NetColor=$00FFFF6E
-Net106=NetName=PA10|NetColor=$00FF6E6E
-Net107=NetName=PA2|NetColor=$009999FF
-Net108=NetName=PC4|NetColor=$00FF6E6E
-Net109=NetName=ENB|NetColor=$00FF6EFF
-Net110=NetName=ENA|NetColor=$00FF6EFF
-Net111=NetName=LIML|NetColor=$00FF6E6E
-Net112=NetName=IO1|NetColor=$00B0B0B0
-Net113=NetName=PB5|NetColor=$00FF6E6E
-Net114=NetName=PA5|NetColor=$00B0B0B0
-Net115=NetName=NetU9_2|NetColor=$00FFFF6E
-Net116=NetName=STP_DIR|NetColor=$00FF6E6E
-Net117=NetName=NetP?_12|NetColor=$00FFFF6E
-Net118=NetName=PC5|NetColor=$00FF6EFF
-Net119=NetName=STP_FLT|NetColor=$00FF6E6E
-Net120=NetName=PA15|NetColor=clYellow
-Net121=NetName=CAN_RX_OUT|NetColor=$00FFCCCC
-Net122=NetName=RESET|NetColor=$006E6EFF
-Net123=NetName=NetLEDRX1_1|NetColor=$009999FF
-Net124=NetName=RS|NetColor=$0000BE00
-Net125=NetName=NetP?_10|NetColor=$00FFFF6E
-Net126=NetName=PA3|NetColor=$009999FF
-Net127=NetName=NetU2_23|NetColor=$00FF6EFF
-Net128=NetName=DC_FLT|NetColor=$00FF6EFF
-Net129=NetName=PA4|NetColor=$0000BE00
-Net130=NetName=PC8|NetColor=$00FF6EFF
-Net131=NetName=PA9|NetColor=$00FF6EFF
-Net132=NetName=BL_PWM|NetColor=$0000BE00
-Net133=NetName=PC10|NetColor=$00FF6EFF
-Net134=NetName=CAN_STBY|NetColor=$00FFCCCC
-Net135=NetName=NetSD*1_7|NetColor=$00FFFF6E
+Net92=NetName=DATA6|NetColor=$0000BE00
+Net93=NetName=CTS_OUT|NetColor=$009999FF
+Net94=NetName=NetU2_20|NetColor=$00FF6EFF
+Net95=NetName=I2C_SCL|NetColor=$00BDDF05
+Net96=NetName=PA0|NetColor=$009999FF
+Net97=NetName=NetP?_14|NetColor=$00FFFF6E
+Net98=NetName=NetP2_8|NetColor=$00B0B0B0
+Net99=NetName=PB12|NetColor=$00FFFF6E
+Net100=NetName=NetU3_6|NetColor=$00FF6EFF
+Net101=NetName=STP_STEP|NetColor=$00FF6E6E
+Net102=NetName=PA8|NetColor=$00FF6EFF
+Net103=NetName=Net3_20|NetColor=$00FF6E6E
+Net104=NetName=SPI_SS_SD|NetColor=$00FFFF6E
+Net105=NetName=PA10|NetColor=$00FF6E6E
+Net106=NetName=PA2|NetColor=$009999FF
+Net107=NetName=PC4|NetColor=$00FF6E6E
+Net108=NetName=ENB|NetColor=$00FF6EFF
+Net109=NetName=ENA|NetColor=$00FF6EFF
+Net110=NetName=LIML|NetColor=$00FF6E6E
+Net111=NetName=IO1|NetColor=$00B0B0B0
+Net112=NetName=PB5|NetColor=$00FF6E6E
+Net113=NetName=PA5|NetColor=$00B0B0B0
+Net114=NetName=NetU9_2|NetColor=$00FFFF6E
+Net115=NetName=STP_DIR|NetColor=$00FF6E6E
+Net116=NetName=NetP?_12|NetColor=$00FFFF6E
+Net117=NetName=PC5|NetColor=$00FF6EFF
+Net118=NetName=STP_FLT|NetColor=$00FF6E6E
+Net119=NetName=PA15|NetColor=clYellow
+Net120=NetName=CAN_RX_OUT|NetColor=$00FFCCCC
+Net121=NetName=RESET|NetColor=$006E6EFF
+Net122=NetName=NetLEDRX1_1|NetColor=$009999FF
+Net123=NetName=RS|NetColor=$0000BE00
+Net124=NetName=NetP?_10|NetColor=$00FFFF6E
+Net125=NetName=PA3|NetColor=$009999FF
+Net126=NetName=NetU2_23|NetColor=$00FF6EFF
+Net127=NetName=DC_FLT|NetColor=$00FF6EFF
+Net128=NetName=PA4|NetColor=$0000BE00
+Net129=NetName=PC8|NetColor=$00FF6EFF
+Net130=NetName=PA9|NetColor=$00FF6EFF
+Net131=NetName=BL_PWM|NetColor=$0000BE00
+Net132=NetName=PC10|NetColor=$00FF6EFF
+Net133=NetName=CAN_STBY|NetColor=$00FFCCCC
+Net134=NetName=NetSD*1_7|NetColor=$00FFFF6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
