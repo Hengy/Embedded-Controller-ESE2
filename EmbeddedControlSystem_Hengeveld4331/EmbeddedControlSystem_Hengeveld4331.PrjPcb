@@ -241,6 +241,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EIFNIDKA
 
+[Document13]
+DocumentPath=controller.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ESGBJLSX
+
 [SearchPath1]
 Path=C:\Users\Public\Documents\Altium\AD19\Library\*.*
 IncludeSubFolders=1
@@ -284,7 +301,7 @@ ExportBOM=0
 TemplateFilename=Board Stack Report.XLT
 TemplateStoreRelative=-1
 PCB_PrintColor=1
-SCH_PrintColor=2
+SCH_PrintColor=0
 PrintQuality=-3
 SCH_ShowNoErc=-1
 SCH_ShowParameter=-1
