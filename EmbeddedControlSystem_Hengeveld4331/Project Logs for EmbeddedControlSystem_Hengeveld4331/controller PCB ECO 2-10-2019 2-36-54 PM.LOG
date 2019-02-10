@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=AGND Pin=TP_GND5-1
+Removed Pin From Net: NetName=AGND Pin=TP_GND6-1
+Removed Member From Class: ClassName=Test Points Member=TP_GND5
+Removed Member From Class: ClassName=Test Points Member=TP_GND6
+Added Member To Class: ClassName=SD card Member=Component C39 100nF
+Added Room: Name=SD card
+Added Room: Name=Test Points
