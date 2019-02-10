@@ -1,0 +1,95 @@
+Added Component: Designator=LCD1(LCD Module)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P1(NUCLEO)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.samtec.com/documents/webfiles/pdf/HW_TH.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.samtec.com/documents/webfiles/cpdf/HW-XX-XX-XX-X-XXX-XXX-XX-XXX-MKT.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "F-214"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Through-hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = ".100[2.54] High Temp Terminal Body (Board Stacking)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "HW-20-08-X-D-255-090"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Y, 8/1991"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "HW-20-08-F-D-255-090"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range"; Value = "-55 to 125 degC"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AGND Pin=LCD1-1
+Added Pin To Net: NetName=E5V Pin=LCD1-2
+Added Pin To Net: NetName=LCD_CNTRST Pin=LCD1-3
+Added Pin To Net: NetName=PA4 Pin=LCD1-4
+Added Pin To Net: NetName=AGND Pin=LCD1-5
+Added Pin To Net: NetName=E Pin=LCD1-6
+Added Pin To Net: NetName=DB4 Pin=LCD1-11
+Added Pin To Net: NetName=DB5 Pin=LCD1-12
+Added Pin To Net: NetName=DB6 Pin=LCD1-13
+Added Pin To Net: NetName=DB7 Pin=LCD1-14
+Added Pin To Net: NetName=E5V Pin=LCD1-15
+Added Pin To Net: NetName=PWM Pin=LCD1-16
+Added Pin To Net: NetName=DC_RST Pin=P1-1_1
+Added Pin To Net: NetName=PC9 Pin=P1-1_2
+Added Pin To Net: NetName=DC_SLP Pin=P1-2_1
+Added Pin To Net: NetName=PC8 Pin=P1-2_2
+Added Pin To Net: NetName=DC_FLT Pin=P1-3_1
+Added Pin To Net: NetName=I2C_SCL Pin=P1-3_2
+Added Pin To Net: NetName=PD2 Pin=P1-4_1
+Added Pin To Net: NetName=PC6 Pin=P1-4_2
+Added Pin To Net: NetName=I2C_SDA Pin=P1-5_2
+Added Pin To Net: NetName=E5V Pin=P1-6_1
+Added Pin To Net: NetName=PC5 Pin=P1-6_2
+Added Pin To Net: NetName=AVDD Pin=P1-7_2
+Added Pin To Net: NetName=AGND Pin=P1-8_1
+Added Pin To Net: NetName=AGND Pin=P1-9_2
+Added Pin To Net: NetName=PA5 Pin=P1-11_2
+Added Pin To Net: NetName=IOREF Pin=P1-12_1
+Added Pin To Net: NetName=PA12 Pin=P1-12_2
+Added Pin To Net: NetName=PA6 Pin=P1-13_2
+Added Pin To Net: NetName=RESET Pin=P1-14_1
+Added Pin To Net: NetName=PA11 Pin=P1-14_2
+Added Pin To Net: NetName=PA7 Pin=P1-15_2
+Added Pin To Net: NetName=3V3 Pin=P1-16_1
+Added Pin To Net: NetName=PB12 Pin=P1-16_2
+Added Pin To Net: NetName=PA15 Pin=P1-17_1
+Added Pin To Net: NetName=PB6 Pin=P1-17_2
+Added Pin To Net: NetName=PB11 Pin=P1-18_2
+Added Pin To Net: NetName=AGND Pin=P1-19_1
+Added Pin To Net: NetName=PC7 Pin=P1-19_2
+Added Pin To Net: NetName=AGND Pin=P1-20_1
+Added Pin To Net: NetName=AGND Pin=P1-20_2
+Added Pin To Net: NetName=BL Pin=P1-21_1
+Added Pin To Net: NetName=PA9 Pin=P1-21_2
+Added Pin To Net: NetName=AGND Pin=P1-22_1
+Added Pin To Net: NetName=PB2 Pin=P1-22_2
+Added Pin To Net: NetName=PC13 Pin=P1-23_1
+Added Pin To Net: NetName=PA8 Pin=P1-23_2
+Added Pin To Net: NetName=PB1 Pin=P1-24_2
+Added Pin To Net: NetName=PC14 Pin=P1-25_1
+Added Pin To Net: NetName=PB10 Pin=P1-25_2
+Added Pin To Net: NetName=MOSI Pin=P1-26_2
+Added Pin To Net: NetName=PB4 Pin=P1-27_2
+Added Pin To Net: NetName=PA0 Pin=P1-28_1
+Added Pin To Net: NetName=MISO Pin=P1-28_2
+Added Pin To Net: NetName=PB5 Pin=P1-29_2
+Added Pin To Net: NetName=PA1 Pin=P1-30_1
+Added Pin To Net: NetName=PB13 Pin=P1-30_2
+Added Pin To Net: NetName=PB3 Pin=P1-31_2
+Added Pin To Net: NetName=PA4 Pin=P1-32_1
+Added Pin To Net: NetName=AGND Pin=P1-32_2
+Added Pin To Net: NetName=VBAT Pin=P1-33_1
+Added Pin To Net: NetName=PA10 Pin=P1-33_2
+Added Pin To Net: NetName=E Pin=P1-34_1
+Added Pin To Net: NetName=PC4 Pin=P1-34_2
+Added Pin To Net: NetName=DB6 Pin=P1-35_1
+Added Pin To Net: NetName=PA2 Pin=P1-35_2
+Added Pin To Net: NetName=DB5 Pin=P1-36_1
+Added Pin To Net: NetName=DB7 Pin=P1-37_1
+Added Pin To Net: NetName=PA3 Pin=P1-37_2
+Added Pin To Net: NetName=DB4 Pin=P1-38_1
+Added Member To Class: ClassName=LCD Member=Component LCD1 LCD Module
+Added Member To Class: ClassName=STM32F303RE Member=Component P1 Nucleo
