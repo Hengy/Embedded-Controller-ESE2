@@ -1,9 +1,0 @@
-Removed Member From Class: ClassName=Power Supply Member=D2
-Added Member To Class: ClassName=Power Supply Member=Component D1 MBRS540T3
-Added Member To Class: ClassName=LCD Member=Component LCD1 LCD Module
-Added Member To Class: ClassName=Test Points Member=Component P15 Header 8X2 Right
-Added Member To Class: ClassName=Bluetooth Member=Component P17 Header 2
-Added Member To Class: ClassName=Test Points Member=Component R43 8RES_ISO_ARRAY
-Added Member To Class: ClassName=Test Points Member=Component R46 8RES_ISO_ARRAY
-Added Member To Class: ClassName=Test Points Member=Component R47 8RES_ISO_ARRAY
-Added Member To Class: ClassName=Bluetooth Member=Component R48 10k 1%
