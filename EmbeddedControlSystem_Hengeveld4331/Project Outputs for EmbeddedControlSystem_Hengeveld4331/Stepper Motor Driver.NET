@@ -1,0 +1,195 @@
+Wire List
+
+<<< Component List >>>
+DRV8884                         1              TI-PWP24
+10K                             2              RESC1608X55X30LL15T15
+45K                             3              RESC1608X55X30LL15T15
+100u                            C54            SMD-CAP-0606
+100u                            C55            SMD-CAP-0606
+100n                            C56            CAPC1608X87X35LL15T15
+100n                            C57            CAPC1608X87X35LL15T15
+470n                            C58            CAPC1608X90X35LL10T15
+100n                            C59            CAPC1608X87X35LL15T15
+100n                            C60            CAPC1608X87X35LL15T15
+10n                             C61            CAPC1608X87X35LL15T15
+100u                            C62            SMD-CAP-0606
+100nF                           C63            CAPC1608X92X38LL15T08
+100n                            C64            CAPC1608X87X35LL15T15
+100n                            C65            CAPC1608X87X35LL15T15
+SMD_JMP                         M1             0603_JUMPER
+SMD_JMP                         M2             0603_JUMPER
+RED                             MTR2           0805_A
+Header 4                        P9             HDR1X4
+Header 3                        P10            HDR1X3
+Header 2                        P11            HDR1X2
+Header 2                        P12            HDR1X2
+1K                              R34            RESC1608X55X30LL15T15
+45K                             R35            RESC1608X55X30LL15T15
+100                             R36            RESC1608X55X30LL15T15
+100K                            R37            RESC1608X55X30LL15T15
+10K                             R38            RESC1608X55X30LL15T15
+10K                             R39            RESC1608X55X30LL15T15
+100R                            R40            RESC1608X55X30LL15T15
+100R                            R41            RESC1608X55X30LL15T15
+Test point                      TP_SRV1        SMD Test Hook
+74LVC2G14                       U9             ONSC-SOT-363-6-419B-02_V
+
+<<< Wire List >>>
+
+  NODE  REFERENCE  PIN #   PIN NAME       PIN TYPE    PART VALUE
+
+[00001] 3V3
+        M1         1       1              PASSIVE     SMD_JMP
+        M2         1       1              PASSIVE     SMD_JMP
+        R34        1       1              PASSIVE     1K
+        R38        1       1              PASSIVE     10K
+        R39        1       1              PASSIVE     10K
+
+[00002] 12V
+        1          4       VMA            POWER       DRV8884
+        1          11      VMB            POWER       DRV8884
+        1          14      DVDD           POWER       DRV8884
+        C54        1       1              PASSIVE     100u
+        C55        1       1              PASSIVE     100u
+        C56        2       2              PASSIVE     100n
+        C57        2       2              PASSIVE     100n
+
+[00003] GND
+        1          6       PGND0          POWER       DRV8884
+        1          9       PGND1          POWER       DRV8884
+        1          12      GND            POWER       DRV8884
+        1          23      TRQ            INPUT       DRV8884
+        1          PAD     PAD            POWER       DRV8884
+        3          2       2              PASSIVE     45K
+        C54        2       2              PASSIVE     100u
+        C55        2       2              PASSIVE     100u
+        C56        1       1              PASSIVE     100n
+        C57        1       1              PASSIVE     100n
+        C58        1       1              PASSIVE     470n
+        C59        1       1              PASSIVE     100n
+        C60        2       2              PASSIVE     100n
+        C62        2       2              PASSIVE     100u
+        C63        1       1              PASSIVE     100nF
+        C64        2       2              PASSIVE     100n
+        C65        2       2              PASSIVE     100n
+        M1         3       3              PASSIVE     SMD_JMP
+        M2         3       3              PASSIVE     SMD_JMP
+        P10        3       3              PASSIVE     Header 3
+        P11        2       2              PASSIVE     Header 2
+        P12        2       2              PASSIVE     Header 2
+        R35        2       2              PASSIVE     45K
+        R37        2       2              PASSIVE     100K
+        U9         2       GND            POWER       74LVC2G14
+
+[00004] Net1_1
+        1          1       CPL            POWER       DRV8884
+        C61        1       1              PASSIVE     10n
+
+[00005] Net1_2
+        1          2       CPH            POWER       DRV8884
+        C61        2       2              PASSIVE     10n
+
+[00006] Net1_3
+        1          3       VCP            POWER       DRV8884
+        C59        2       2              PASSIVE     100n
+
+[00007] Net1_13
+        1          13      AVDD           POWER       DRV8884
+        2          1       1              PASSIVE     10K
+        C58        2       2              PASSIVE     470n
+
+[00008] Net1_16
+        1          16      RREF           INPUT       DRV8884
+        3          1       1              PASSIVE     45K
+
+[00009] Net1_18
+        1          18      EN             INPUT       DRV8884
+
+[00010] Net1_19
+        1          19      STEP           INPUT       DRV8884
+
+[00011] Net1_20
+        1          20      DIR            INPUT       DRV8884
+
+[00012] Net1_21
+        1          21      M0             INPUT       DRV8884
+        M1         2       2              PASSIVE     SMD_JMP
+
+[00013] Net1_22
+        1          22      M1             INPUT       DRV8884
+        M2         2       2              PASSIVE     SMD_JMP
+
+[00014] Net1_24
+        1          24      DECAY          INPUT       DRV8884
+        R35        1       1              PASSIVE     45K
+
+[00015] NetC64_1
+        C64        1       1              PASSIVE     100n
+        P12        1       1              PASSIVE     Header 2
+        R38        2       2              PASSIVE     10K
+        R41        1       1              PASSIVE     100R
+
+[00016] NetC65_1
+        C65        1       1              PASSIVE     100n
+        P11        1       1              PASSIVE     Header 2
+        R39        2       2              PASSIVE     10K
+        R40        1       1              PASSIVE     100R
+
+[00017] NetMTR2_2
+        MTR2       2       A              PASSIVE     RED
+        R34        2       2              PASSIVE     1K
+
+[00018] NetP10_1
+        P10        1       1              PASSIVE     Header 3
+        R36        1       1              PASSIVE     100
+        R37        1       1              PASSIVE     100K
+        TP_SRV1    1       point          PASSIVE     Test point
+
+[00019] NetR40_2
+        R40        2       2              PASSIVE     100R
+        U9         1       1A             INPUT       74LVC2G14
+
+[00020] NetR41_2
+        R41        2       2              PASSIVE     100R
+        U9         3       2A             INPUT       74LVC2G14
+
+[00021] NetU9_4
+        U9         4       2Y             OUTPUT      74LVC2G14
+
+[00022] NetU9_6
+        U9         6       1Y             OUTPUT      74LVC2G14
+
+[00023] Servo
+        R36        2       2              PASSIVE     100
+
+[00024] STP_A1
+        1          5       AOUT1          OUTPUT      DRV8884
+        P9         1       1              PASSIVE     Header 4
+
+[00025] STP_A2
+        1          7       AOUT2          OUTPUT      DRV8884
+        P9         2       2              PASSIVE     Header 4
+
+[00026] STP_B1
+        1          10      BOUT1          OUTPUT      DRV8884
+        P9         4       4              PASSIVE     Header 4
+
+[00027] STP_B2
+        1          8       BOUT2          OUTPUT      DRV8884
+        P9         3       3              PASSIVE     Header 4
+
+[00028] STP_FLT
+        1          15      nFAULT         OUTPUT      DRV8884
+        2          2       2              PASSIVE     10K
+        MTR2       1       K              PASSIVE     RED
+
+[00029] STP_SLP
+        1          17      NSLEEP         INPUT       DRV8884
+
+[00030] VCC
+        C60        1       1              PASSIVE     100n
+        C62        1       1              PASSIVE     100u
+        C63        2       2              PASSIVE     100nF
+        P10        2       2              PASSIVE     Header 3
+        U9         5       VCC            POWER       74LVC2G14
+

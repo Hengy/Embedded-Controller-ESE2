@@ -1,0 +1,1157 @@
+Wire List
+
+<<< Component List >>>
+DRV8884                         1              TI-PWP24
+10K                             2              RESC1608X55X30LL15T15
+45K                             3              RESC1608X55X30LL15T15
+SMD_JMP                         AI1            0603_JUMPER
+SMD_JMP                         AI2            0603_JUMPER
+BU2032 Battery                  BAT1           BU2032
+BLUE                            BEAT1          0805_A
+SMD_JMP                         BI1            0603_JUMPER
+SMD_JMP                         BI2            0603_JUMPER
+100nF                           C1             CAPC1608X92X38LL15T08
+100nF                           C2             CAPC1608X92X38LL15T08
+100nF                           C3             CAPC1608X92X38LL15T08
+100n                            C4             CAPC2113X100X50LL30T25
+100n                            C5             CAPC1608X90X35LL15T15
+100nF                           C6             CAPC2013X94X50LL20T25
+4.7u                            C7             CAPC3225X220X20LL40
+4.7u                            C8             CAPC3225X220X20LL40
+22u                             C9             CAPC3225X220X20LL40
+22u                             C10            CAPC3225X220X20LL40
+100n                            C11            CAPC2013X95X45LL15T25
+10n                             C12            CAPC2013X95X45LL15T25
+4.7p                            C13            CAPC1608X87X35LL15T15
+100n                            C14            CAPC1608X87X35LL15T15
+1u                              C15            CAPC2013X140X50LL20T25
+100n                            C16            CAPC1608X87X35LL15T15
+100n                            C17            CAPC1608X87X35LL15T15
+3.3u                            C18            CAPC3225X220X20LL40
+10n                             C19            CAPC1608X87X35LL15T15
+100n                            C20            CAPC1608X87X35LL15T15
+100nF                           C21            CAPC1608X92X38LL15T08
+100nF                           C22            CAPC2013X94X50LL20T25
+100nF                           C23            CAPC2013X94X50LL20T25
+100nF                           C24            CAPC2013X94X50LL20T25
+100nF                           C25            CAPC2013X94X50LL20T25
+100nF                           C26            CAPC1608X92X38LL15T08
+100nF                           C27            CAPC1608X92X38LL15T08
+100nF                           C28            CAPC1608X92X38LL15T08
+47pF                            C29            CAPC1608X87X35LL15T15
+47nF                            C30            CAPC2013X88X50LL20T25
+47pF                            C31            CAPC1608X87X35LL15T15
+100nF                           C32            CAPC1608X92X38LL15T08
+1u                              C33            CAPC2013X94X50LL20T25
+100nF                           C34            CAPC1608X92X38LL15T08
+100nF                           C35            CAPC1608X92X38LL15T08
+100nF                           C36            CAPC1608X92X38LL15T08
+10nF                            C37            CAPC1608X92X38LL15T08
+100nF                           C38            CAPC1608X92X38LL15T08
+100nF                           C39            CAPC1608X92X38LL15T08
+10nF                            C40            CAPC1608X92X38LL15T08
+10nF                            C41            CAPC1608X92X38LL15T08
+100u                            C42            SMD-CAP-0606
+100u                            C43            SMD-CAP-0606
+100n                            C44            CAPC1608X87X35LL15T15
+100n                            C45            CAPC1608X87X35LL15T15
+100n                            C46            CAPC1608X87X35LL15T15
+470n                            C47            CAPC1608X90X35LL10T15
+10n                             C48            CAPC1608X87X35LL15T15
+100nF                           C49            CAPC1608X92X38LL15T08
+100n                            C50            CAPC1608X87X35LL15T15
+10n                             C51            CAPC1608X87X35LL15T15
+10n                             C52            CAPC1608X87X35LL15T15
+100n                            C53            CAPC1608X87X35LL15T15
+100u                            C54            SMD-CAP-0606
+100u                            C55            SMD-CAP-0606
+100n                            C56            CAPC1608X87X35LL15T15
+100n                            C57            CAPC1608X87X35LL15T15
+470n                            C58            CAPC1608X90X35LL10T15
+100n                            C59            CAPC1608X87X35LL15T15
+100n                            C60            CAPC1608X87X35LL15T15
+10n                             C61            CAPC1608X87X35LL15T15
+100u                            C62            SMD-CAP-0606
+100nF                           C63            CAPC1608X92X38LL15T08
+100n                            C64            CAPC1608X87X35LL15T15
+100n                            C65            CAPC1608X87X35LL15T15
+100nF                           C66            CAPC1608X92X38LL15T08
+SL44HE                          D1             SMC Diode
+SM12T1G                         D2             SOT-23-3
+SM12T1G                         D3             SOT-23-3
+Header 2                        DCM1           HDR1X2
+Header 2                        DCM2           HDR1X2
+1734354-1                       J1             TE-1734354-1-9_V
+SMD_JMP                         JMP3           0603_JUMPER
+Header 2                        JMP3V3         HDR1X2
+Header 2                        JMP5V          HDR1X2
+74404064047                     L1             WE-LQS 6045
+LCD Module                      LCD1           LCD Module
+RED                             LEDRX1         0805_A
+GREEN                           LEDTX1         0805_A
+SMD_JMP                         M1             0603_JUMPER
+SMD_JMP                         M2             0603_JUMPER
+RED                             MTR1           0805_A
+RED                             MTR2           0805_A
+Nucleo                          P1             NUCLEO
+Header 4                        P2             HDR1X4
+2PIN_SCREW_TERM_3_5MM           P3             2PIN_SCREWW_TERM_3_5MM
+Barrel Jack                     P4             2.1x5.5mm Barrel Jack
+Header 4                        P5             HDR1X4
+Header 10X2 RIGHT               P6             HDR2X10 RIGHT
+Header 3                        P7             HDR1X3
+Header 3                        P8             HDR1X3
+Header 4                        P9             HDR1X4
+Header 3                        P10            HDR1X3
+Header 2                        P11            HDR1X2
+Header 2                        P12            HDR1X2
+Header 8X2 Right                P13            HDR2X8 RIGHT
+Header 8X2 Right                P14            HDR2X8 RIGHT
+Header 8X2 Right                P15            HDR2X8 RIGHT
+Header 6                        P16            HDR1X6
+Header 2                        P17            HDR1X2
+GREEN                           PWR1           0805_A
+2N7002,215                      Q1             NXP-SOT23_L
+0R                              R1             RESC1608X55X30LL15T15
+0R                              R2             RESC1608X55X30LL15T15
+470R                            R3             RESC1608X55X30LL15T15
+3K3                             R4             RESC1608X55X30LL15T15
+3K3                             R5             RESC1608X55X30LL15T15
+56K 1%                          R6             RESC1608X55X30LL15T15
+10k 1%                          R7             RESC1608X55X30LL15T15
+0R05 1W                         R8             ROHM-MCR100-2_V
+470R                            R9             RESC1608X55X30LL15T15
+0R05 1W                         R10            ROHM-MCR100-2_V
+10R                             R11            RESC1608X55X30LL15T15
+10R                             R12            RESC1608X55X30LL15T15
+1.2K                            R13            RESC1609X50X30LL10T20
+680R                            R14            RESC1609X50X30LL10T20
+60R                             R15            RESC3216X70X50LL05T20
+60R                             R16            RESC3216X70X50LL05T20
+10K                             R17            BOUR-3266W-3_V
+0R                              R18            RESC1609X55X30LL10T20
+0R                              R19            RESC1609X55X30LL10T20
+100K                            R20            RESC1608X55X30LL15T15
+1K                              R22            RESC1608X55X30LL15T15
+1K                              R23            RESC1608X55X30LL15T15
+1K                              R24            RESC1608X55X30LL15T15
+0R22 1W                         R25            ROHM-MCR100-2_V
+0R22 1W                         R26            ROHM-MCR100-2_V
+10K                             R27            RESC1608X55X30LL15T15
+10K                             R28            RESC1608X55X30LL15T15
+10K                             R29            RESC1608X55X30LL15T15
+330R                            R30            RESC1608X55X30LL15T15
+330R                            R31            RESC1608X55X30LL15T15
+10K                             R32            RESC1608X55X30LL15T15
+10K                             R33            RESC1608X55X30LL15T15
+1K                              R34            RESC1608X55X30LL15T15
+45K                             R35            RESC1608X55X30LL15T15
+100                             R36            RESC1608X55X30LL15T15
+100K                            R37            RESC1608X55X30LL15T15
+10K                             R38            RESC1608X55X30LL15T15
+10K                             R39            RESC1608X55X30LL15T15
+100R                            R40            RESC1608X55X30LL15T15
+100R                            R41            RESC1608X55X30LL15T15
+8RES_ISO_ARRAY                  R42            4RES_ARRAY_1206
+8RES_ISO_ARRAY                  R43            4RES_ARRAY_1206
+8RES_ISO_ARRAY                  R44            4RES_ARRAY_1206
+8RES_ISO_ARRAY                  R45            4RES_ARRAY_1206
+8RES_ISO_ARRAY                  R46            4RES_ARRAY_1206
+8RES_ISO_ARRAY                  R47            4RES_ARRAY_1206
+10k 1%                          R48            RESC1608X55X30LL15T15
+uSD                             SD*1           uSD
+NTC                             THM1           NTC
+NTC                             THM2           NTC
+Test point                      TP_CTRST1      SMD Test Hook
+Test point                      TP_DC_VRE      SMD Test Hook
+Test point                      TP_GND1        SMD Test Hook
+Test point                      TP_GND2        SMD Test Hook
+Test point                      TP_GND3        SMD Test Hook
+Test point                      TP_GND4        SMD Test Hook
+Test point                      TP_IOREF1      SMD Test Hook
+Test point                      TP_PWM1        SMD Test Hook
+Test point                      TP_RST1        SMD Test Hook
+Test point                      TP_SRV1        SMD Test Hook
+Test point                      TP_VFB1        SMD Test Hook
+TPS562201                       U1             MCHP-SOT-23-OT6_N
+CAT6219-330TDGT3                U2             SOT-23-5
+INA219AIDCNR                    U3             SOT-23-8
+RS232 Transciever               U4             TSSOP-16
+MCP2542                         U5             MCHP-SOIC-SN8_N
+MCP23S08T-E/SS                  U6             SSOP-20
+DRV8814                         U7             TI-PWP28
+74LVC2G14                       U8             ONSC-SOT-363-6-419B-02_V
+74LVC2G14                       U9             ONSC-SOT-363-6-419B-02_V
+
+<<< Wire List >>>
+
+  NODE  REFERENCE  PIN #   PIN NAME       PIN TYPE    PART VALUE
+
+[00001] PA2
+        LEDTX1     1       K              PASSIVE     GREEN
+        P1         35_2    35             PASSIVE     Nucleo
+        P16        3       3              PASSIVE     Header 6
+        U4         11      T1IN           INPUT       RS232 Transciever
+
+[00002] PA7
+        C40        2       2              PASSIVE     10nF
+        P1         15_2    15             PASSIVE     Nucleo
+        R22        2       2              PASSIVE     1K
+        THM1       1       1              PASSIVE     NTC
+
+[00003] PA6
+        C41        2       2              PASSIVE     10nF
+        P1         13_2    13             PASSIVE     Nucleo
+        R23        2       2              PASSIVE     1K
+        THM2       1       1              PASSIVE     NTC
+
+[00004] PB5
+        1          19      STEP           INPUT       DRV8884
+        P1         29_2    29             PASSIVE     Nucleo
+        R46        3       14             PASSIVE     8RES_ISO_ARRAY
+
+[00005] PC4
+        1          17      NSLEEP         INPUT       DRV8884
+        P1         34_2    34             PASSIVE     Nucleo
+
+[00006] PA10
+        1          15      nFAULT         OUTPUT      DRV8884
+        2          2       2              PASSIVE     10K
+        MTR2       1       K              PASSIVE     RED
+        P1         33_2    33             PASSIVE     Nucleo
+
+[00007] PB3
+        1          18      EN             INPUT       DRV8884
+        P1         31_2    31             PASSIVE     Nucleo
+        R47        1       14             PASSIVE     8RES_ISO_ARRAY
+
+[00008] PB4
+        1          20      DIR            INPUT       DRV8884
+        P1         27_2    27             PASSIVE     Nucleo
+        R46        4       14             PASSIVE     8RES_ISO_ARRAY
+
+[00009] PB6
+        P1         17_2    17             PASSIVE     Nucleo
+        SD*1       2       CS             INPUT       uSD
+
+[00010] PB12
+        P1         16_2    16             PASSIVE     Nucleo
+        U6         7       C\S\           INPUT       MCP23S08T-E/SS
+
+[00011] PB13
+        P1         30_2    30             PASSIVE     Nucleo
+        P6         10      10             PASSIVE     Header 10X2 RIGHT
+        SD*1       5       CLK            INPUT       uSD
+        U6         1       SCK            INPUT       MCP23S08T-E/SS
+
+[00012] MOSI
+        P1         26_2    26             PASSIVE     Nucleo
+        P6         12      12             PASSIVE     Header 10X2 RIGHT
+        SD*1       3       MOSI           INPUT       uSD
+        U6         2       SI             INPUT       MCP23S08T-E/SS
+
+[00013] MISO
+        P1         28_2    28             PASSIVE     Nucleo
+        P6         14      14             PASSIVE     Header 10X2 RIGHT
+        SD*1       7       MISO           OUTPUT      uSD
+        U6         3       SO             HIZ         MCP23S08T-E/SS
+
+[00014] PA15
+        P1         17_1    17             PASSIVE     Nucleo
+        R36        2       2              PASSIVE     100
+        R43        4       14             PASSIVE     8RES_ISO_ARRAY
+
+[00015] PA3
+        LEDRX1     1       K              PASSIVE     RED
+        P1         37_2    37             PASSIVE     Nucleo
+        P16        2       2              PASSIVE     Header 6
+        U4         12      R1OUT          OUTPUT      RS232 Transciever
+
+[00016] PA1
+        P1         30_1    30             PASSIVE     Nucleo
+        R47        3       14             PASSIVE     8RES_ISO_ARRAY
+        U4         9       R2OUT          OUTPUT      RS232 Transciever
+
+[00017] PC13
+        P1         23_1    23             PASSIVE     Nucleo
+        P6         6       6              PASSIVE     Header 10X2 RIGHT
+
+[00018] PA4
+        LCD1       4       4              PASSIVE     LCD Module
+        P1         32_1    32             PASSIVE     Nucleo
+        R43        2       14             PASSIVE     8RES_ISO_ARRAY
+
+[00019] RESET
+        C37        2       2              PASSIVE     10nF
+        P1         14_1    14             PASSIVE     Nucleo
+        R20        2       2              PASSIVE     100K
+        R47        4       14             PASSIVE     8RES_ISO_ARRAY
+        TP_RST1    1       point          PASSIVE     Test point
+        U6         6       R\E\S\E\T\     INPUT       MCP23S08T-E/SS
+
+[00020] PC6
+        P1         4_2     4              PASSIVE     Nucleo
+        R44        4       14             PASSIVE     8RES_ISO_ARRAY
+        U7         20      APHASE         INPUT       DRV8814
+
+[00021] PC5
+        P1         6_2     6              PASSIVE     Nucleo
+        R44        3       14             PASSIVE     8RES_ISO_ARRAY
+        U7         23      BPHASE         INPUT       DRV8814
+
+[00022] PB2
+        P1         22_2    22             PASSIVE     Nucleo
+        R46        2       14             PASSIVE     8RES_ISO_ARRAY
+        U9         4       2Y             OUTPUT      74LVC2G14
+
+[00023] PB1
+        P1         24_2    24             PASSIVE     Nucleo
+        R46        1       14             PASSIVE     8RES_ISO_ARRAY
+        U9         6       1Y             OUTPUT      74LVC2G14
+
+[00024] PB10
+        P1         25_2    25             PASSIVE     Nucleo
+        U6         8       INT            OPEN COLLECTORMCP23S08T-E/SS
+
+[00025] PA5
+        P1         11_2    11             PASSIVE     Nucleo
+        P6         8       8              PASSIVE     Header 10X2 RIGHT
+
+[00026] I2C_SDA
+        P1         5_2     5              PASSIVE     Nucleo
+        P6         4       4              PASSIVE     Header 10X2 RIGHT
+        R5         2       2              PASSIVE     3K3
+        U3         6       SDA            I/O         INA219AIDCNR
+
+[00027] I2C_SCL
+        P1         3_2     3              PASSIVE     Nucleo
+        P6         2       2              PASSIVE     Header 10X2 RIGHT
+        R4         2       2              PASSIVE     3K3
+        U3         5       SCL            I/O         INA219AIDCNR
+
+[00028] PA9
+        P1         21_2    21             PASSIVE     Nucleo
+        R44        2       14             PASSIVE     8RES_ISO_ARRAY
+        U8         4       2Y             OUTPUT      74LVC2G14
+
+[00029] PA8
+        P1         23_2    23             PASSIVE     Nucleo
+        R44        1       14             PASSIVE     8RES_ISO_ARRAY
+        U8         6       1Y             OUTPUT      74LVC2G14
+
+[00030] PC9
+        P1         1_2     1              PASSIVE     Nucleo
+        R45        2       14             PASSIVE     8RES_ISO_ARRAY
+        U7         22      BENBL          INPUT       DRV8814
+
+[00031] PC8
+        P1         2_2     2              PASSIVE     Nucleo
+        R45        1       14             PASSIVE     8RES_ISO_ARRAY
+        U7         21      AENBL          INPUT       DRV8814
+
+[00032] E
+        LCD1       6       6              PASSIVE     LCD Module
+        P1         34_1    34             PASSIVE     Nucleo
+        R43        1       14             PASSIVE     8RES_ISO_ARRAY
+
+[00033] DC_SLP
+        P1         2_1     2              PASSIVE     Nucleo
+        U7         17      NSLEEP         INPUT       DRV8814
+
+[00034] DC_RST
+        P1         1_1     1              PASSIVE     Nucleo
+        U7         16      NRESET         INPUT       DRV8814
+
+[00035] DC_FLT
+        MTR1       1       K              PASSIVE     RED
+        P1         3_1     3              PASSIVE     Nucleo
+        R27        2       2              PASSIVE     10K
+        U7         18      NFAULT         OUTPUT      DRV8814
+
+[00036] DB7
+        LCD1       14      14             PASSIVE     LCD Module
+        P1         37_1    37             PASSIVE     Nucleo
+        R42        4       14             PASSIVE     8RES_ISO_ARRAY
+
+[00037] DB6
+        LCD1       13      13             PASSIVE     LCD Module
+        P1         35_1    35             PASSIVE     Nucleo
+        R42        3       14             PASSIVE     8RES_ISO_ARRAY
+
+[00038] DB5
+        LCD1       12      12             PASSIVE     LCD Module
+        P1         36_1    36             PASSIVE     Nucleo
+        R42        2       14             PASSIVE     8RES_ISO_ARRAY
+
+[00039] DB4
+        LCD1       11      11             PASSIVE     LCD Module
+        P1         38_1    38             PASSIVE     Nucleo
+        R42        1       14             PASSIVE     8RES_ISO_ARRAY
+
+[00040] PA0
+        P1         28_1    28             PASSIVE     Nucleo
+        R47        2       14             PASSIVE     8RES_ISO_ARRAY
+        U4         10      T2IN           INPUT       RS232 Transciever
+
+[00041] PA12
+        P1         12_2    12             PASSIVE     Nucleo
+        R45        3       14             PASSIVE     8RES_ISO_ARRAY
+        U5         1       TXD            INPUT       MCP2542
+
+[00042] PB11
+        P1         18_2    18             PASSIVE     Nucleo
+        U5         8       STBY           INPUT       MCP2542
+
+[00043] PA11
+        P1         14_2    14             PASSIVE     Nucleo
+        R45        4       14             PASSIVE     8RES_ISO_ARRAY
+        U5         4       RXD            OUTPUT      MCP2542
+
+[00044] BL
+        P1         21_1    21             PASSIVE     Nucleo
+        R19        2       2              PASSIVE     0R
+
+[00046] NetP15_16
+        P15        16      16             PASSIVE     Header 8X2 Right
+        R47        5       15             PASSIVE     8RES_ISO_ARRAY
+
+[00047] NetP15_14
+        P15        14      14             PASSIVE     Header 8X2 Right
+        R47        6       15             PASSIVE     8RES_ISO_ARRAY
+
+[00048] NetP15_12
+        P15        12      12             PASSIVE     Header 8X2 Right
+        R47        7       15             PASSIVE     8RES_ISO_ARRAY
+
+[00049] NetP15_10
+        P15        10      10             PASSIVE     Header 8X2 Right
+        R47        8       15             PASSIVE     8RES_ISO_ARRAY
+
+[00050] NetP15_8
+        P15        8       8              PASSIVE     Header 8X2 Right
+        R46        5       15             PASSIVE     8RES_ISO_ARRAY
+
+[00051] NetP15_6
+        P15        6       6              PASSIVE     Header 8X2 Right
+        R46        6       15             PASSIVE     8RES_ISO_ARRAY
+
+[00052] NetP15_4
+        P15        4       4              PASSIVE     Header 8X2 Right
+        R46        7       15             PASSIVE     8RES_ISO_ARRAY
+
+[00053] NetP15_2
+        P15        2       2              PASSIVE     Header 8X2 Right
+        R46        8       15             PASSIVE     8RES_ISO_ARRAY
+
+[00054] NetP14_16
+        P14        16      16             PASSIVE     Header 8X2 Right
+        R45        5       15             PASSIVE     8RES_ISO_ARRAY
+
+[00055] NetP14_14
+        P14        14      14             PASSIVE     Header 8X2 Right
+        R45        6       15             PASSIVE     8RES_ISO_ARRAY
+
+[00056] NetP14_12
+        P14        12      12             PASSIVE     Header 8X2 Right
+        R45        7       15             PASSIVE     8RES_ISO_ARRAY
+
+[00057] NetP14_10
+        P14        10      10             PASSIVE     Header 8X2 Right
+        R45        8       15             PASSIVE     8RES_ISO_ARRAY
+
+[00058] NetP14_8
+        P14        8       8              PASSIVE     Header 8X2 Right
+        R44        5       15             PASSIVE     8RES_ISO_ARRAY
+
+[00059] NetP14_6
+        P14        6       6              PASSIVE     Header 8X2 Right
+        R44        6       15             PASSIVE     8RES_ISO_ARRAY
+
+[00060] NetP14_4
+        P14        4       4              PASSIVE     Header 8X2 Right
+        R44        7       15             PASSIVE     8RES_ISO_ARRAY
+
+[00061] NetP14_2
+        P14        2       2              PASSIVE     Header 8X2 Right
+        R44        8       15             PASSIVE     8RES_ISO_ARRAY
+
+[00062] NetP13_16
+        P13        16      16             PASSIVE     Header 8X2 Right
+        R43        5       15             PASSIVE     8RES_ISO_ARRAY
+
+[00063] NetP13_14
+        P13        14      14             PASSIVE     Header 8X2 Right
+        R43        6       15             PASSIVE     8RES_ISO_ARRAY
+
+[00064] NetP13_12
+        P13        12      12             PASSIVE     Header 8X2 Right
+        R43        7       15             PASSIVE     8RES_ISO_ARRAY
+
+[00065] NetP13_10
+        P13        10      10             PASSIVE     Header 8X2 Right
+        R43        8       15             PASSIVE     8RES_ISO_ARRAY
+
+[00066] NetP13_8
+        P13        8       8              PASSIVE     Header 8X2 Right
+        R42        5       15             PASSIVE     8RES_ISO_ARRAY
+
+[00067] NetP13_6
+        P13        6       6              PASSIVE     Header 8X2 Right
+        R42        6       15             PASSIVE     8RES_ISO_ARRAY
+
+[00068] NetP13_4
+        P13        4       4              PASSIVE     Header 8X2 Right
+        R42        7       15             PASSIVE     8RES_ISO_ARRAY
+
+[00069] NetP13_2
+        P13        2       2              PASSIVE     Header 8X2 Right
+        R42        8       15             PASSIVE     8RES_ISO_ARRAY
+
+[00070] STP_B2
+        1          8       BOUT2          OUTPUT      DRV8884
+        P9         3       3              PASSIVE     Header 4
+
+[00071] STP_B1
+        1          10      BOUT1          OUTPUT      DRV8884
+        P9         4       4              PASSIVE     Header 4
+
+[00072] STP_A2
+        1          7       AOUT2          OUTPUT      DRV8884
+        P9         2       2              PASSIVE     Header 4
+
+[00073] STP_A1
+        1          5       AOUT1          OUTPUT      DRV8884
+        P9         1       1              PASSIVE     Header 4
+
+[00074] NetR41_2
+        R41        2       2              PASSIVE     100R
+        U9         3       2A             INPUT       74LVC2G14
+
+[00075] NetR40_2
+        R40        2       2              PASSIVE     100R
+        U9         1       1A             INPUT       74LVC2G14
+
+[00076] NetP10_1
+        P10        1       1              PASSIVE     Header 3
+        R36        1       1              PASSIVE     100
+        R37        1       1              PASSIVE     100K
+        TP_SRV1    1       point          PASSIVE     Test point
+
+[00077] NetMTR2_2
+        MTR2       2       A              PASSIVE     RED
+        R34        2       2              PASSIVE     1K
+
+[00078] NetC65_1
+        C65        1       1              PASSIVE     100n
+        P11        1       1              PASSIVE     Header 2
+        R39        2       2              PASSIVE     10K
+        R40        1       1              PASSIVE     100R
+
+[00079] NetC64_1
+        C64        1       1              PASSIVE     100n
+        P12        1       1              PASSIVE     Header 2
+        R38        2       2              PASSIVE     10K
+        R41        1       1              PASSIVE     100R
+
+[00080] Net1_24
+        1          24      DECAY          INPUT       DRV8884
+        R35        1       1              PASSIVE     45K
+
+[00081] Net1_22
+        1          22      M1             INPUT       DRV8884
+        M2         2       2              PASSIVE     SMD_JMP
+
+[00082] Net1_21
+        1          21      M0             INPUT       DRV8884
+        M1         2       2              PASSIVE     SMD_JMP
+
+[00083] Net1_16
+        1          16      RREF           INPUT       DRV8884
+        3          1       1              PASSIVE     45K
+
+[00084] Net1_13
+        1          13      AVDD           POWER       DRV8884
+        2          1       1              PASSIVE     10K
+        C58        2       2              PASSIVE     470n
+
+[00085] Net1_3
+        1          3       VCP            POWER       DRV8884
+        C59        2       2              PASSIVE     100n
+
+[00086] Net1_2
+        1          2       CPH            POWER       DRV8884
+        C61        2       2              PASSIVE     10n
+
+[00087] Net1_1
+        1          1       CPL            POWER       DRV8884
+        C61        1       1              PASSIVE     10n
+
+[00090] NetC22_1
+        C22        1       1              PASSIVE     100nF
+        U4         2       V+             POWER       RS232 Transciever
+
+[00091] NetC23_1
+        C23        1       1              PASSIVE     100nF
+        U4         6       V-             POWER       RS232 Transciever
+
+[00092] NetC24_1
+        C24        1       1              PASSIVE     100nF
+        U4         1       C1+            POWER       RS232 Transciever
+
+[00093] NetC24_2
+        C24        2       2              PASSIVE     100nF
+        U4         3       C1-            POWER       RS232 Transciever
+
+[00094] NetC25_1
+        C25        1       1              PASSIVE     100nF
+        U4         5       C2-            POWER       RS232 Transciever
+
+[00095] NetC25_2
+        C25        2       2              PASSIVE     100nF
+        U4         4       C2+            POWER       RS232 Transciever
+
+[00097] NetJ1_2
+        J1         2       2              PASSIVE     1734354-1
+        U4         13      R1IN           INPUT       RS232 Transciever
+
+[00098] NetJ1_3
+        J1         3       3              PASSIVE     1734354-1
+        U4         14      T1OUT          OUTPUT      RS232 Transciever
+
+[00099] NetJ1_4
+        J1         4       4              PASSIVE     1734354-1
+        J1         6       6              PASSIVE     1734354-1
+
+[00100] NetJ1_7
+        J1         7       7              PASSIVE     1734354-1
+        U4         8       R2IN           INPUT       RS232 Transciever
+
+[00101] NetJ1_8
+        J1         8       8              PASSIVE     1734354-1
+        U4         7       T2OUT          OUTPUT      RS232 Transciever
+
+[00105] NetLEDRX1_2
+        LEDRX1     2       A              PASSIVE     RED
+        R14        1       1              PASSIVE     680R
+
+[00106] NetLEDTX1_2
+        LEDTX1     2       A              PASSIVE     GREEN
+        R13        1       1              PASSIVE     1.2K
+
+[00107] VIN
+        C11        2       2              PASSIVE     100n
+        C12        2       2              PASSIVE     10n
+        D1         1       K              PASSIVE     SL44HE
+        R8         1       1              PASSIVE     0R05 1W
+        R10        1       1              PASSIVE     0R05 1W
+        R11        1       1              PASSIVE     10R
+
+[00108] NetPWR1_2
+        PWR1       2       A              PASSIVE     GREEN
+        R9         1       1              PASSIVE     470R
+
+[00109] NetJMP3_2
+        JMP3       2       2              PASSIVE     SMD_JMP
+        U3         8       A1             INPUT       INA219AIDCNR
+
+[00110] NetD1_2
+        D1         2       A              PASSIVE     SL44HE
+        P3         1       1              PASSIVE     2PIN_SCREW_TERM_3_5MM
+        P4         1       1              PASSIVE     Barrel Jack
+
+[00111] NetC19_2
+        C19        2       2              PASSIVE     10n
+        U2         4       BYP            PASSIVE     CAT6219-330TDGT3
+
+[00112] NetC17_2
+        C17        2       2              PASSIVE     100n
+        C18        2       2              PASSIVE     3.3u
+        JMP3V3     2       2              PASSIVE     Header 2
+        R9         2       2              PASSIVE     470R
+        U2         5       VOUT           POWER       CAT6219-330TDGT3
+
+[00113] NetC14_2
+        C14        2       2              PASSIVE     100n
+        R12        2       2              PASSIVE     10R
+        U3         2       VIN-           INPUT       INA219AIDCNR
+
+[00114] NetC14_1
+        C14        1       1              PASSIVE     100n
+        R11        2       2              PASSIVE     10R
+        U3         1       VIN+           INPUT       INA219AIDCNR
+
+[00115] NetC13_1
+        C13        1       1              PASSIVE     4.7p
+        R6         1       1              PASSIVE     56K 1%
+        R7         2       2              PASSIVE     10k 1%
+        TP_VFB1    1       point          PASSIVE     Test point
+        U1         4       VFB            INPUT       TPS562201
+
+[00116] NetC9_2
+        C9         2       2              PASSIVE     22u
+        C10        2       2              PASSIVE     22u
+        C13        2       2              PASSIVE     4.7p
+        JMP5V      2       2              PASSIVE     Header 2
+        L1         2       2              PASSIVE     74404064047
+        R6         2       2              PASSIVE     56K 1%
+
+[00117] NetC4_2
+        C4         2       2              PASSIVE     100n
+        L1         1       1              PASSIVE     74404064047
+        U1         2       SW             POWER       TPS562201
+
+[00118] NetC4_1
+        C4         1       1              PASSIVE     100n
+        U1         6       VBST           POWER       TPS562201
+
+[00119] +12
+        C5         2       2              PASSIVE     100n
+        C6         1       1              PASSIVE     100nF
+        C7         2       2              PASSIVE     4.7u
+        C8         2       2              PASSIVE     4.7u
+        R8         2       2              PASSIVE     0R05 1W
+        R10        2       2              PASSIVE     0R05 1W
+        R12        1       1              PASSIVE     10R
+        U1         3       VIN            POWER       TPS562201
+        U1         5       EN             INPUT       TPS562201
+
+[00120] VCC
+        C3         2       2              PASSIVE     100nF
+        P2         1       1              PASSIVE     Header 4
+
+[00121] VBAT
+        BAT1       +       +              POWER       BU2032 Battery
+        P1         33_1    33             PASSIVE     Nucleo
+
+[00122] PD2
+        P1         4_1     4              PASSIVE     Nucleo
+        R3         1       1              PASSIVE     470R
+
+[00123] PC14
+        P1         25_1    25             PASSIVE     Nucleo
+        P2         2       2              PASSIVE     Header 4
+
+[00124] PC7
+        P1         19_2    19             PASSIVE     Nucleo
+        P2         3       3              PASSIVE     Header 4
+
+[00125] NetBEAT1_2
+        BEAT1      2       A              PASSIVE     BLUE
+        R3         2       2              PASSIVE     470R
+
+[00143] IOREF
+        P1         12_1    12             PASSIVE     Nucleo
+        TP_IOREF1  1       point          PASSIVE     Test point
+
+[00144] AVDD
+        P1         7_2     7              PASSIVE     Nucleo
+        R2         1       1              PASSIVE     0R
+
+[00145] PWM
+        LCD1       16      16             PASSIVE     LCD Module
+        Q1         3       D              PASSIVE     2N7002,215
+        TP_PWM1    1       point          PASSIVE     Test point
+
+[00146] NetQ1_1
+        Q1         1       G              PASSIVE     2N7002,215
+        R18        1       1              PASSIVE     0R
+        R19        1       1              PASSIVE     0R
+
+[00151] LCD_CNTRST
+        LCD1       3       3              PASSIVE     LCD Module
+        R17        2       WIPER          PASSIVE     10K
+        TP_CTRST1  1       point          PASSIVE     Test point
+
+[00154] NetP6_15
+        P6         15      15             PASSIVE     Header 10X2 RIGHT
+        U6         19      GP7            I/O         MCP23S08T-E/SS
+
+[00155] NetP6_13
+        P6         13      13             PASSIVE     Header 10X2 RIGHT
+        U6         18      GP6            I/O         MCP23S08T-E/SS
+
+[00156] NetP6_11
+        P6         11      11             PASSIVE     Header 10X2 RIGHT
+        U6         17      GP5            I/O         MCP23S08T-E/SS
+
+[00157] NetP6_9
+        P6         9       9              PASSIVE     Header 10X2 RIGHT
+        U6         16      GP4            I/O         MCP23S08T-E/SS
+
+[00158] NetP6_7
+        P6         7       7              PASSIVE     Header 10X2 RIGHT
+        U6         14      GP2            I/O         MCP23S08T-E/SS
+
+[00159] NetP6_5
+        P6         5       5              PASSIVE     Header 10X2 RIGHT
+        U6         15      GP3            I/O         MCP23S08T-E/SS
+
+[00160] NetP6_3
+        P6         3       3              PASSIVE     Header 10X2 RIGHT
+        U6         13      GP1            I/O         MCP23S08T-E/SS
+
+[00161] NetP6_1
+        P6         1       1              PASSIVE     Header 10X2 RIGHT
+        U6         12      GP0            I/O         MCP23S08T-E/SS
+
+[00163] NetMTR1_2
+        MTR1       2       A              PASSIVE     RED
+        R24        2       2              PASSIVE     1K
+
+[00164] NetC53_1
+        C53        1       1              PASSIVE     100n
+        P8         2       2              PASSIVE     Header 3
+        R31        1       1              PASSIVE     330R
+
+[00165] NetC52_1
+        C52        1       1              PASSIVE     10n
+        P8         1       1              PASSIVE     Header 3
+        R33        2       2              PASSIVE     10K
+        U8         3       2A             INPUT       74LVC2G14
+
+[00166] NetC51_1
+        C51        1       1              PASSIVE     10n
+        P7         1       1              PASSIVE     Header 3
+        R32        2       2              PASSIVE     10K
+        U8         1       1A             INPUT       74LVC2G14
+
+[00167] NetC50_1
+        C50        1       1              PASSIVE     100n
+        P7         2       2              PASSIVE     Header 3
+        R30        1       1              PASSIVE     330R
+
+[00168] NetC48_2
+        C48        2       2              PASSIVE     10n
+        U7         1       CP1            POWER       DRV8814
+
+[00169] NetC48_1
+        C48        1       1              PASSIVE     10n
+        U7         2       CP2            POWER       DRV8814
+
+[00170] NetC47_2
+        C47        2       2              PASSIVE     470n
+        R27        1       1              PASSIVE     10K
+        R28        2       2              PASSIVE     10K
+        U7         15      V3P3OUT        POWER       DRV8814
+
+[00171] NetC46_2
+        C46        2       2              PASSIVE     100n
+        U7         3       VCP            POWER       DRV8814
+
+[00172] DC_VREF
+        R28        1       1              PASSIVE     10K
+        R29        2       2              PASSIVE     10K
+        TP_DC_VRE  1       point          PASSIVE     Test point
+        U7         12      AVREF          INPUT       DRV8814
+        U7         13      BVREF          INPUT       DRV8814
+
+[00173] DC_MTRB2
+        DCM2       2       2              PASSIVE     Header 2
+        U7         8       BOUT2          OUTPUT      DRV8814
+
+[00174] DC_MTRB1
+        DCM2       1       1              PASSIVE     Header 2
+        U7         10      BOUT1          OUTPUT      DRV8814
+
+[00175] DC_MTRA2
+        DCM1       2       2              PASSIVE     Header 2
+        U7         7       AOUT2          OUTPUT      DRV8814
+
+[00176] DC_MTRA1
+        DCM1       1       1              PASSIVE     Header 2
+        U7         5       AOUT1          OUTPUT      DRV8814
+
+[00177] DC_ISENB
+        R26        1       1              PASSIVE     0R22 1W
+        U7         9       ISENB          OUTPUT      DRV8814
+
+[00178] DC_ISENA
+        R25        1       1              PASSIVE     0R22 1W
+        U7         6       ISENA          OUTPUT      DRV8814
+
+[00179] BI1
+        BI2        2       2              PASSIVE     SMD_JMP
+        U7         27      BI1            INPUT       DRV8814
+
+[00180] BI0
+        BI1        2       2              PASSIVE     SMD_JMP
+        U7         26      BI0            INPUT       DRV8814
+
+[00181] AI1
+        AI2        2       2              PASSIVE     SMD_JMP
+        U7         25      AI1            INPUT       DRV8814
+
+[00182] AI0
+        AI1        2       2              PASSIVE     SMD_JMP
+        U7         24      AI0            INPUT       DRV8814
+
+[00183] 12V
+        1          4       VMA            POWER       DRV8884
+        1          11      VMB            POWER       DRV8884
+        1          14      DVDD           POWER       DRV8884
+        C42        1       1              PASSIVE     100u
+        C43        1       1              PASSIVE     100u
+        C44        2       2              PASSIVE     100n
+        C45        2       2              PASSIVE     100n
+        C54        1       1              PASSIVE     100u
+        C55        1       1              PASSIVE     100u
+        C56        2       2              PASSIVE     100n
+        C57        2       2              PASSIVE     100n
+        U7         4       VMA            POWER       DRV8814
+        U7         11      VMB            POWER       DRV8814
+
+[00184] NetC29_2
+        C29        2       2              PASSIVE     47pF
+        D3         1       K1             PASSIVE     SM12T1G
+        P5         1       1              PASSIVE     Header 4
+        R15        2       2              PASSIVE     60R
+        U5         7       CANH           I/O         MCP2542
+
+[00185] NetC30_1
+        C30        1       1              PASSIVE     47nF
+        R15        1       1              PASSIVE     60R
+        R16        2       2              PASSIVE     60R
+
+[00186] NetC31_2
+        C31        2       2              PASSIVE     47pF
+        D2         1       K1             PASSIVE     SM12T1G
+        P5         2       2              PASSIVE     Header 4
+        R16        1       1              PASSIVE     60R
+        U5         6       CANL           I/O         MCP2542
+
+[00189] 3V3
+        AI1        1       1              PASSIVE     SMD_JMP
+        AI2        1       1              PASSIVE     SMD_JMP
+        BI1        1       1              PASSIVE     SMD_JMP
+        BI2        1       1              PASSIVE     SMD_JMP
+        C1         2       2              PASSIVE     100nF
+        C20        2       2              PASSIVE     100n
+        C21        2       2              PASSIVE     100nF
+        C27        2       2              PASSIVE     100nF
+        C35        2       2              PASSIVE     100nF
+        C38        2       2              PASSIVE     100nF
+        C39        2       2              PASSIVE     100nF
+        C49        2       2              PASSIVE     100nF
+        C63        2       2              PASSIVE     100nF
+        JMP3       1       1              PASSIVE     SMD_JMP
+        JMP3V3     1       1              PASSIVE     Header 2
+        M1         1       1              PASSIVE     SMD_JMP
+        M2         1       1              PASSIVE     SMD_JMP
+        P1         16_1    16             PASSIVE     Nucleo
+        P6         16      16             PASSIVE     Header 10X2 RIGHT
+        R1         1       1              PASSIVE     0R
+        R1         2       2              PASSIVE     0R
+        R2         2       2              PASSIVE     0R
+        R4         1       1              PASSIVE     3K3
+        R5         1       1              PASSIVE     3K3
+        R13        2       2              PASSIVE     1.2K
+        R14        2       2              PASSIVE     680R
+        R20        1       1              PASSIVE     100K
+        R24        1       1              PASSIVE     1K
+        R30        2       2              PASSIVE     330R
+        R31        2       2              PASSIVE     330R
+        R32        1       1              PASSIVE     10K
+        R33        1       1              PASSIVE     10K
+        R34        1       1              PASSIVE     1K
+        R38        1       1              PASSIVE     10K
+        R39        1       1              PASSIVE     10K
+        SD*1       4       VDD            POWER       uSD
+        THM1       2       2              PASSIVE     NTC
+        THM2       2       2              PASSIVE     NTC
+        U3         4       VS             POWER       INA219AIDCNR
+        U4         16      VCC            POWER       RS232 Transciever
+        U5         5       VIO            POWER       MCP2542
+        U6         4       A1             INPUT       MCP23S08T-E/SS
+        U6         5       A0             INPUT       MCP23S08T-E/SS
+        U6         20      VDD            POWER       MCP23S08T-E/SS
+        U8         5       VCC            POWER       74LVC2G14
+        U9         5       VCC            POWER       74LVC2G14
+
+[00190] NetP16_6
+        P16        6       6              PASSIVE     Header 6
+        P17        2       2              PASSIVE     Header 2
+        R48        2       2              PASSIVE     10k 1%
+
+[00192] AGND
+        1          6       PGND0          POWER       DRV8884
+        1          9       PGND1          POWER       DRV8884
+        1          12      GND            POWER       DRV8884
+        1          23      TRQ            INPUT       DRV8884
+        1          PAD     PAD            POWER       DRV8884
+        3          2       2              PASSIVE     45K
+        AI1        3       3              PASSIVE     SMD_JMP
+        AI2        3       3              PASSIVE     SMD_JMP
+        BAT1       -       -              POWER       BU2032 Battery
+        BEAT1      1       K              PASSIVE     BLUE
+        BI1        3       3              PASSIVE     SMD_JMP
+        BI2        3       3              PASSIVE     SMD_JMP
+        C1         1       1              PASSIVE     100nF
+        C2         1       1              PASSIVE     100nF
+        C3         1       1              PASSIVE     100nF
+        C5         1       1              PASSIVE     100n
+        C6         2       2              PASSIVE     100nF
+        C7         1       1              PASSIVE     4.7u
+        C8         1       1              PASSIVE     4.7u
+        C9         1       1              PASSIVE     22u
+        C10        1       1              PASSIVE     22u
+        C11        1       1              PASSIVE     100n
+        C12        1       1              PASSIVE     10n
+        C15        1       1              PASSIVE     1u
+        C16        1       1              PASSIVE     100n
+        C17        1       1              PASSIVE     100n
+        C18        1       1              PASSIVE     3.3u
+        C19        1       1              PASSIVE     10n
+        C20        1       1              PASSIVE     100n
+        C21        1       1              PASSIVE     100nF
+        C22        2       2              PASSIVE     100nF
+        C23        2       2              PASSIVE     100nF
+        C26        2       2              PASSIVE     100nF
+        C27        1       1              PASSIVE     100nF
+        C28        1       1              PASSIVE     100nF
+        C29        1       1              PASSIVE     47pF
+        C30        2       2              PASSIVE     47nF
+        C31        1       1              PASSIVE     47pF
+        C32        2       2              PASSIVE     100nF
+        C33        2       2              PASSIVE     1u
+        C34        1       1              PASSIVE     100nF
+        C35        1       1              PASSIVE     100nF
+        C36        1       1              PASSIVE     100nF
+        C37        1       1              PASSIVE     10nF
+        C38        1       1              PASSIVE     100nF
+        C39        1       1              PASSIVE     100nF
+        C40        1       1              PASSIVE     10nF
+        C41        1       1              PASSIVE     10nF
+        C42        2       2              PASSIVE     100u
+        C43        2       2              PASSIVE     100u
+        C44        1       1              PASSIVE     100n
+        C45        1       1              PASSIVE     100n
+        C46        1       1              PASSIVE     100n
+        C47        1       1              PASSIVE     470n
+        C49        1       1              PASSIVE     100nF
+        C50        2       2              PASSIVE     100n
+        C51        2       2              PASSIVE     10n
+        C52        2       2              PASSIVE     10n
+        C53        2       2              PASSIVE     100n
+        C54        2       2              PASSIVE     100u
+        C55        2       2              PASSIVE     100u
+        C56        1       1              PASSIVE     100n
+        C57        1       1              PASSIVE     100n
+        C58        1       1              PASSIVE     470n
+        C59        1       1              PASSIVE     100n
+        C60        2       2              PASSIVE     100n
+        C62        2       2              PASSIVE     100u
+        C63        1       1              PASSIVE     100nF
+        C64        2       2              PASSIVE     100n
+        C65        2       2              PASSIVE     100n
+        C66        2       2              PASSIVE     100nF
+        D2         2       K2             PASSIVE     SM12T1G
+        D3         2       K2             PASSIVE     SM12T1G
+        J1         5       5              PASSIVE     1734354-1
+        JMP3       3       3              PASSIVE     SMD_JMP
+        LCD1       1       1              PASSIVE     LCD Module
+        LCD1       5       5              PASSIVE     LCD Module
+        M1         3       3              PASSIVE     SMD_JMP
+        M2         3       3              PASSIVE     SMD_JMP
+        P1         8_1     8              PASSIVE     Nucleo
+        P1         9_2     9              PASSIVE     Nucleo
+        P1         19_1    19             PASSIVE     Nucleo
+        P1         20_1    20             PASSIVE     Nucleo
+        P1         20_2    20             PASSIVE     Nucleo
+        P1         22_1    22             PASSIVE     Nucleo
+        P1         32_2    32             PASSIVE     Nucleo
+        P2         4       4              PASSIVE     Header 4
+        P3         2       2              PASSIVE     2PIN_SCREW_TERM_3_5MM
+        P4         2       2              PASSIVE     Barrel Jack
+        P4         3       3              PASSIVE     Barrel Jack
+        P5         4       4              PASSIVE     Header 4
+        P6         17      17             PASSIVE     Header 10X2 RIGHT
+        P6         19      19             PASSIVE     Header 10X2 RIGHT
+        P7         3       3              PASSIVE     Header 3
+        P8         3       3              PASSIVE     Header 3
+        P10        3       3              PASSIVE     Header 3
+        P11        2       2              PASSIVE     Header 2
+        P12        2       2              PASSIVE     Header 2
+        P13        1       1              PASSIVE     Header 8X2 Right
+        P13        3       3              PASSIVE     Header 8X2 Right
+        P13        5       5              PASSIVE     Header 8X2 Right
+        P13        7       7              PASSIVE     Header 8X2 Right
+        P13        9       9              PASSIVE     Header 8X2 Right
+        P13        11      11             PASSIVE     Header 8X2 Right
+        P13        13      13             PASSIVE     Header 8X2 Right
+        P13        15      15             PASSIVE     Header 8X2 Right
+        P14        1       1              PASSIVE     Header 8X2 Right
+        P14        3       3              PASSIVE     Header 8X2 Right
+        P14        5       5              PASSIVE     Header 8X2 Right
+        P14        7       7              PASSIVE     Header 8X2 Right
+        P14        9       9              PASSIVE     Header 8X2 Right
+        P14        11      11             PASSIVE     Header 8X2 Right
+        P14        13      13             PASSIVE     Header 8X2 Right
+        P14        15      15             PASSIVE     Header 8X2 Right
+        P15        1       1              PASSIVE     Header 8X2 Right
+        P15        3       3              PASSIVE     Header 8X2 Right
+        P15        5       5              PASSIVE     Header 8X2 Right
+        P15        7       7              PASSIVE     Header 8X2 Right
+        P15        9       9              PASSIVE     Header 8X2 Right
+        P15        11      11             PASSIVE     Header 8X2 Right
+        P15        13      13             PASSIVE     Header 8X2 Right
+        P15        15      15             PASSIVE     Header 8X2 Right
+        P16        4       4              PASSIVE     Header 6
+        PWR1       1       K              PASSIVE     GREEN
+        Q1         2       S              PASSIVE     2N7002,215
+        R7         1       1              PASSIVE     10k 1%
+        R17        3       CW             PASSIVE     10K
+        R22        1       1              PASSIVE     1K
+        R23        1       1              PASSIVE     1K
+        R25        2       2              PASSIVE     0R22 1W
+        R26        2       2              PASSIVE     0R22 1W
+        R29        1       1              PASSIVE     10K
+        R35        2       2              PASSIVE     45K
+        R37        2       2              PASSIVE     100K
+        R48        1       1              PASSIVE     10k 1%
+        SD*1       6       VSS            POWER       uSD
+        TP_GND1    1       point          PASSIVE     Test point
+        TP_GND2    1       point          PASSIVE     Test point
+        TP_GND3    1       point          PASSIVE     Test point
+        TP_GND4    1       point          PASSIVE     Test point
+        U1         1       GND            POWER       TPS562201
+        U2         2       GND            POWER       CAT6219-330TDGT3
+        U3         3       GND            POWER       INA219AIDCNR
+        U3         7       A0             INPUT       INA219AIDCNR
+        U4         15      GND            POWER       RS232 Transciever
+        U5         2       VSS            POWER       MCP2542
+        U6         9       VSS            POWER       MCP23S08T-E/SS
+        U7         14      GND            POWER       DRV8814
+        U7         28      GND            POWER       DRV8814
+        U7         PAD     PAD            POWER       DRV8814
+        U8         2       GND            POWER       74LVC2G14
+        U9         2       GND            POWER       74LVC2G14
+
+[00193] E5V
+        C2         2       2              PASSIVE     100nF
+        C15        2       2              PASSIVE     1u
+        C16        2       2              PASSIVE     100n
+        C26        1       1              PASSIVE     100nF
+        C28        2       2              PASSIVE     100nF
+        C32        1       1              PASSIVE     100nF
+        C33        1       1              PASSIVE     1u
+        C34        2       2              PASSIVE     100nF
+        C36        2       2              PASSIVE     100nF
+        C60        1       1              PASSIVE     100n
+        C62        1       1              PASSIVE     100u
+        C66        1       1              PASSIVE     100nF
+        JMP5V      1       1              PASSIVE     Header 2
+        LCD1       2       2              PASSIVE     LCD Module
+        LCD1       15      15             PASSIVE     LCD Module
+        P1         6_1     6              PASSIVE     Nucleo
+        P5         3       3              PASSIVE     Header 4
+        P6         18      18             PASSIVE     Header 10X2 RIGHT
+        P6         20      20             PASSIVE     Header 10X2 RIGHT
+        P10        2       2              PASSIVE     Header 3
+        P16        5       5              PASSIVE     Header 6
+        P17        1       1              PASSIVE     Header 2
+        R17        1       CCW            PASSIVE     10K
+        R18        2       2              PASSIVE     0R
+        U2         1       VIN            POWER       CAT6219-330TDGT3
+        U2         3       EN             INPUT       CAT6219-330TDGT3
+        U5         3       VDD            POWER       MCP2542
+

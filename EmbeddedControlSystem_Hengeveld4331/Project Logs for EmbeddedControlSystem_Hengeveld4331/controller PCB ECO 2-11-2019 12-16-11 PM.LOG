@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetC37_2 Pin=R21-2
+Removed Member From Class: ClassName=Designator Member=R21
+Added Pin To Net: NetName=NetC37_2 Pin=P1-14_1
+Added Pin To Net: NetName=NetC37_2 Pin=R47-4
+Change Net Name : Old Net Name=NetC37_2 New Net Name=RESET
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(255, 110, 110)

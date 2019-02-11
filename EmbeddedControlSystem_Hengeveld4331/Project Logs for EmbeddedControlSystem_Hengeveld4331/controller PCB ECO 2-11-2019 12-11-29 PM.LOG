@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=AGND Pin=TP_ISENA1-1
+Removed Pin From Net: NetName=AGND Pin=TP_ISENB1-1
+Removed Member From Class: ClassName=DC Motor Member=TP_ISENA1
+Removed Member From Class: ClassName=DC Motor Member=TP_ISENB1

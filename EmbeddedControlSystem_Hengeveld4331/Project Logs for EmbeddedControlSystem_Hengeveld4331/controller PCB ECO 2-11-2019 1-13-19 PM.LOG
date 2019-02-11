@@ -1,0 +1,22 @@
+Removed Member From Class: ClassName=STM32F303RE Member=TP_IOREF1
+Added Pin To Net: NetName=E5V Pin=C3-2
+Added Pin To Net: NetName=12V Pin=C5-2
+Added Pin To Net: NetName=12V Pin=C6-1
+Added Pin To Net: NetName=12V Pin=C7-2
+Added Pin To Net: NetName=12V Pin=C8-2
+Added Pin To Net: NetName=E5V Pin=C26-1
+Added Pin To Net: NetName=E5V Pin=C28-2
+Added Pin To Net: NetName=E5V Pin=C60-1
+Added Pin To Net: NetName=E5V Pin=C62-1
+Added Pin To Net: NetName=3V3 Pin=C63-2
+Added Pin To Net: NetName=E5V Pin=P2-1
+Added Pin To Net: NetName=E5V Pin=P5-3
+Added Pin To Net: NetName=E5V Pin=P10-2
+Added Pin To Net: NetName=12V Pin=R8-2
+Added Pin To Net: NetName=12V Pin=R10-2
+Added Pin To Net: NetName=12V Pin=R12-1
+Added Pin To Net: NetName=12V Pin=U1-3
+Added Pin To Net: NetName=12V Pin=U1-5
+Added Pin To Net: NetName=E5V Pin=U5-3
+Added Pin To Net: NetName=3V3 Pin=U9-5
+Change Net Name : Old Net Name=E5V New Net Name=5V
