@@ -1,6 +1,6 @@
-DRC Rules Export File for PCB: V:\Documents\GitHub\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\controller.PcbDoc
+DRC Rules Export File for PCB: C:\ESE Conestoga\Semester 4\Project\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\controller.PcbDoc
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=9.84
 RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.91
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.00
-RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=9.84
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
