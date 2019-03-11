@@ -288,7 +288,7 @@ OutputDocumentPath6=controller.PcbDoc
 OutputVariantName6=
 OutputEnabled6=0
 OutputEnabled6_OutputMedium1=0
-OutputEnabled6_OutputMedium2=0
+OutputEnabled6_OutputMedium2=3
 OutputEnabled6_OutputMedium3=0
 OutputEnabled6_OutputMedium4=0
 OutputDefault6=0
@@ -308,9 +308,22 @@ OutputEnabled7_OutputMedium4=0
 OutputDefault7=0
 Configuration7_Name1=OutputConfigurationParameter1
 Configuration7_Item1=FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=True|GerberUnit=Imperial|MinusApertureTolerance=50|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|PlotBackDrillingPairs=False|PlotBlindViasPairs=False|PlotBoardProfile=True|PlotDrillDrawingPair0_Backdrill=False|PlotDrillDrawingPair0_DrillType=Regular|PlotDrillDrawingPair0_HighLayer=Bottom Layer|PlotDrillDrawingPair0_LowLayer=Top Layer|PlotDrillDrawingPairs=False|PlotDrillGuidePair0_Backdrill=False|PlotDrillGuidePair0_DrillType=Regular|PlotDrillGuidePair0_HighLayer=Bottom Layer|PlotDrillGuidePair0_LowLayer=Top Layer|PlotDrillGuidePairs=False|PlotMicroViasPairs=False|PlotNPTHPair0_Backdrill=False|PlotNPTHPair0_DrillType=Regular|PlotNPTHPair0_HighLayer=Top Layer|PlotNPTHPair0_LowLayer=Bottom Layer|PlotNPTHPairs=False|PlotPTHPair0_Backdrill=False|PlotPTHPair0_DrillType=Regular|PlotPTHPair0_HighLayer=Top Layer|PlotPTHPair0_LowLayer=Bottom Layer|PlotPTHPairs=False|PlotX2.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16908301~1,16973831~1,16777217~1,16973849~1,16908377~1,16973832~1,16842751~1,16973834~1,16973833~1,16973837~1,16908303~1,16973848~1,16777218~1,16777219~1,16973835~1,16973830~1|PlusApertureTolerance=50|Record=GerberX2View|Sorted=False
+OutputType8=ExportSTEP
+OutputName8=3D Model
+OutputCategory8=Export
+OutputDocumentPath8=
+OutputVariantName8=
+OutputEnabled8=0
+OutputEnabled8_OutputMedium1=0
+OutputEnabled8_OutputMedium2=0
+OutputEnabled8_OutputMedium3=0
+OutputEnabled8_OutputMedium4=0
+OutputDefault8=0
+Configuration8_Name1=OutputConfigurationParameter1
+Configuration8_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=0|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False|IncludeCoverLayer=True|SkipFreeBodies=False
 
 [PublishSettings]
-OutputFilePath2=V:\Documents\GitHub\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\Project Outputs for EmbeddedControlSystem_Hengeveld4331\controller_hengeveld4331.PDF
+OutputFilePath2=C:\ESE Conestoga\Semester 4\Project\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\Project Outputs for EmbeddedControlSystem_Hengeveld4331\controller_hengeveld4331_PCB.PDF
 ReleaseManaged2=1
 OutputBasePath2=Project Outputs for EmbeddedControlSystem_Hengeveld4331
 OutputPathMedia2=
@@ -318,7 +331,7 @@ OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=controller_hengeveld4331_PCB.PDF
+OutputFileName2=controller_hengeveld4331_PCB_FINAL.PDF
 OutputFileNameMulti2=
 UseOutputNameForMulti2=0
 OutputFileNameSpecial2=
@@ -389,7 +402,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=V:\Documents\GitHub\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\Project Outputs for EmbeddedControlSystem_Hengeveld4331\controller_hengeveld4331.PDF
+RelativeOutputPath2=C:\ESE Conestoga\Semester 4\Project\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\Project Outputs for EmbeddedControlSystem_Hengeveld4331\controller_hengeveld4331_PCB.PDF
 OpenOutputs2=1
 RelativeOutputPath3=C:\ESE Conestoga\Semester 4\Project\Embedded-Controller-ESE2\EmbeddedControlSystem_Hengeveld4331\Project Outputs for EmbeddedControlSystem_Hengeveld4331\
 OpenOutputs3=1
