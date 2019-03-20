@@ -339,102 +339,90 @@ DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Fi
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Files\Controller_Hengeveld4331-RoundHoles-NonPlated.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Files\Controller_Hengeveld4331-RoundHoles-Plated.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Files\Controller_Hengeveld4331-SlotHoles-Plated.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument7]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Files\Controller_Hengeveld4331.DRL
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Files\Controller_Hengeveld4331.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.G1
 DItemRevisionGUID=
 
-[GeneratedDocument11]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.G2
 DItemRevisionGUID=
 
-[GeneratedDocument12]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument13]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument14]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument15]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument16]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GD1
 DItemRevisionGUID=
 
-[GeneratedDocument17]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GG1
 DItemRevisionGUID=
 
-[GeneratedDocument18]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GKO
 DItemRevisionGUID=
 
-[GeneratedDocument19]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument20]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument21]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument22]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument23]
+[GeneratedDocument20]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument24]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument25]
+[GeneratedDocument22]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\NC Drill Files\Controller_Hengeveld4331.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument26]
+[GeneratedDocument23]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.REP
 DItemRevisionGUID=
 
-[GeneratedDocument27]
+[GeneratedDocument24]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Gerber Files\Controller_Hengeveld4331.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument28]
+[GeneratedDocument25]
 DocumentPath=Project Outputs for EmbeddedControlSystem_Hengeveld4331\Design Rule Check - controller.html
 DItemRevisionGUID=
 
@@ -506,7 +494,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -614,7 +602,7 @@ Configuration20_Item1=False
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -688,7 +676,7 @@ PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -710,7 +698,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -786,7 +774,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -823,7 +811,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -1003,7 +991,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -1047,7 +1035,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -1098,7 +1086,7 @@ OutputDefault9=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=\\psstu01ds\Pca3146
+TargetPrinter=Samsung C430W Network
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
