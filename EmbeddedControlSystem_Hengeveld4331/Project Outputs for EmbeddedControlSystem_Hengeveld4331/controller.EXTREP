@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: controller.GBR   3/28/2019  4:31:23 PM
+Gerber File Extension Report For: controller.GBR   3/31/2019  6:34:35 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -16,8 +16,6 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
-.GM3                Mechanical 3                            
 .GKO                Keep-Out Layer                          
 .GPT                Top Pad Master                          
 .GPB                Bottom Pad Master                       

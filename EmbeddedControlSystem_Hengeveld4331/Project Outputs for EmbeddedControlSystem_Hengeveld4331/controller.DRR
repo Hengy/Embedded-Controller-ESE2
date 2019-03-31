@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: controller.PcbDoc   3/28/2019  4:34:53 PM
+NCDrill File Report For: controller.PcbDoc   3/31/2019  6:38:16 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Signal to Bottom Signal
@@ -7,9 +7,9 @@ ASCII RoundHoles File : controller.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.3mm)                                             Round             169       PTH        0.00inch (0.00mm)
-T2      14mil (0.35mm)                                            Round             177       PTH        0.00inch (0.00mm)
-T3      16mil (0.4mm)                                             Round             2         PTH        0.00inch (0.00mm)
+T1      12mil (0.3mm)                                             Round             163       PTH        0.00inch (0.00mm)
+T2      14mil (0.35mm)                                            Round             178       PTH        0.00inch (0.00mm)
+T3      16mil (0.4mm)                                             Round             7         PTH        0.00inch (0.00mm)
 T4      24mil (0.6mm)                                             Round             5         PTH        0.00inch (0.00mm)
 T5      26mil (0.65mm)                                            Round             3         PTH        0.00inch (0.00mm)
 T6      32mil (0.8mm)                                             Round             3         PTH        0.00inch (0.00mm)
