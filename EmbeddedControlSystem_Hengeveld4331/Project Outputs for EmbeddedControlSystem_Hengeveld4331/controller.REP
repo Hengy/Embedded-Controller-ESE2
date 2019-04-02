@@ -2,138 +2,6 @@
 FileName = controller.GBR
 AutoAperture = True
 *************************************************************
-Generating : Keep-Out Layer
-      File : controller.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : controller.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Signal
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D53
-    D55
-    D73
-    D78
-    D79
-    D81
-    D82
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D100
-    D101
-    D102
-    D103
-    D104
-    D105
-    D106
-    D154
-    D155
-    D156
-    D157
-    D158
-    D159
-    D160
-    D161
-    D162
-    D163
-    D164
-    D165
-*************************************************************
-
-*************************************************************
-Generating : Bottom Signal
-      File : controller.GBL
-
-    Adding Layer      : Bottom Signal
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D14
-    D16
-    D17
-    D18
-    D21
-    D23
-    D41
-    D46
-    D47
-    D49
-    D50
-    D107
-    D108
-    D109
-    D110
-    D112
-    D115
-    D116
-    D118
-    D119
-    D120
-    D121
-    D122
-    D123
-    D124
-    D125
-    D126
-    D127
-    D128
-    D129
-    D130
-    D131
-    D132
-    D133
-    D134
-    D135
-    D136
-    D137
-    D138
-    D139
-    D140
-    D141
-    D142
-    D143
-    D144
-    D145
-    D146
-    D147
-    D148
-    D149
-    D150
-    D151
-    D152
-    D153
-*************************************************************
-
-*************************************************************
 Generating : Bottom Overlay
       File : controller.GBO
 
@@ -142,14 +10,14 @@ Generating : Bottom Overlay
 
 Used DCodes :
     D10
-    D12
+    D11
     D13
-    D15
+    D14
     D16
-    D17
     D18
-    D19
     D20
+    D21
+    D171
 *************************************************************
 
 *************************************************************
@@ -164,10 +32,6 @@ Generating : Top Solder
 
 
 Used DCodes :
-    D53
-    D54
-    D55
-    D56
     D57
     D58
     D59
@@ -218,6 +82,13 @@ Used DCodes :
     D104
     D105
     D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
 *************************************************************
 
 *************************************************************
@@ -232,11 +103,10 @@ Generating : Top Signal
 Used DCodes :
     D10
     D11
-    D14
-    D16
-    D17
+    D12
+    D15
     D18
-    D21
+    D20
     D22
     D23
     D24
@@ -268,13 +138,10 @@ Used DCodes :
     D50
     D51
     D52
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
+    D53
+    D54
+    D55
+    D56
     D114
     D115
     D116
@@ -301,52 +168,13 @@ Used DCodes :
     D137
     D138
     D139
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : controller.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Signal
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
+    D140
+    D141
+    D142
+    D143
+    D144
+    D145
+    D146
 *************************************************************
 
 *************************************************************
@@ -361,30 +189,32 @@ Generating : Bottom Paste
 
 
 Used DCodes :
-    D21
-    D23
-    D41
-    D46
+    D22
+    D25
+    D26
+    D29
     D47
-    D49
-    D50
-    D140
-    D141
-    D142
-    D143
-    D144
-    D145
-    D146
+    D52
+    D54
+    D55
     D147
     D148
     D149
     D150
     D151
+    D152
+    D153
+    D154
+    D155
+    D156
+    D157
 *************************************************************
 
 *************************************************************
-Generating : Top Pad Master
-      File : controller.GPT
+Generating : Top Paste
+      File : controller.GTP
+
+    Adding Layer      : Top Paste
 
     Adding Layer      : Top Signal
 
@@ -392,7 +222,6 @@ Generating : Top Pad Master
 
 
 Used DCodes :
-    D21
     D22
     D23
     D24
@@ -424,13 +253,57 @@ Used DCodes :
     D50
     D51
     D52
-    D118
-    D119
-    D120
-    D121
-    D122
-    D123
-    D124
+    D53
+    D54
+    D55
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : controller.GPT
+
+    Adding Layer      : Top Signal
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
     D125
     D126
     D127
@@ -442,30 +315,196 @@ Used DCodes :
     D133
     D134
     D135
+    D136
+    D137
+    D138
+    D139
+    D140
+    D141
+    D142
 *************************************************************
 
 *************************************************************
-Generating : GND
-      File : controller.G2
+Generating : Power
+      File : controller.G1
 
-    Adding Layer      : GND
+    Adding Layer      : Power
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D14
-    D118
+    D15
+    D114
+    D115
+    D116
     D119
     D121
     D122
-    D123
-    D124
+    D125
     D126
+    D130
+    D134
+    D137
+    D139
+    D140
+    D143
+    D144
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : controller.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Signal
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D57
+    D60
+    D61
+    D64
+    D82
+    D87
+    D89
+    D90
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D160
+    D161
+    D162
+    D163
+    D164
+    D165
+    D166
+    D167
+    D168
+    D169
+    D170
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : controller.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : controller.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : controller.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D13
+    D172
+    D173
+*************************************************************
+
+*************************************************************
+Generating : Bottom Signal
+      File : controller.GBL
+
+    Adding Layer      : Bottom Signal
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D12
+    D15
+    D18
+    D20
+    D22
+    D25
+    D26
+    D29
+    D47
+    D52
+    D54
+    D55
+    D114
+    D115
+    D116
+    D117
+    D119
+    D122
+    D123
+    D125
+    D126
+    D127
+    D128
     D129
     D130
+    D131
+    D132
     D133
+    D134
+    D135
     D136
+    D137
+    D138
+    D139
+    D140
+    D141
+    D142
+    D143
+    D144
+    D145
+    D146
+    D147
+    D148
+    D149
+    D150
+    D151
+    D152
+    D153
+    D154
+    D155
+    D156
+    D157
+    D158
+    D159
 *************************************************************
 
 *************************************************************
@@ -487,6 +526,7 @@ Used DCodes :
     D18
     D19
     D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -499,20 +539,14 @@ Generating : Bottom Pad Master
 
 
 Used DCodes :
-    D21
-    D23
-    D41
-    D46
+    D22
+    D25
+    D26
+    D29
     D47
-    D49
-    D50
-    D118
-    D119
-    D120
-    D121
-    D122
-    D123
-    D124
+    D52
+    D54
+    D55
     D125
     D126
     D127
@@ -524,45 +558,48 @@ Used DCodes :
     D133
     D134
     D135
+    D136
+    D137
+    D138
+    D139
     D140
     D141
     D142
-    D143
-    D144
-    D145
-    D146
     D147
     D148
     D149
     D150
     D151
+    D152
+    D153
+    D154
+    D155
+    D156
+    D157
 *************************************************************
 
 *************************************************************
-Generating : Power
-      File : controller.G1
+Generating : GND
+      File : controller.G2
 
-    Adding Layer      : Power
+    Adding Layer      : GND
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D14
-    D107
-    D108
-    D109
-    D112
-    D114
-    D115
-    D118
-    D119
-    D123
-    D127
+    D15
+    D125
+    D126
+    D128
+    D129
     D130
-    D132
+    D131
     D133
     D136
     D137
+    D140
+    D143
+    D144
 *************************************************************
 
