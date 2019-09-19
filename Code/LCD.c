@@ -1,0 +1,201 @@
+#include "LCD.h"
+
+void LCD_Init(void) {
+	
+	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;	// Enable clock of Port A
+	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;	// Enable clock of Port B
+	RCC->AHBENR |= RCC_AHBENR_GPIOCEN;	// Enable clock of Port C
+	
+	// E & RS setup
+	GPIO_PIN_MODE(LCD_E_PORT,LCD_E,OUT);
+	GPIO_PIN_MODE(LCD_RS_PORT,LCD_RS,OUT);
+	
+	GPIO_PIN_DRV_TYPE(LCD_E_PORT,LCD_E,PP);  // Set mode to output
+	GPIO_PIN_DRV_TYPE(LCD_RS_PORT,LCD_RS,PP);  // Set mode to output
+	
+	// Data pins setup
+	GPIO_PIN_MODE(LCD_BITS_PORT,LCD_BIT0,OUT);
+	GPIO_PIN_MODE(LCD_BITS_PORT,LCD_BIT1,OUT);
+	GPIO_PIN_MODE(LCD_BITS_PORT,LCD_BIT2,OUT);
+	GPIO_PIN_MODE(LCD_BITS_PORT,LCD_BIT3,OUT);
+	
+	GPIO_PIN_DRV_TYPE(LCD_BITS_PORT,LCD_BIT0,PP);  // Set mode to output
+	GPIO_PIN_DRV_TYPE(LCD_BITS_PORT,LCD_BIT1,PP);  // Set mode to output
+	GPIO_PIN_DRV_TYPE(LCD_BITS_PORT,LCD_BIT2,PP);  // Set mode to output
+	GPIO_PIN_DRV_TYPE(LCD_BITS_PORT,LCD_BIT3,PP);  // Set mode to output
+	
+	LCD_E_LO;
+	LCD_RS_D;
+	
+	LCD_BUS( HD44780_SYNC );
+	
+	delay_ms(30);
+	
+	// 3 knocks
+	
+	LCD_BUS( HD44780_SYNC );	// wake up & sync
+	LCD_E_HI;
+	delay_us(50);
+	LCD_E_LO;
+	
+	delay_ms(30);
+
+	LCD_BUS( HD44780_SYNC );	// wake up & sync
+	LCD_E_HI;
+	delay_us(50);
+	LCD_E_LO;
+	
+	delay_ms(10);
+
+	LCD_BUS( HD44780_SYNC );	// wake up & sync
+	LCD_E_HI;
+	delay_us(50);
+	LCD_E_LO;
+	
+	delay_ms(10);
+	
+	LCDwriteCMD(HD44780_CMD_FUNCTION);	// set to 4-bit mode
+	
+	delay_us(LCD_WAIT);
+	
+	LCDwriteCMD(HD44780_CMD_FUNCTION | HD44780_FUNCTION_5X8FONT | HD44780_FUNCTION_2LINES | HD44780_FUNCTION_4BIT);
+	
+	delay_us(LCD_WAIT);
+	
+	LCDwriteCMD(HD44780_CMD_DISPLAY);		// display off
+	
+	delay_us(LCD_WAIT);
+	
+	LCDwriteCMD(HD44780_CMD_CLEAR);			// clear display
+	
+	delay_ms(20);
+	
+	//LCDwriteCMD(HD44780_CMD_ENTRY | HD44780_ENTRY_MOVE_CURSOR | HD44780_ENTRY_INC);		// Cursor setup
+	
+	//delay_us(LCD_WAIT);
+	
+	LCDwriteCMD(HD44780_CMD_DISPLAY | HD44780_DISPLAY_ON | HD44780_DISPLAY_NOCURSOR | HD44780_DISPLAY_NOBLINK);	// display on
+	
+	delay_us(LCD_WAIT);
+	
+	LCDwriteCMD(HD44780_CMD_CLEAR);	// clear display
+	
+	delay_ms(20);
+	
+	TIM17_Init(LCD_BL_PWMFREQ, LCD_BL_PWMDEFAULT);
+	
+	TIM17_enable();
+}
+
+void LCDwriteData(uint8_t data) {
+	
+	__disable_irq();
+	
+	LCD_E_LO;
+	LCD_RS_D;	// data
+	
+	LCD_BUS(HI_NIBBLE(data));	// send high nibble
+	
+	uint32_t wait = 20;
+	while (wait--);
+	
+	LCD_E_HI;
+	wait = 20;
+	while (wait--);
+	LCD_E_LO;
+	
+	wait = 20;
+	while (wait--);
+	
+	LCD_BUS(LO_NIBBLE(data));	// send low nibble
+	
+	LCD_E_HI;
+	wait = 20;
+	while (wait--);
+	LCD_E_LO;
+	
+	wait = 20;
+	while (wait--);
+	
+	__enable_irq();
+}
+
+void LCDwriteCMD(uint8_t cmd) {
+	
+	__disable_irq();
+	
+	LCD_E_LO;
+	LCD_RS_I;	// instruction
+
+	LCD_BUS(HI_NIBBLE(cmd));	// send high nibble
+	
+	uint8_t wait = 20;
+	while (wait--);
+	
+	LCD_E_HI;
+	wait = 20;
+	while (wait--);
+	LCD_E_LO;
+	
+	wait = 20;
+	while (wait--);
+	
+	LCD_BUS(LO_NIBBLE(cmd));	// send low nibble
+	
+	LCD_E_HI;
+	wait = 20;
+	while (wait--);
+	LCD_E_LO;
+	
+	wait = 20;
+	while (wait--);
+	
+	__enable_irq();
+}
+
+void LCDputc(char c) {
+	LCDwriteData(c);	// write single character
+	
+	delay_us(LCD_WAIT);
+}
+
+void LCDputs(char *buf) {
+	if (*buf == '\0')	// check if NULL character
+		return;
+	LCDputc(*buf);		// write single character
+	LCDputs(++buf);		// recursive call
+	delay_us(50);
+}
+
+void LCDprintf(char *fmt, ...) {
+	va_list args;	// init args
+	
+	char buf[LCD_MAX_BUFSZ];	// setup buffer
+	
+	va_start(args,fmt);	
+	vsnprintf(buf,LCD_MAX_BUFSZ,fmt,args);
+	va_end(args);
+	
+	LCDputs(buf);	// print string
+}
+
+void LCDsetCursorPosition(uint8_t row, uint8_t pos) {
+	delay_us(LCD_WAIT);
+	
+	uint8_t cmd = 0x80;	// position command
+	if (row == 1) {
+		cmd += pos;		// add position to command
+	} else if (row == 2) {
+		cmd += 0x40;	// add postion of second line to command
+		cmd += pos;		// add position to command
+	}
+	LCDwriteCMD(cmd);	// write command
+	
+	delay_us(LCD_WAIT);
+}
+
+void LCDclear(void) {
+	LCDwriteCMD(HD44780_CMD_CLEAR);	// clear display
+	
+	delay_ms(30);
+}

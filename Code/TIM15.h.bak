@@ -1,0 +1,14 @@
+#ifndef __TIM15_H
+#define __TIM15_H
+
+#include "stm32f30xe.h"
+#include "utils.h"
+
+
+void TIM15_Init(uint16_t freq);
+void TIM15_set(uint16_t freq);
+void TIM15_enable(void);
+void TIM15_disable(void);
+
+#endif /* __TIM15_H */
+

@@ -1,0 +1,48 @@
+#include "encoders.h"
+
+void ENC_Init() {
+	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;	// enable PORT A clocks
+	
+	RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;		// enable TIM1 clocks
+	
+	GPIO_PIN_MODE(ENC_PORT,ENC_L_PIN,AF);					// set PA8 as AF	
+	GPIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
+	
+	GPIO_PIN_MODE(ENC_PORT,ENC_R_PIN,AF);					// set PA9 as AF	
+	GPIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
+	
+	TIM1->PSC = 71;
+	
+	FORCE_BITS(TIM1->SMCR,TIM_SMCR_TS,0x40);	// Reset Mode
+	
+	FORCE_BITS(TIM1->SMCR,TIM_SMCR_SMS,0x04);	// Reset Mode
+	
+	FORCE_BITS(TIM1->CCMR1,TIM_CCMR1_CC1S,(0x01 << TIM_CCMR1_CC1S_Pos));	// input CC1
+	FORCE_BITS(TIM1->CCMR1,TIM_CCMR1_CC2S,(0x01 << TIM_CCMR1_CC2S_Pos));	// input CC2
+	
+	FORCE_BITS(TIM1->CCMR1,TIM_CCMR1_IC1F,(0x03 << TIM_CCMR1_IC1F_Pos));	// input filter
+	FORCE_BITS(TIM1->CCMR1,TIM_CCMR1_IC2F,(0x03 << TIM_CCMR1_IC2F_Pos));	// input filter
+	
+	CLR_BITS(TIM1->CCER,TIM_CCER_CC1NP);	// edge selection; both
+	SET_BITS(TIM1->CCER,TIM_CCER_CC1P);		// edge selection; both
+	
+	CLR_BITS(TIM1->CCER,TIM_CCER_CC2NP);	// edge selection; both
+	SET_BITS(TIM1->CCER,TIM_CCER_CC2P);		// edge selection; both
+	
+	FORCE_BITS(TIM1->CCMR1,TIM_CCMR1_IC1PSC, (0x01 << TIM_CCMR1_IC1PSC_Pos)); // input prescaler
+	FORCE_BITS(TIM1->CCMR1,TIM_CCMR1_IC2PSC, (0x01 << TIM_CCMR1_IC2PSC_Pos)); // input prescaler
+	
+	SET_BITS(TIM1->CCER,TIM_CCER_CC1E);	// enable capture from counter channel 1 --default--
+	CLR_BITS(TIM1->CCER,TIM_CCER_CC2E);	// disable capture from counter
+	
+	SET_BITS(TIM1->DIER,TIM_DIER_CC1IE);	// enable interrupt channel 1 --default--
+	CLR_BITS(TIM1->DIER,TIM_DIER_CC2IE);	// disable interrupt
+	
+	SET_BITS(TIM1->CR1,TIM_CR1_CEN);	// start counter
+	
+	
+	// interrupt
+	NVIC_SetPriority(TIM1_CC_IRQn, 0);
+	
+	NVIC_EnableIRQ(TIM1_CC_IRQn);
+}

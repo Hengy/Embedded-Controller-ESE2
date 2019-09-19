@@ -1,0 +1,11 @@
+.\objects\encoders.o: encoders.c
+.\objects\encoders.o: encoders.h
+.\objects\encoders.o: stm32f30xe.h
+.\objects\encoders.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h
+.\objects\encoders.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\encoders.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\encoders.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\encoders.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\encoders.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h
+.\objects\encoders.o: C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h
+.\objects\encoders.o: utils.h

@@ -8,7 +8,7 @@
 //-------------------------------------------------------------------------------------------------
 
 // Sync
-#define HD44780_SYNC			0x03
+#define HD44780_SYNC			0x30
 
 // Commands to LCD module
 #define HD44780_CMD_CLEAR           0x01

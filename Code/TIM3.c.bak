@@ -1,0 +1,65 @@
+#include "TIM3.h"
+
+void TIM3_Init(uint16_t freq) {
+	RCC->APB1ENR |= RCC_APB1ENR_TIM3EN;		// enable TIM3 clocks
+	
+	CLR_BITS(TIM3->CR1, 0x10);		// clear DIR bit (up-counting)
+	
+	TIM3->PSC = 719;	// 100KHz counter frequency
+	
+	TIM3->ARR = freq;
+	
+	// duty cycles
+	TIM3->CCR3 = 0;	// start off
+	TIM3->CCR4 = 0;
+	
+	FORCE_BITS(TIM3->CCMR2,TIM_CCMR2_OC3M_Msk,TIM_CCMR2_OC3M_1 | TIM_CCMR2_OC3M_2);	// PWM mode 1; channel 3
+	FORCE_BITS(TIM3->CCMR2,TIM_CCMR2_OC4M_Msk,TIM_CCMR2_OC4M_1 | TIM_CCMR2_OC4M_2);	// PWM mode 1; channel 4
+	
+	// enable preload
+	SET_BITS(TIM3->CCMR2, TIM_CCMR2_OC3PE);
+	SET_BITS(TIM3->CCMR2, TIM_CCMR2_OC4PE);
+	
+	// output polarity low & enable output
+	CLR_BITS(TIM3->CCER, TIM_CCER_CC3NP);
+	CLR_BITS(TIM3->CCER, TIM_CCER_CC4NP);
+	SET_BITS(TIM3->CCER, TIM_CCER_CC3E);
+	SET_BITS(TIM3->CCER, TIM_CCER_CC4E);
+	
+	SET_BITS(TIM3->CR1,TIM_CR1_ARPE);	// buffer preload value
+	
+	SET_BITS(TIM3->CR1,TIM_CR1_CEN);	// enable counter
+
+	SET_BITS(TIM3->BDTR, TIM_BDTR_MOE);	// main output enable
+}
+
+void TIM3_set_ch3(uint16_t duty) {
+	if (duty > DRV8814_MIN_DUTY) {
+		TIM3->CCR3 = duty;
+	} else if (duty == 0) {
+		TIM3->CCR3 = 0;
+	} else {
+		TIM3->CCR3 = DRV8814_MIN_DUTY;
+	}
+}
+
+void TIM3_set_ch4(uint16_t duty) {
+	TIM3->CCR4 = duty;
+}
+
+void TIM3_enable_ch3() {
+	SET_BITS(TIM3->CCER, TIM_CCER_CC3E);
+}
+
+void TIM3_enable_ch4() {
+	SET_BITS(TIM3->CCER, TIM_CCER_CC4E);
+}
+
+void TIM3_disable_ch3() {
+	CLR_BITS(TIM3->CCER, TIM_CCER_CC3E);
+}
+
+void TIM3_disable_ch4() {
+	CLR_BITS(TIM3->CCER, TIM_CCER_CC4E);
+}
+

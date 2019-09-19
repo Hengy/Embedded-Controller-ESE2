@@ -1,0 +1,23 @@
+--cpu Cortex-M4.fp
+".\objects\lcd.o"
+".\objects\leds.o"
+".\objects\main.o"
+".\objects\servo.o"
+".\objects\startup_stm32f303xe.o"
+".\objects\sysclock.o"
+".\objects\system_stm32f3xx.o"
+".\objects\systick.o"
+".\objects\drv8884.o"
+".\objects\tim17.o"
+".\objects\tim16.o"
+".\objects\lim_sw.o"
+".\objects\drv8814.o"
+".\objects\tim3.o"
+".\objects\encoders.o"
+".\objects\tim15.o"
+".\objects\serial.o"
+".\objects\rtc.o"
+--strict --scatter ".\Objects\Stepper.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Stepper.map" -o .\Objects\Stepper.axf

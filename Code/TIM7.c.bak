@@ -1,0 +1,60 @@
+#include "TIM17.h"
+
+void TIM17_Init(uint16_t freq, uint16_t duty) {
+	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;	// enable PORT E clocks
+	
+	RCC->APB2ENR |= RCC_APB2ENR_TIM17EN;		// enable TIM17 clocks
+	
+	GPIO_PIN_MODE(TIM17_OUTPUT_PORT,TIM17_OUTPUT_PIN, 0x01);					// set PE8 as AF
+	
+	GPIO_PIN_AF_MODE(TIM17_OUTPUT_PORT,TIM17_OUTPUT_PIN,0x01);				// set AF mode
+	
+	GPIO_PIN_DRV_TYPE(TIM17_OUTPUT_PORT,TIM17_OUTPUT_PIN,PP);
+	
+	CLR_BITS(TIM17->CR1, 0x10);		// clear DIR bit (up-counting)
+	
+	TIM17->PSC = 799;	// 100KHz counter frequency
+	
+	TIM17->ARR = freq;
+	
+	FORCE_BITS(TIM17->CCMR1,0x00F0,0x60);	// PWM mode 1
+	
+	SET_BITS(TIM17->CR1,0x80);			// auto-reload preload value
+	
+	FORCE_BITS(TIM17->CCER,0x07,0x05);	// complementary output, polarity bit, compare enable 
+
+	TIM17->CCR1 = 0;	// Set duty cycle
+	
+	SET_BITS(TIM17->CR1,0x01);					// enable counter
+}
+
+void TIM17_set(uint16_t freq, uint16_t percent) {
+	if (freq) {
+		TIM17->ARR = freq;
+		
+		int val = TIM17_ToVal(percent);
+		if (val != 0) {
+			TIM17->CCR1 = val;	// Set duty cycle
+		}
+		
+	} else {
+		TIM17_disable();
+	}
+}
+
+void TIM17_enable() {
+	SET_BITS(TIM17->BDTR,0x8000);			// Enable master output
+}
+
+void TIM17_disable() {
+	CLR_BITS(TIM17->BDTR,0x8000);			// disable master output
+}
+
+uint16_t TIM17_ToVal(uint16_t percent) {
+	
+	uint16_t val = (percent*199) / 100;
+	
+	return val;
+}
+
+

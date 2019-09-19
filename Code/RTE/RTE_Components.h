@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'test' 
+ * Project: 'Stepper' 
  * Target:  'Target 1' 
  */
 
