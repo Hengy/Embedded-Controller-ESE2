@@ -10,6 +10,7 @@
 //	-----------------------------------------*/
 
 #include "utils.h"
+#include <string.h>
 
 #include "system_stm32f3xx.h"
 #include "stm32f303xe.h"
@@ -54,8 +55,9 @@ volatile static uint8_t update_flag = 0;
 volatile static uint8_t send_update = 10;
 
 // Serial UART global variables
-volatile static uint8_t SerialRX_Buf = 0;
+volatile static uint8_t SerialRX_Buf[64];
 volatile static uint8_t SerialRX_Buf_index = 0;
+volatile static uint8_t SerialRX_cmd[64];
 
 
 void TIM16_IRQHandler(void) {
@@ -171,7 +173,16 @@ void TIM1_CC_IRQHandler(void) {
 
 // Serial UART Receive ISR
 void USART2_IRQHandler(void) {
-	SerialRX_Buf = USART2->RDR;
+	SerialRX_Buf[SerialRX_Buf_index] = USART2->RDR;
+	
+	if (SerialRX_Buf[SerialRX_Buf_index] == 'X') {
+		memcpy((void*)SerialRX_cmd, (void*)SerialRX_Buf, 64);
+	}
+		
+	SerialRX_Buf_index++;
+	if (SerialRX_Buf_index == 64) {
+		SerialRX_Buf_index = 0;
+	}
 }
 
 uint16_t CAM_HOME(void) {
@@ -320,7 +331,8 @@ int main(void){
 			}
 			update_flag = 0;
 		}
-		
+	
+		/*
 		if (SerialRX_Buf != 0) {
 			LCDsetCursorPosition(2, 0);
 			LCDprintf("%c", (char)SerialRX_Buf);
@@ -370,6 +382,7 @@ int main(void){
 			
 			SerialRX_Buf = 0;
 		}
+		*/
 
 //		if (step_fault_changed) {
 //			if (step_fault == DRV8884_NO_FAULT) {

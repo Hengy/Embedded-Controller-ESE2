@@ -29,7 +29,7 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D263
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FF694)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h)(0x594AD1BE)
 F (.\LEDs.h)(0x5CA39A5C)()
-F (.\main.c)(0x5D851772)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections-ID:\Project\Embedded-Controller-ESE2\Code\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F303xE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x5D85207C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections-ID:\Project\Embedded-Controller-ESE2\Code\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F303xE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (utils.h)(0x5CA26CF1)
 I (stm32f30xe.h)(0x5C939A90)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D263976)
@@ -39,6 +39,7 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D263976)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FF694)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h)(0x594AD1BE)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x588C2C04)
 I (stm32f303xe.h)(0x5C8FBE74)
 I (SysClock.h)(0x5C8FFCB4)
 I (SysTick.h)(0x5CA4A6A0)
