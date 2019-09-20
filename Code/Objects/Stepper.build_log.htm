@@ -28,6 +28,8 @@ Project File Date:  09/06/2019
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 assembling startup_stm32f303xe.s...
+compiling LEDs.c...
+compiling LCD.c...
 compiling servo.c...
 servo.c(8): warning:  #61-D: integer operation result is out of range
   	
@@ -54,9 +56,9 @@ servo.c(10): warning:  #63-D: shift count is too large
   	
 PIO_PIN_AF_MODE(SERVOPORT,SERVOPIN,0x01);				// set AF mode
 servo.c: 8 warnings, 0 errors
-compiling LEDs.c...
-compiling LCD.c...
 compiling SysClock.c...
+compiling system_stm32f3xx.c...
+compiling DRV8884.c...
 compiling SysTick.c...
 compiling TIM17.c...
 TIM17.c(10): warning:  #61-D: integer operation result is out of range
@@ -72,35 +74,12 @@ TIM17.c(10): warning:  #61-D: integer operation result is out of range
   	
 PIO_PIN_AF_MODE(TIM17_OUTPUT_PORT,TIM17_OUTPUT_PIN, 0x01);				// set AF mode
 TIM17.c: 4 warnings, 0 errors
-compiling DRV8884.c...
 compiling main.c...
-main.c(252): warning:  #177-D: variable "dir_count"  was declared but never referenced
+lim_sw.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LIM_SW_H */
+main.c(243): warning:  #177-D: variable "dir_count"  was declared but never referenced
   	uint32_t dir_count = DIR_TIMER_VAL;
-main.c: 1 warning, 0 errors
-compiling system_stm32f3xx.c...
-compiling DRV8814.c...
-DRV8814.c(12): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENA_PIN, 0x02);
-DRV8814.c(12): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENA_PIN, 0x02);
-DRV8814.c(12): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENA_PIN, 0x02);
-DRV8814.c(13): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
-DRV8814.c(13): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
-DRV8814.c(13): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
-DRV8814.c: 6 warnings, 0 errors
-compiling TIM16.c...
-compiling lim_sw.c...
-compiling TIM3.c...
+main.c: 2 warnings, 0 errors
 compiling encoders.c...
 encoders.c(9): warning:  #63-D: shift count is too large
   	
@@ -121,16 +100,42 @@ encoders.c(12): warning:  #63-D: shift count is too large
   	
 PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
 encoders.c: 6 warnings, 0 errors
+compiling TIM16.c...
+compiling lim_sw.c...
+lim_sw.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LIM_SW_H */
+lim_sw.c: 1 warning, 0 errors
+compiling TIM3.c...
+compiling DRV8814.c...
+DRV8814.c(12): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENA_PIN, 0x02);
+DRV8814.c(12): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENA_PIN, 0x02);
+DRV8814.c(12): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENA_PIN, 0x02);
+DRV8814.c(13): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
+DRV8814.c(13): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
+DRV8814.c(13): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
+DRV8814.c: 6 warnings, 0 errors
 compiling TIM15.c...
-compiling serial.c...
 compiling RTC.c...
 RTC.c(61): warning:  #940-D: missing return statement at end of non-void function "RTC_getTime" 
   }
 RTC.c: 1 warning, 0 errors
+compiling serial.c...
 linking...
-Program Size: Code=14224 RO-data=988 RW-data=36 ZI-data=1636  
+Program Size: Code=14144 RO-data=988 RW-data=36 ZI-data=1636  
 FromELF: creating hex file...
-".\Objects\Stepper.axf" - 0 Error(s), 26 Warning(s).
+".\Objects\Stepper.axf" - 0 Error(s), 28 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -148,7 +153,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

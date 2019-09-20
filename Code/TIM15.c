@@ -7,7 +7,7 @@ void TIM15_Init(uint32_t freq) {
 	
 	TIM15->PSC = 719;	// 100KHz counter frequency
 	
-	TIM15->ARR = 25000;
+	TIM15->ARR = 2500;
 	
 	SET_BITS(TIM15->CR1,0x80);			// auto-reload preload value
 	

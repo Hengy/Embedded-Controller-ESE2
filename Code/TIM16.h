@@ -5,8 +5,8 @@
 #include "utils.h"
 
 // servo signal frequency
-#define STEP_PWMFREQFAST			389		// ~256Hz
-#define STEP_PWMFREQMED				780		// ~128Hz
+#define STEP_PWMFREQFAST			78		// ~1024Hz
+#define STEP_PWMFREQMED				389		// ~128Hz
 #define STEP_PWMFREQSLOW			1561	// ~64Hz
 
 void TIM16_Init(uint16_t freq);

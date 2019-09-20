@@ -41,7 +41,7 @@ void DRV8884_Init(void) {
 	NVIC_EnableIRQ(EXTI3_IRQn);		// Enable NVIC IRQ
 	
 	// TIM16
-	TIM16_Init(STEP_PWMFREQSLOW);
+	TIM16_Init(STEP_PWMFREQFAST);
 	TIM16_enable();
 	
 	DRV8884_SLEEP;

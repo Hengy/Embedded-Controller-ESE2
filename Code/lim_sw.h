@@ -14,4 +14,3 @@
 void lim_sw_Init(void);
 
 #endif /* __LIM_SW_H */
-

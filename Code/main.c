@@ -51,10 +51,11 @@ volatile static uint8_t enc_update = 0;	// Encoder update flag
 
 // LCD & Serial update flag
 volatile static uint8_t update_flag = 0;
+volatile static uint8_t send_update = 10;
 
 // Serial UART global variables
 volatile static uint8_t SerialRX_Buf = 0;
-
+volatile static uint8_t SerialRX_Buf_index = 0;
 
 
 void TIM16_IRQHandler(void) {
@@ -67,9 +68,6 @@ void TIM16_IRQHandler(void) {
 			while (wait--);
 			DRV8884_STEP_LO;
 			
-		} else {
-			DRV8884_disable();
-			DRV8884_sleep();
 		}
 		
 		TIM16->SR &= ~TIM_SR_UIF;
@@ -81,6 +79,11 @@ void TIM15_IRQHandler(void) {
 		
 		update_flag = 1;
 		
+		send_update = 10;
+		
+		Step_LLim = 0;
+		Step_RLim = 0;
+		
 		TIM15->SR &= ~TIM_SR_UIF;
 	}
 }
@@ -88,7 +91,7 @@ void TIM15_IRQHandler(void) {
 // R Limit switch interrupt handler
 void EXTI2_TSC_IRQHandler(void) {
 
-	Step_LLim = READ_BITS(LIM_PORT, LIML_PIN);
+	Step_LLim = 1;
 	
 	SET_BITS(EXTI->PR, EXTI_PR_PIF2);	// clear EXTI2 flag
 }
@@ -96,7 +99,7 @@ void EXTI2_TSC_IRQHandler(void) {
 // L Limit switch interrupt handler
 void EXTI1_IRQHandler(void) {
 
-	Step_RLim = READ_BITS(LIM_PORT, LIMR_PIN);
+	Step_RLim = 1;
 	
 	SET_BITS(EXTI->PR, EXTI_PR_PIF1);	// clear EXTI1 flag
 }
@@ -174,18 +177,13 @@ void USART2_IRQHandler(void) {
 uint16_t CAM_HOME(void) {
 	LCDsetCursorPosition(2, 0);
 	LCDprintf("HOMING");
-	delay_ms(500);
+	delay_ms(5);
 	
 	DRV8884_DIR_CW;
 	step_num = 1500;
 	DRV8884_enable();
 	DRV8884_wake();
-	while (READ_BITS(LIM_PORT, LIMR_PIN) == 0);	// turn until right limit is hit
-	step_num = 0;
-	
-	LCDsetCursorPosition(2, 0);
-	LCDprintf("HOMING..");
-	delay_ms(500);
+	while (Step_RLim == 0);	// turn until right limit is hit
 	
 	uint16_t total_steps = 0;	// set steps count to 0
 	
@@ -193,16 +191,9 @@ uint16_t CAM_HOME(void) {
 	DRV8884_enable();
 	DRV8884_wake();
 	step_num = 1500;
-	uint8_t limit_val = READ_BITS(LIM_PORT, LIML_PIN);
-	while (limit_val == 0) {	// turn until left limit is hit
-		limit_val = READ_BITS(LIM_PORT, LIML_PIN);
-	}
+	while (Step_LLim == 0);
 	total_steps = 1500 - step_num;
 	step_num = 0;	//stop
-	
-	LCDsetCursorPosition(2, 0);
-	LCDprintf("HOMING....");
-	delay_ms(500);
 	
 	DRV8884_enable();
 	DRV8884_wake();
@@ -212,8 +203,8 @@ uint16_t CAM_HOME(void) {
 	while (step_num);	// wait for stepper to get to middle
 	
 	LCDsetCursorPosition(2, 0);
-	LCDprintf("HOMING DONE");
-	delay_ms(500);
+	LCDprintf("      ");
+	delay_ms(5);
 	
 	return total_steps;
 }
@@ -287,18 +278,6 @@ int main(void){
 	delay_ms(5);
 	
 	TIM17_set(LCD_BL_PWMFREQ, 80);
-	
-	UART_printf("---MENU---\nS) Stepper\n");
-	delay_ms(10);
-	UART_printf("D) DC\n");
-	delay_ms(10);
-	UART_printf("A) Servo\n");
-	delay_ms(10);
-	UART_printf("H) Home\n");
-	delay_ms(10);
-	UART_printf("U) Update\n");
-	delay_ms(10);
-	UART_printf("T) Time\n");
 	
 	while(1){
 		
@@ -403,16 +382,6 @@ int main(void){
 //			step_fault_changed = 0;
 //		}
 		
-		if (Step_RLim || Step_LLim) {
-			if (Step_RLim) {
-				LCDsetCursorPosition(2, 0);
-				LCDprintf("R Lim!");
-			} else if (Step_LLim) {
-				LCDsetCursorPosition(2, 0);
-				LCDprintf("L Lim!");
-			}
-		}
-		
 		if (dc_fault_changed) {
 			if (dc_fault == DRV8814_NO_FAULT) {
 				LCDsetCursorPosition(1, 0);
@@ -423,26 +392,7 @@ int main(void){
 			}	
 			dc_fault_changed = 0;
 		}
-		
-		// stepper direction
-//		dir_count--;
-//		if (dir_count == 0) {
-//			DRV8884_DIR_CCW;
-//			Servo_set(0);
-//			if (step_fault == DRV8884_NO_FAULT) {
-//				step_num = 768;
-//				DRV8884_enable();
-//			}
-//			dir_count = DIR_TIMER_VAL;
-//		} else if (dir_count == DIR_TIMER_VAL/2) {
-//			DRV8884_DIR_CW;
-//			Servo_set(180);
-//			if (step_fault == DRV8884_NO_FAULT) {
-//				step_num = 768;
-//				DRV8884_enable();
-//			}
-//		}
-//		
+
 		// DC direction & speed
 		if (dc_speed <= 105) {
 			dc_speed += dc_step;
@@ -463,8 +413,6 @@ int main(void){
 			delay_ms(100);
 		}
 		if (dc_speed == 105) {
-//			DRV8814_sleep();
-//			DRV8814_disable();
 			dc_speed = 100;
 		}
 	}

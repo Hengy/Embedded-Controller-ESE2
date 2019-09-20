@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Stepper.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Stepper.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Thu Sep 19 15:12:15 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Fri Sep 20 14:16:30 2019
 <BR><P>
 <H3>Maximum Stack Usage =        324 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -404,8 +404,8 @@ Global Symbols
 <P><STRONG><a name="[113]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[8e]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; CAM_HOME &rArr; LCDprintf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; UART_printf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -699,7 +699,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_printf
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_printf
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDprintf
 </UL>
 
@@ -1107,8 +1107,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul
 </UL>
 
-<P><STRONG><a name="[ba]"></a>CAM_HOME</STRONG> (Thumb, 254 bytes, Stack size 16 bytes, main.o(i.CAM_HOME))
-<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<P><STRONG><a name="[ba]"></a>CAM_HOME</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, main.o(i.CAM_HOME))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
 <LI>Call Chain = CAM_HOME &rArr; LCDprintf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_wake
@@ -1172,7 +1172,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[cc]"></a>DRV8884_Init</STRONG> (Thumb, 324 bytes, Stack size 8 bytes, drv8884.o(i.DRV8884_Init))
+<P><STRONG><a name="[cc]"></a>DRV8884_Init</STRONG> (Thumb, 322 bytes, Stack size 8 bytes, drv8884.o(i.DRV8884_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DRV8884_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM16_enable
@@ -1181,9 +1181,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[df]"></a>DRV8884_disable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8884.o(i.DRV8884_disable))
+<P><STRONG><a name="[e9]"></a>DRV8884_disable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8884.o(i.DRV8884_disable))
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_TIM16_IRQHandler
 </UL>
 
 <P><STRONG><a name="[be]"></a>DRV8884_enable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8884.o(i.DRV8884_enable))
@@ -1192,9 +1191,8 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAM_HOME
 </UL>
 
-<P><STRONG><a name="[e0]"></a>DRV8884_sleep</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8884.o(i.DRV8884_sleep))
+<P><STRONG><a name="[e8]"></a>DRV8884_sleep</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8884.o(i.DRV8884_sleep))
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_TIM16_IRQHandler
 </UL>
 
 <P><STRONG><a name="[bf]"></a>DRV8884_wake</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8884.o(i.DRV8884_wake))
@@ -1208,10 +1206,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[14]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(i.EXTI1_IRQHandler))
+<P><STRONG><a name="[14]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, main.o(i.EXTI1_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
-<P><STRONG><a name="[15]"></a>EXTI2_TSC_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(i.EXTI2_TSC_IRQHandler))
+<P><STRONG><a name="[15]"></a>EXTI2_TSC_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, main.o(i.EXTI2_TSC_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
 <P><STRONG><a name="[16]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, main.o(i.EXTI3_IRQHandler))
@@ -1229,7 +1227,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
-<P><STRONG><a name="[e8]"></a>Heartbeat_Init</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, leds.o(i.Heartbeat_Init))
+<P><STRONG><a name="[e6]"></a>Heartbeat_Init</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, leds.o(i.Heartbeat_Init))
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1306,7 +1304,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDputc
 </UL>
 
-<P><STRONG><a name="[e9]"></a>LED_Init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, leds.o(i.LED_Init))
+<P><STRONG><a name="[e7]"></a>LED_Init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, leds.o(i.LED_Init))
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1345,7 +1343,7 @@ Global Symbols
 <P><STRONG><a name="[c]"></a>SysTick_Handler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, systick.o(i.SysTick_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
-<P><STRONG><a name="[e7]"></a>SysTick_Init</STRONG> (Thumb, 90 bytes, Stack size 12 bytes, systick.o(i.SysTick_Init))
+<P><STRONG><a name="[e5]"></a>SysTick_Init</STRONG> (Thumb, 90 bytes, Stack size 12 bytes, systick.o(i.SysTick_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SysTick_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1354,7 +1352,7 @@ Global Symbols
 <P><STRONG><a name="[57]"></a>SystemInit</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, system_stm32f3xx.o(i.SystemInit))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(.text)
 </UL>
-<P><STRONG><a name="[e6]"></a>System_Clock_Init</STRONG> (Thumb, 242 bytes, Stack size 0 bytes, sysclock.o(i.System_Clock_Init))
+<P><STRONG><a name="[e4]"></a>System_Clock_Init</STRONG> (Thumb, 242 bytes, Stack size 0 bytes, sysclock.o(i.System_Clock_Init))
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1391,18 +1389,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[25]"></a>TIM1_BRK_TIM15_IRQHandler</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, main.o(i.TIM1_BRK_TIM15_IRQHandler))
+<P><STRONG><a name="[25]"></a>TIM1_BRK_TIM15_IRQHandler</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, main.o(i.TIM1_BRK_TIM15_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
 <P><STRONG><a name="[28]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 194 bytes, Stack size 0 bytes, main.o(i.TIM1_CC_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
-<P><STRONG><a name="[26]"></a>TIM1_UP_TIM16_IRQHandler</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, main.o(i.TIM1_UP_TIM16_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM1_UP_TIM16_IRQHandler
-</UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_sleep
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_disable
-</UL>
+<P><STRONG><a name="[26]"></a>TIM1_UP_TIM16_IRQHandler</STRONG> (Thumb, 80 bytes, Stack size 0 bytes, main.o(i.TIM1_UP_TIM16_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
 <P><STRONG><a name="[c1]"></a>TIM3_Init</STRONG> (Thumb, 190 bytes, Stack size 0 bytes, tim3.o(i.TIM3_Init))
@@ -1437,26 +1430,26 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[e1]"></a>UART_printf</STRONG> (Thumb, 38 bytes, Stack size 56 bytes, serial.o(i.UART_printf))
+<P><STRONG><a name="[df]"></a>UART_printf</STRONG> (Thumb, 38 bytes, Stack size 56 bytes, serial.o(i.UART_printf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
 <LI>Call Chain = UART_printf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vsnprintf
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_puts
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_puts
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[e3]"></a>UART_putc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, serial.o(i.UART_putc))
-<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_puts
+<P><STRONG><a name="[e1]"></a>UART_putc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, serial.o(i.UART_putc))
+<BR><BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_puts
 </UL>
 
-<P><STRONG><a name="[e2]"></a>UART_puts</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, serial.o(i.UART_puts))
+<P><STRONG><a name="[e0]"></a>UART_puts</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, serial.o(i.UART_puts))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = UART_puts
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_putc
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_putc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_printf
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_printf
 </UL>
 
 <P><STRONG><a name="[33]"></a>USART2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, main.o(i.USART2_IRQHandler))
@@ -1487,33 +1480,33 @@ Global Symbols
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 </UL>
 
-<P><STRONG><a name="[e4]"></a>lim_sw_Init</STRONG> (Thumb, 162 bytes, Stack size 8 bytes, lim_sw.o(i.lim_sw_Init))
+<P><STRONG><a name="[e2]"></a>lim_sw_Init</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, lim_sw.o(i.lim_sw_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lim_sw_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[8f]"></a>main</STRONG> (Thumb, 866 bytes, Stack size 16 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
-<LI>Call Chain = main &rArr; CAM_HOME &rArr; LCDprintf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = main &rArr; UART_printf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lim_sw_Init
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_printf
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lim_sw_Init
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_printf
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM17_set
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM15_Init
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Clock_Init
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Init
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Clock_Init
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Init
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Servo_set
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Servo_Init
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Init
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ENC_Init
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_wake
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_sleep
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_sleep
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_enable
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_disable
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_disable
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_Init
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8814_wake
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8814_sleep
@@ -1523,8 +1516,8 @@ Global Symbols
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8814_disable
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8814_Init
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAM_HOME
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heartbeat_Init
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heartbeat_Init
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDsetCursorPosition
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDprintf
@@ -1584,8 +1577,8 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM17_set
 </UL>
 
-<P><STRONG><a name="[e5]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, lim_sw.o(i.__NVIC_EnableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lim_sw_Init
+<P><STRONG><a name="[e3]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, lim_sw.o(i.__NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lim_sw_Init
 </UL>
 
 <P><STRONG><a name="[5a]"></a>_printf_input_char</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _printf_char_common.o(.text))
