@@ -36,6 +36,9 @@
 volatile static uint16_t step_num = 0;
 volatile uint8_t step_fault = DRV8884_NO_FAULT;
 volatile uint8_t step_fault_changed = 0;
+uint16_t total_LR_steps = 0;	// total steps form left limit switch to right limit switch
+uint16_t current_LR_steps = 0;
+volatile static uint8_t stepper_dis_cnt = 0;
 
 // DC global variables
 volatile uint8_t dc_fault = DRV8814_NO_FAULT;
@@ -58,6 +61,8 @@ volatile static uint8_t send_update = 10;
 volatile static uint8_t SerialRX_Buf[64];
 volatile static uint8_t SerialRX_Buf_index = 0;
 volatile static uint8_t SerialRX_cmd[64];
+volatile static uint8_t cmd_recv = 0;
+volatile static uint8_t cmd_recv_index = 0;
 
 
 void TIM16_IRQHandler(void) {
@@ -85,6 +90,18 @@ void TIM15_IRQHandler(void) {
 		
 		Step_LLim = 0;
 		Step_RLim = 0;
+		
+		if (step_num == 0) {
+			stepper_dis_cnt--;
+			if (stepper_dis_cnt < 1) {
+				stepper_dis_cnt = 1;
+			}
+			if (stepper_dis_cnt == 2) {
+				DRV8884_disable();
+			}
+		} else {
+			stepper_dis_cnt = 30;
+		}
 		
 		TIM15->SR &= ~TIM_SR_UIF;
 	}
@@ -177,6 +194,14 @@ void USART2_IRQHandler(void) {
 	
 	if (SerialRX_Buf[SerialRX_Buf_index] == 'X') {
 		memcpy((void*)SerialRX_cmd, (void*)SerialRX_Buf, 64);
+		
+		cmd_recv = 1;
+		if (SerialRX_Buf_index > 0) {
+			cmd_recv_index = SerialRX_Buf_index - 1;
+		} else {
+			cmd_recv_index = 63;
+		}
+;
 	}
 		
 	SerialRX_Buf_index++;
@@ -212,6 +237,13 @@ uint16_t CAM_HOME(void) {
 	step_num = total_steps >> 1;
 	
 	while (step_num);	// wait for stepper to get to middle
+	
+	DRV8884_disable();
+	
+	// done homing stepper
+	
+	/// home servo
+	Servo_set(100);
 	
 	LCDsetCursorPosition(2, 0);
 	LCDprintf("      ");
@@ -261,6 +293,7 @@ int main(void){
 	
 	// servo
 	Servo_Init(SERVOFREQ, SERVO_FWD_DEG);
+	Servo_set(100);
 	uint8_t servo_angle = 0;
 	
 	// DRV8814
@@ -330,6 +363,117 @@ int main(void){
 				
 			}
 			update_flag = 0;
+		}
+		
+		if (cmd_recv) {
+			uint8_t cmd_recv_index_next;
+			if (cmd_recv_index_next > 0) {
+			cmd_recv_index_next = cmd_recv_index - 1;
+		} else {
+			cmd_recv_index_next = 63;
+		}
+			
+			if (SerialRX_cmd[cmd_recv_index] == 'C') {
+				switch (SerialRX_cmd[cmd_recv_index_next]) {
+					
+					case 'S':	//camera straight
+						TIM16_Init(STEP_PWMFREQFAST);
+					
+						if (current_LR_steps > (total_LR_steps >> 1)) {
+							DRV8884_DIR_CW;
+						} else {
+							DRV8884_DIR_CCW;
+						}
+						step_num = 1500;
+						DRV8884_enable();
+						DRV8884_wake();
+						while ((Step_RLim == 0) && (Step_LLim == 0));	// turn until right limit is hit
+					
+						if (current_LR_steps > (total_LR_steps >> 1)) {
+							DRV8884_DIR_CCW;
+						} else {
+							DRV8884_DIR_CW;
+						}
+						DRV8884_enable();
+						DRV8884_wake();
+						step_num = total_LR_steps >> 1;
+						while (step_num);
+					
+						break;
+					
+					case 'L':	//camera left
+						TIM16_Init(STEP_PWMFREQMED);	
+					
+						if ((current_LR_steps - 45) > 0) {
+							DRV8884_DIR_CCW;
+							step_num = 45;
+							DRV8884_enable();
+							DRV8884_wake();
+							current_LR_steps-= 45;
+						}
+
+						break;
+					
+					case 'R':	//camera right
+						TIM16_Init(STEP_PWMFREQMED);	
+					
+						if ((current_LR_steps + 45) < total_LR_steps) {
+							DRV8884_DIR_CW;
+							step_num = 45;
+							DRV8884_enable();
+							DRV8884_wake();
+							current_LR_steps+= 45;
+						}
+					
+						break;
+					
+					case 'U':	//camera up
+						
+						break;
+					
+					case 'D':	//camera down
+						
+						break;
+				}
+			} else if (SerialRX_cmd[cmd_recv_index] == 'H') {
+				switch (SerialRX_cmd[cmd_recv_index_next]) {
+					
+					case 'L':	//hard left
+						
+						break;
+					
+					case 'R':	//hard right
+						
+						break;
+					
+					case 'M':	//home
+						TIM16_Init(STEP_PWMFREQFAST);
+						total_LR_steps = CAM_HOME();
+						current_LR_steps = total_LR_steps >> 1;
+						break;
+				}
+			} else if (SerialRX_cmd[cmd_recv_index] == 'R') {
+				switch (SerialRX_cmd[cmd_recv_index_next]) {
+					
+					case 'S':	//robot stop
+						
+						break;
+					
+					case 'M':	//robot move
+						
+						break;
+				}
+			} else if (SerialRX_cmd[cmd_recv_index] == 'O') {
+				if (SerialRX_cmd[cmd_recv_index_next] == 'M') {	// on screen message
+					
+				}
+			} else if (SerialRX_cmd[cmd_recv_index] == 'S') {
+				if (SerialRX_cmd[cmd_recv_index_next] == 'T') {	// status
+					
+				}
+			}
+			
+			cmd_recv = 0;
 		}
 	
 		/*

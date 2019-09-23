@@ -14,6 +14,9 @@
 #define SERVOMAX	 	1750
 #define SERVOMIN 		1940
 
+#define SERVOMAXDEG	170
+#define SERVOMINDEG 30
+
 // centre position
 #define SERVO_FWD_DEG 		60
 
