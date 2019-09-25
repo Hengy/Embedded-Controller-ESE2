@@ -61,7 +61,7 @@ void DRV8814_set_speed_left(uint8_t speed) {
 	if (speed != 0) {
 		duty = ((speed*DRV8814_DC_FREQ) / 100) + 1;
 	}
-	TIM3_set_ch3(duty);
+	TIM3_set_ch4(duty);
 }
 
 void DRV8814_set_speed_right(uint8_t speed) {
@@ -69,7 +69,7 @@ void DRV8814_set_speed_right(uint8_t speed) {
 	if (speed != 0) {
 		duty = ((speed*DRV8814_DC_FREQ) / 100) + 1;
 	}
-	TIM3_set_ch4(duty);
+	TIM3_set_ch3(duty);
 }
 
 void DRV8814_sleep(void) {

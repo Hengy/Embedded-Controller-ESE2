@@ -40,9 +40,16 @@ uint16_t total_LR_steps = 0;	// total steps form left limit switch to right limi
 uint16_t current_LR_steps = 0;
 volatile static uint8_t stepper_dis_cnt = 0;
 
+// servo global variables
+volatile static uint8_t servo_angle = 100;
+
 // DC global variables
 volatile uint8_t dc_fault = DRV8814_NO_FAULT;
 volatile uint8_t dc_fault_changed = 0;
+volatile uint8_t dc_speedL = 0;
+volatile uint8_t dc_speedR = 0;
+volatile uint8_t dc_dirL = 1;	// 0 - backwards; 1 - forwards
+volatile uint8_t dc_dirR = 1;
 
 // limit switch global variables
 volatile static uint16_t Step_RLim = 0;
@@ -56,6 +63,7 @@ volatile static uint8_t enc_update = 0;	// Encoder update flag
 // LCD & Serial update flag
 volatile static uint8_t update_flag = 0;
 volatile static uint8_t send_update = 10;
+#define STATUSMSGLEN		13
 
 // Serial UART global variables
 volatile static uint8_t SerialRX_Buf[64];
@@ -64,6 +72,7 @@ volatile static uint8_t SerialRX_cmd[64];
 volatile static uint8_t cmd_recv = 0;
 volatile static uint8_t cmd_recv_index = 0;
 
+void send_status(void);
 
 void TIM16_IRQHandler(void) {
 	if ((TIM16->SR & TIM_SR_UIF) != 0) {
@@ -86,7 +95,7 @@ void TIM15_IRQHandler(void) {
 		
 		update_flag = 1;
 		
-		send_update = 10;
+		send_update--;
 		
 		Step_LLim = 0;
 		Step_RLim = 0;
@@ -243,13 +252,33 @@ uint16_t CAM_HOME(void) {
 	// done homing stepper
 	
 	/// home servo
-	Servo_set(100);
+	Servo_set(servo_angle);
 	
 	LCDsetCursorPosition(2, 0);
 	LCDprintf("      ");
 	delay_ms(5);
 	
 	return total_steps;
+}
+
+void send_status(void) {
+	char status_msg[STATUSMSGLEN];
+	
+	status_msg[0] = 'X';
+	status_msg[1] = 'S';
+	status_msg[2] = 'T';
+	status_msg[3] = servo_angle;
+	status_msg[4] = LO_NIBBLE(current_LR_steps);
+	status_msg[5] = HI_NIBBLE(current_LR_steps);
+	status_msg[6] = speed_R;
+	status_msg[7] = dc_speedR;
+	status_msg[8] = dc_dirR;
+	status_msg[9] = speed_L;
+	status_msg[10] = dc_speedL;
+	status_msg[11] = dc_dirL;
+	status_msg[12] = '\n';
+	
+	UART_puts(status_msg);
 }
 
 int main(void){
@@ -293,8 +322,7 @@ int main(void){
 	
 	// servo
 	Servo_Init(SERVOFREQ, SERVO_FWD_DEG);
-	Servo_set(100);
-	uint8_t servo_angle = 0;
+	Servo_set(servo_angle);
 	
 	// DRV8814
 	DRV8814_Init();
@@ -302,10 +330,7 @@ int main(void){
 	DRV8814_disable();
 	dc_fault = DRV8814_NO_FAULT;
 	dc_fault_changed = 0;
-	short int dc_step = 1;
-	uint16_t dc_speed = 107;
-	
-	dc_speed = 0;
+	//short int dc_step = 1;
 	DRV8814_wake();
 	DRV8814_enable();
 	
@@ -332,6 +357,11 @@ int main(void){
 		} else if (beat_timer == 0) {
 			HEARTBEAT_TOGGLE;
 			beat_timer = HEARTBEAT_TIMER_VAL;
+		}
+		
+		if (send_update < 3) {
+			send_status();
+			send_update = 53;
 		}
 		
 		if (update_flag == 1) {
@@ -404,12 +434,12 @@ int main(void){
 					case 'L':	//camera left
 						TIM16_Init(STEP_PWMFREQMED);	
 					
-						if ((current_LR_steps - 45) > 0) {
+						if ((current_LR_steps - 20) > 0) {
 							DRV8884_DIR_CCW;
-							step_num = 45;
+							step_num = 20;
 							DRV8884_enable();
 							DRV8884_wake();
-							current_LR_steps-= 45;
+							current_LR_steps-= 20;
 						}
 
 						break;
@@ -417,22 +447,34 @@ int main(void){
 					case 'R':	//camera right
 						TIM16_Init(STEP_PWMFREQMED);	
 					
-						if ((current_LR_steps + 45) < total_LR_steps) {
+						if ((current_LR_steps + 20) < total_LR_steps) {
 							DRV8884_DIR_CW;
-							step_num = 45;
+							step_num = 20;
 							DRV8884_enable();
 							DRV8884_wake();
-							current_LR_steps+= 45;
+							current_LR_steps+= 20;
 						}
 					
 						break;
 					
 					case 'U':	//camera up
 						
+						servo_angle -= 5;
+						if (servo_angle < SERVOMINDEG) {
+							servo_angle = SERVOMINDEG;
+						}
+						Servo_set(servo_angle);
+						
 						break;
 					
 					case 'D':	//camera down
 						
+						servo_angle += 5;
+						if (servo_angle > SERVOMAXDEG) {
+							servo_angle = SERVOMAXDEG;
+						}
+						Servo_set(servo_angle);
+					
 						break;
 				}
 			} else if (SerialRX_cmd[cmd_recv_index] == 'H') {
@@ -457,76 +499,70 @@ int main(void){
 					
 					case 'S':	//robot stop
 						
+						dc_speedL = 0;
+						dc_speedR = 0;
+					
+						DRV8814_set_speed_left(dc_speedL);
+						DRV8814_set_speed_right(dc_speedR);
+					
 						break;
 					
 					case 'M':	//robot move
 						
+						if (SerialRX_cmd[cmd_recv_index-2] == 'F') {	// right direction
+							DRV8814_DIRR_FWD;
+							dc_dirR = 1;
+						} else {
+							DRV8814_DIRR_BKWD;
+							dc_dirR = 0;
+						}
+					
+						if (SerialRX_cmd[cmd_recv_index-4] == 'F') {	// left direction
+							DRV8814_DIRL_FWD;
+							dc_dirL = 1;
+						} else {
+							DRV8814_DIRL_BKWD;
+							dc_dirL = 0;
+						}
+					
+						dc_speedL = SerialRX_cmd[cmd_recv_index-3];
+						if (dc_speedL > 107) {
+							dc_speedL = 107;
+						}
+						
+						dc_speedR = SerialRX_cmd[cmd_recv_index-5];
+						if (dc_speedR > 107) {
+							dc_speedR = 107;
+						}
+					
+						DRV8814_set_speed_left(dc_speedL);
+						DRV8814_set_speed_right(dc_speedR);
+					
 						break;
 				}
 			} else if (SerialRX_cmd[cmd_recv_index] == 'O') {
 				if (SerialRX_cmd[cmd_recv_index_next] == 'M') {	// on screen message
+					char msg[16];
+					uint8_t msg_i = 0;
+					uint8_t msg_len = SerialRX_cmd[cmd_recv_index-2] - 16;
 					
+					if ((cmd_recv_index-2) > 15) {
+						for (uint8_t i = cmd_recv_index-17; i < cmd_recv_index-2; i++) {
+							msg[msg_i++] = SerialRX_cmd[i];
+						}
+					}
+					
+					LCDsetCursorPosition(2, 0);
+					LCDputs(msg);
 				}
 			} else if (SerialRX_cmd[cmd_recv_index] == 'S') {
 				if (SerialRX_cmd[cmd_recv_index_next] == 'T') {	// status
-					
+					send_status();
 				}
 			}
 			
 			cmd_recv = 0;
 		}
-	
-		/*
-		if (SerialRX_Buf != 0) {
-			LCDsetCursorPosition(2, 0);
-			LCDprintf("%c", (char)SerialRX_Buf);
-			
-			UART_printf("char: %c\n", (char)SerialRX_Buf);
-			
-			switch (SerialRX_Buf) {
-				
-				case 'S':	// Stepper
-					step_num = 768;
-					DRV8884_enable();
-					DRV8884_wake();
-					break;
-				
-				case 'D':	// DC motor
-					dc_speed = 100;
-					DRV8814_wake();
-					DRV8814_enable();
-					break;
-				
-				case 'A':	// Servo
-					if (servo_angle > 0) {
-						Servo_set(0);
-						servo_angle = 40;
-					} else {
-						Servo_set(180);
-						servo_angle = 60;
-					}
-					break;
-					
-				case 'H':	// Home
-					// homing function for camera
-					DRV8884_enable();
-					DRV8884_wake();
-					CAM_HOME();
-					break;
-					
-				case 'U':	// Update
-					UART_printf("SPD: %u\n", speed_R);
-					break;
-				
-				case 'T':	// Time
-					UART_printf("TIME: %u%u:%u%u:%u%u\n", (RTC->TR & RTC_TR_HT_Msk) >> RTC_TR_HT_Pos, (RTC->TR & RTC_TR_HU_Msk) >> RTC_TR_HU_Pos, (RTC->TR & RTC_TR_MNT_Msk) >> RTC_TR_MNT_Pos, (RTC->TR & RTC_TR_MNU_Msk) >> RTC_TR_MNU_Pos, (RTC->TR & RTC_TR_ST_Msk) >> RTC_TR_ST_Pos, (RTC->TR & RTC_TR_SU_Msk) >> RTC_TR_SU_Pos);
-					break;
-				
-			}
-			
-			SerialRX_Buf = 0;
-		}
-		*/
 
 //		if (step_fault_changed) {
 //			if (step_fault == DRV8884_NO_FAULT) {
@@ -548,29 +584,6 @@ int main(void){
 				LCDprintf("DC: FAULT! ");
 			}	
 			dc_fault_changed = 0;
-		}
-
-		// DC direction & speed
-		if (dc_speed <= 105) {
-			dc_speed += dc_step;
-			
-			if (dc_fault == DRV8814_NO_FAULT) {
-				
-				if (dc_speed > 100) {
-					if ((speed_R > 15) && (speed_R < 105)) {
-						DRV8814_set_speed_left(speed_R);
-						DRV8814_set_speed_right(speed_R);
-					}
-				} else {
-					DRV8814_set_speed_left(dc_speed);
-					DRV8814_set_speed_right(dc_speed);
-				}
-				
-			}
-			delay_ms(100);
-		}
-		if (dc_speed == 105) {
-			dc_speed = 100;
 		}
 	}
 }
