@@ -98,8 +98,13 @@ int RS232_init (void) {
 	return serial_fd;
 }
 
-void send_robot_cmd(int serial_fd, char *cmd, char *data) {
+void send_robot_cmd(int serial_fd, char *cmd) {
 	write(serial_fd, cmd, 3);
+}
+
+void send_robot_datacmd(int serial_fd, char *cmd, char *data) {
+	write(serial_fd, cmd, 3);
+	write(serial_fd, data, 61);
 }
 
 int main(void) {
@@ -141,7 +146,7 @@ int main(void) {
 					printf("Button %u\n", event.number);
 					switch (event.number) {
 					case 0:	// X; robot stop
-						send_robot_cmd(serial_fd, "SRX", data_buf);
+						send_robot_cmd(serial_fd, "SRX");
 						break;
 
 					case 1:	// A
@@ -149,19 +154,19 @@ int main(void) {
 						break;
 
 					case 2:	// B; camera straight
-						send_robot_cmd(serial_fd, "SCX", data_buf);
+						send_robot_cmd(serial_fd, "SCX");
 						break;
 
 					case 3:	// Y; home
-						send_robot_cmd(serial_fd, "MHX", data_buf);
+						send_robot_cmd(serial_fd, "MHX");
 						break;
 
 					case 4:	// LB; 90 degree left turn
-
+						send_robot_cmd(serial_fd, "LHX");
 						break;
 
 					case 5:	// RB; 90 degree right turn
-
+						send_robot_cmd(serial_fd, "RHX");
 						break;
 
 					default:
@@ -178,19 +183,19 @@ int main(void) {
 					switch (axis) {
 					case 2:	// dpad
 						if (axes[2].y > 32000) {	// dpad down
-							send_robot_cmd(serial_fd, "DCX", data_buf);
+							send_robot_cmd(serial_fd, "DCX");
 							camera_repeat_sig = 1;
 							camera_repeat = REPEAT_PERIOD;
 						} else if (axes[2].y < -32000) {	// dpad up
-							send_robot_cmd(serial_fd, "UCX", data_buf);
+							send_robot_cmd(serial_fd, "UCX");
 							camera_repeat_sig = 2;
 							camera_repeat = REPEAT_PERIOD;
 						} else if (axes[2].x > 32000) {	// dpad right
-							send_robot_cmd(serial_fd, "RCX", data_buf);
+							send_robot_cmd(serial_fd, "RCX");
 							camera_repeat_sig = 3;
 							camera_repeat = REPEAT_PERIOD;
 						} else if(axes[2].x < -32000) {	// dpad left
-							send_robot_cmd(serial_fd, "LCX", data_buf);
+							send_robot_cmd(serial_fd, "LCX");
 							camera_repeat_sig = 4;
 							camera_repeat = REPEAT_PERIOD;
 						}
@@ -201,7 +206,23 @@ int main(void) {
 						break;
 
 					case 1:
-
+						if (axes[1].y > 25000) {
+							memset(data_buf, 0x00, 61);
+							data_buf[59] = 100;
+							data_buf[57] = 100;
+							send_robot_datacmd(serial_fd, "MRX", data_buf);
+						} else if (axes[1].y < -25000) {
+							memset(data_buf, 0x00, 61);
+							data_buf[59] = 100;
+							data_buf[58] = 'F';
+							data_buf[57] = 100;
+							data_buf[56] = 'F';
+							send_robot_datacmd(serial_fd, "MRX", data_buf);
+						}
+						if ( ((axes[1].x < 8000) && (axes[1].x > -8000)) && ((axes[1].y < 8000) && (axes[1].y > -8000)) ) { //dead zone
+							memset(data_buf, 0x00, 61);
+							send_robot_datacmd(serial_fd, "MRX", data_buf);
+						}
 						break;
 					}
 				break;
@@ -216,27 +237,27 @@ int main(void) {
 		}
 
 		now_time = clock()/1000;
-		//printf("%d\n", now_time);
+
 		if ((now_time - prev_cmd_time) > 100) {
 			prev_cmd_time = now_time;
 			switch (camera_repeat_sig) {
 			case 1:
-				send_robot_cmd(serial_fd, "DCX", data_buf);
+				send_robot_cmd(serial_fd, "DCX");
 				printf("repeat\n");
 				break;
 
 			case 2:
-				send_robot_cmd(serial_fd, "UCX", data_buf);
+				send_robot_cmd(serial_fd, "UCX");
 				printf("repeat\n");
 				break;
 
 			case 3:
-				send_robot_cmd(serial_fd, "RCX", data_buf);
+				send_robot_cmd(serial_fd, "RCX");
 				printf("repeat\n");
 				break;
 
 			case 4:
-				send_robot_cmd(serial_fd, "LCX", data_buf);
+				send_robot_cmd(serial_fd, "LCX");
 				printf("repeat\n");
 				break;
 
@@ -251,3 +272,4 @@ int main(void) {
 
 	return EXIT_SUCCESS;
 }
+
