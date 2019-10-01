@@ -41,7 +41,8 @@ uint16_t current_LR_steps = 0;
 volatile static uint8_t stepper_dis_cnt = 0;
 
 // servo global variables
-volatile static uint8_t servo_angle = 100;
+volatile static uint16_t servo_angle_curr = 1500;
+volatile static uint16_t servo_angle = 1600;
 
 // DC global variables
 volatile uint8_t dc_fault = DRV8814_NO_FAULT;
@@ -84,6 +85,22 @@ void TIM16_IRQHandler(void) {
 			while (wait--);
 			DRV8884_STEP_LO;
 			
+		}
+		
+		if (servo_angle > servo_angle_curr) {
+			if ((servo_angle - servo_angle_curr) < 2) {
+				servo_angle_curr = servo_angle;
+			} else {
+				servo_angle_curr += 2;
+			}
+			Servo_set_us(servo_angle_curr);
+		} else if (servo_angle < servo_angle_curr) {
+			if ((servo_angle_curr - servo_angle) < 2) {
+				servo_angle_curr = servo_angle;
+			} else {
+				servo_angle_curr -= 2;
+			}
+			Servo_set_us(servo_angle_curr);
 		}
 		
 		TIM16->SR &= ~TIM_SR_UIF;
@@ -252,7 +269,7 @@ uint16_t CAM_HOME(void) {
 	// done homing stepper
 	
 	/// home servo
-	Servo_set(servo_angle);
+	Servo_set_us(servo_angle);
 	
 	LCDsetCursorPosition(2, 0);
 	LCDprintf("      ");
@@ -459,21 +476,21 @@ int main(void){
 					
 					case 'U':	//camera up
 						
-						servo_angle -= 8;
+						servo_angle -= 60;
 						if (servo_angle < SERVOMINDEG) {
 							servo_angle = SERVOMINDEG;
 						}
-						Servo_set(servo_angle);
+						//Servo_set(servo_angle);
 						
 						break;
 					
 					case 'D':	//camera down
 						
-						servo_angle += 8;
+						servo_angle += 60;
 						if (servo_angle > SERVOMAXDEG) {
 							servo_angle = SERVOMAXDEG;
 						}
-						Servo_set(servo_angle);
+						//Servo_set(servo_angle);
 					
 						break;
 				}

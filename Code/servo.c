@@ -36,6 +36,13 @@ void Servo_set(uint16_t degree) {
 	}
 }
 
+void Servo_set_us(uint16_t us_set) {
+	int val = Servo_UsToVal(us_set);
+	if (val != 0) {
+		TIM2->CCR1 = val;	// Set duty cycle
+	}
+}
+
 void Servo_enable() {
 	SET_BITS(TIM2->BDTR,0x8000);			// Enable master output
 }

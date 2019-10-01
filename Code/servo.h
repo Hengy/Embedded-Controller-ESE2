@@ -14,14 +14,15 @@
 #define SERVOMAX	 	1750
 #define SERVOMIN 		1940
 
-#define SERVOMAXDEG	170
-#define SERVOMINDEG 55
+#define SERVOMAXDEG	2300 // 170
+#define SERVOMINDEG 1150 // 55
 
 // centre position
 #define SERVO_FWD_DEG 		60
 
 void Servo_Init(uint16_t freq, uint16_t duty);
 void Servo_set(uint16_t duty);
+void Servo_set_us(uint16_t us_set);
 void Servo_enable(void);
 void Servo_disable(void);
 uint16_t Servo_degreeToUs(uint16_t degree);
