@@ -434,12 +434,12 @@ int main(void){
 					case 'L':	//camera left
 						TIM16_Init(STEP_PWMFREQMED);	
 					
-						if ((current_LR_steps - 20) > 0) {
+						if ((current_LR_steps - 40) > 0) {
 							DRV8884_DIR_CCW;
-							step_num = 20;
+							step_num = 40;
 							DRV8884_enable();
 							DRV8884_wake();
-							current_LR_steps-= 20;
+							current_LR_steps-= 40;
 						}
 
 						break;
@@ -447,19 +447,19 @@ int main(void){
 					case 'R':	//camera right
 						TIM16_Init(STEP_PWMFREQMED);	
 					
-						if ((current_LR_steps + 20) < total_LR_steps) {
+						if ((current_LR_steps + 40) < total_LR_steps) {
 							DRV8884_DIR_CW;
-							step_num = 20;
+							step_num = 40;
 							DRV8884_enable();
 							DRV8884_wake();
-							current_LR_steps+= 20;
+							current_LR_steps+= 40;
 						}
 					
 						break;
 					
 					case 'U':	//camera up
 						
-						servo_angle -= 5;
+						servo_angle -= 8;
 						if (servo_angle < SERVOMINDEG) {
 							servo_angle = SERVOMINDEG;
 						}
@@ -469,7 +469,7 @@ int main(void){
 					
 					case 'D':	//camera down
 						
-						servo_angle += 5;
+						servo_angle += 8;
 						if (servo_angle > SERVOMAXDEG) {
 							servo_angle = SERVOMAXDEG;
 						}

@@ -28,6 +28,7 @@ Project File Date:  09/06/2019
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 assembling startup_stm32f303xe.s...
+compiling LCD.c...
 compiling LEDs.c...
 compiling servo.c...
 servo.c(8): warning:  #61-D: integer operation result is out of range
@@ -55,8 +56,13 @@ servo.c(10): warning:  #63-D: shift count is too large
   	
 PIO_PIN_AF_MODE(SERVOPORT,SERVOPIN,0x01);				// set AF mode
 servo.c: 8 warnings, 0 errors
-compiling LCD.c...
 compiling SysClock.c...
+compiling main.c...
+lim_sw.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif /* __LIM_SW_H */
+main.c(315): warning:  #177-D: variable "dir_count"  was declared but never referenced
+  	uint32_t dir_count = DIR_TIMER_VAL;
+main.c: 2 warnings, 0 errors
 compiling system_stm32f3xx.c...
 compiling SysTick.c...
 compiling DRV8884.c...
@@ -74,38 +80,11 @@ TIM17.c(10): warning:  #61-D: integer operation result is out of range
   	
 PIO_PIN_AF_MODE(TIM17_OUTPUT_PORT,TIM17_OUTPUT_PIN, 0x01);				// set AF mode
 TIM17.c: 4 warnings, 0 errors
-compiling main.c...
-lim_sw.h(16): warning:  #1-D: last line of file ends without a newline
-  #endif /* __LIM_SW_H */
-main.c(315): warning:  #177-D: variable "dir_count"  was declared but never referenced
-  	uint32_t dir_count = DIR_TIMER_VAL;
-main.c: 2 warnings, 0 errors
 compiling TIM16.c...
-compiling TIM3.c...
 compiling lim_sw.c...
 lim_sw.h(16): warning:  #1-D: last line of file ends without a newline
   #endif /* __LIM_SW_H */
 lim_sw.c: 1 warning, 0 errors
-compiling encoders.c...
-encoders.c(9): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
-encoders.c(9): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
-encoders.c(9): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
-encoders.c(12): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
-encoders.c(12): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
-encoders.c(12): warning:  #63-D: shift count is too large
-  	
-PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
-encoders.c: 6 warnings, 0 errors
 compiling DRV8814.c...
 DRV8814.c(12): warning:  #63-D: shift count is too large
   	
@@ -126,12 +105,33 @@ DRV8814.c(13): warning:  #63-D: shift count is too large
   	
 PIO_PIN_AF_MODE(DRV8814_EN_PORT, DRV8814_ENB_PIN, 0x02);
 DRV8814.c: 6 warnings, 0 errors
+compiling TIM3.c...
 compiling TIM15.c...
+compiling encoders.c...
+encoders.c(9): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
+encoders.c(9): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
+encoders.c(9): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(ENC_PORT,ENC_L_PIN,0x06);				// set AF mode
+encoders.c(12): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
+encoders.c(12): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
+encoders.c(12): warning:  #63-D: shift count is too large
+  	
+PIO_PIN_AF_MODE(ENC_PORT,ENC_R_PIN,0x06);				// set AF mode
+encoders.c: 6 warnings, 0 errors
+compiling serial.c...
 compiling RTC.c...
 RTC.c(61): warning:  #940-D: missing return statement at end of non-void function "RTC_getTime" 
   }
 RTC.c: 1 warning, 0 errors
-compiling serial.c...
 linking...
 Program Size: Code=15060 RO-data=988 RW-data=48 ZI-data=1760  
 FromELF: creating hex file...
@@ -153,7 +153,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>
