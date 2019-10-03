@@ -19,7 +19,10 @@
 #include <time.h>
 #include <unistd.h>
 
-#define REPEAT_PERIOD 250000
+#define REPEAT_PERIOD 	250000
+#define JSDEADZONE		5000
+
+#define TANKCONTROLS		// comment out to use differential steering
 
 int read_event(int fd, struct js_event *event) {
 	ssize_t bytes;
@@ -103,8 +106,10 @@ void send_robot_cmd(int serial_fd, char *cmd) {
 }
 
 void send_robot_datacmd(int serial_fd, char *cmd, char *data) {
-	write(serial_fd, cmd, 3);
-	write(serial_fd, data, 61);
+	char send_buf[64];
+	memcpy(send_buf, data, 61);
+	memcpy(send_buf+60, cmd, 3);
+	write(serial_fd, send_buf, 64);
 }
 
 int main(void) {
@@ -117,10 +122,10 @@ int main(void) {
 	char data_buf[61];
 	char cmd_buf[3];
 
+	double x, y, result_angle;
+
 	clock_t prev_cmd_time, now_time;
 	prev_cmd_time = clock()/1000;
-
-	printf("Time: %d\n", prev_cmd_time);
 
 	int camera_repeat = 0;
 	int camera_repeat_sig = 0;
@@ -141,9 +146,9 @@ int main(void) {
 			switch (event.type)
 			{
 			case JS_EVENT_BUTTON:
-				//printf("Button %u %s\n", event.number, event.value ? "pressed" : "released");
+				printf("Button %u %s\n", event.number, event.value ? "pressed" : "released");
 				if (event.value == 0) {
-					printf("Button %u\n", event.number);
+					//printf("Button %u\n", event.number);
 					switch (event.number) {
 					case 0:	// X; robot stop
 						send_robot_cmd(serial_fd, "SRX");
@@ -169,8 +174,14 @@ int main(void) {
 						send_robot_cmd(serial_fd, "RHX");
 						break;
 
+					case 10:
+					case 11:
+						memset(data_buf, 0x00, 61);
+						send_robot_datacmd(serial_fd, "MRX", data_buf);
+						break;
+
 					default:
-						printf("Unmapped button %u\n", event.number);
+						//printf("Unmapped button %u\n", event.number);
 						break;
 					}
 				}
@@ -206,24 +217,68 @@ int main(void) {
 						break;
 
 					case 1:
-						if (axes[1].y > 25000) {
-							memset(data_buf, 0x00, 61);
-							data_buf[59] = 100;
-							data_buf[57] = 100;
-							send_robot_datacmd(serial_fd, "MRX", data_buf);
-						} else if (axes[1].y < -25000) {
-							memset(data_buf, 0x00, 61);
-							data_buf[59] = 100;
-							data_buf[58] = 'F';
-							data_buf[57] = 100;
+					case 0:
+#ifndef TANKCONROLS	// use tank controls
+
+						memset(data_buf, 0x00, 61);
+						if (axes[1].y > JSDEADZONE) {		// right joystick reverse
+							data_buf[57] = (abs(axes[1].y*100) / 32767);
+							data_buf[56] = 0;
+						} else if (axes[1].y < -JSDEADZONE) {	// forward
+							data_buf[57] = (abs(axes[1].y*100) / 32767);
 							data_buf[56] = 'F';
-							send_robot_datacmd(serial_fd, "MRX", data_buf);
 						}
-						if ( ((axes[1].x < 8000) && (axes[1].x > -8000)) && ((axes[1].y < 8000) && (axes[1].y > -8000)) ) { //dead zone
-							memset(data_buf, 0x00, 61);
-							send_robot_datacmd(serial_fd, "MRX", data_buf);
+
+						if (axes[0].y > JSDEADZONE) {		// left joystick reverse
+							data_buf[59] = (abs(axes[0].y*100) / 32767);
+							data_buf[58] = 0;
+						} else if (axes[0].y < -JSDEADZONE) {	// forward
+							data_buf[59] = (abs(axes[0].y*100) / 32767);
+							data_buf[58] = 'F';
 						}
+
+						send_robot_datacmd(serial_fd, "MRX", data_buf);
+#else	// use differential steering
+						memset(data_buf, 0x00, 61);
+
+						x = (axes[1].x + 1) / 64;	// result is 1 - 512
+						y = ((axes[1].y*-1) + 1) / 64;	// result is 1 - 512
+						result_angle = ((atan2(x, y) * 180) / 3.14159)+180;
+						//printf("Angle: %f", result_angle);
+
+						if ((result_angle >= 45) && (result_angle < 135)) {
+							// L: reverse
+							data_buf[59] = (abs(axes[1].y*100) / 32767);
+							data_buf[58] = 0;
+							// R: forward
+							data_buf[57] = (abs(axes[1].y*100) / 32767);
+							data_buf[56] = 'F';
+						} else if ((result_angle >= 135) && (result_angle < 225)) {
+							// L: forward
+							data_buf[59] = (abs(axes[1].y*100) / 32767);
+							data_buf[58] = 'F';
+							// R: forward
+							data_buf[57] = (abs(axes[1].y*100) / 32767);
+							data_buf[56] = 'F';
+						} else if ((result_angle >= 225) && (result_angle < 315)) {
+							// L: forward
+							data_buf[59] = (abs(axes[1].y*100) / 32767);
+							data_buf[58] = 'F';
+							// R: reverse
+							data_buf[57] = (abs(axes[1].y*100) / 32767);
+							data_buf[56] = 0;
+						} else {
+							// L: reverse
+							data_buf[59] = (abs(axes[1].y*100) / 32767);
+							data_buf[58] = 0;
+							// R: reverse
+							data_buf[57] = (abs(axes[1].y*100) / 32767);
+							data_buf[56] = 0;
+						}
+						send_robot_datacmd(serial_fd, "MRX", data_buf);
+#endif
 						break;
+
 					}
 				break;
 
@@ -272,4 +327,5 @@ int main(void) {
 
 	return EXIT_SUCCESS;
 }
+
 
