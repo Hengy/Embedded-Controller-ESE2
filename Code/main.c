@@ -28,9 +28,8 @@
 #include "serial.h"
 #include "RTC.h"
 
-#define	HEARTBEAT_TIMER_VAL			3000000		// heartbeat LED timer
-#define	DIR_TIMER_VAL				8000000	 	// stepper direction timer
-#define ENC_SW_ITER					10			// encoder switch iterations
+#define	HEARTBEAT_TIMER_VAL			300000			// heartbeat LED timer
+#define ENC_SW_ITER							10					// encoder switch iterations
 
 // stepper global variables
 volatile static uint16_t step_num = 0;
@@ -329,7 +328,6 @@ int main(void){
 	lim_sw_Init();
 	
 	// stepper motor
-	uint32_t dir_count = DIR_TIMER_VAL;
 	DRV8884_Init();
 	DRV8884_sleep();
 	DRV8884_DIR_CW;
@@ -526,35 +524,34 @@ int main(void){
 					
 					case 'M':	//robot move
 						
-						if (SerialRX_cmd[cmd_recv_index-2] == 'F') {	// right direction
-							DRV8814_DIRR_FWD;
-							dc_dirR = 1;
-						} else {
-							DRV8814_DIRR_BKWD;
-							dc_dirR = 0;
-						}
-					
-						if (SerialRX_cmd[cmd_recv_index-4] == 'F') {	// left direction
+						if (SerialRX_cmd[cmd_recv_index-3] == 'F') {	// forward
 							DRV8814_DIRL_FWD;
 							dc_dirL = 1;
 						} else {
 							DRV8814_DIRL_BKWD;
 							dc_dirL = 0;
 						}
-					
-						dc_speedL = SerialRX_cmd[cmd_recv_index-3];
-						if (dc_speedL > 107) {
+						dc_speedL = SerialRX_cmd[cmd_recv_index-2];
+						if (dc_speedL > 99) {
 							dc_speedL = 107;
 						}
 						
-						dc_speedR = SerialRX_cmd[cmd_recv_index-5];
-						if (dc_speedR > 107) {
+						DRV8814_set_speed_left(dc_speedL);
+						
+						if (SerialRX_cmd[cmd_recv_index-5] == 'F') {	// forward
+							DRV8814_DIRR_FWD;
+							dc_dirR = 1;
+						} else {
+							DRV8814_DIRR_BKWD;
+							dc_dirR = 0;
+						}
+						dc_speedR = SerialRX_cmd[cmd_recv_index-4];
+						if (dc_speedR > 99) {
 							dc_speedR = 107;
 						}
-					
-						DRV8814_set_speed_left(dc_speedL);
+						
 						DRV8814_set_speed_right(dc_speedR);
-					
+
 						break;
 				}
 			} else if (SerialRX_cmd[cmd_recv_index] == 'O') {
