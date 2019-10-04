@@ -30,6 +30,7 @@
 
 #define	HEARTBEAT_TIMER_VAL			300000			// heartbeat LED timer
 #define ENC_SW_ITER							10					// encoder switch iterations
+#define SERVODEFAULT						1600				// default servo position
 
 // stepper global variables
 volatile static uint16_t step_num = 0;
@@ -40,8 +41,8 @@ uint16_t current_LR_steps = 0;
 volatile static uint8_t stepper_dis_cnt = 0;
 
 // servo global variables
-volatile static uint16_t servo_angle_curr = 1500;
-volatile static uint16_t servo_angle = 1600;
+volatile static uint16_t servo_angle_curr = SERVODEFAULT - 100;
+volatile static uint16_t servo_angle = SERVODEFAULT;
 
 // DC global variables
 volatile uint8_t dc_fault = DRV8814_NO_FAULT;
@@ -363,6 +364,8 @@ int main(void){
 	
 	TIM17_set(LCD_BL_PWMFREQ, 80);
 	
+	total_LR_steps = CAM_HOME();
+	
 	while(1){
 		
 		// heartbeat LED toggles
@@ -442,7 +445,9 @@ int main(void){
 						DRV8884_enable();
 						DRV8884_wake();
 						step_num = total_LR_steps >> 1;
-						while (step_num);
+						//while (step_num);
+						
+						servo_angle = SERVODEFAULT;
 					
 						break;
 					
