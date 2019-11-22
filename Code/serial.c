@@ -38,7 +38,8 @@ void UART_Init(uint32_t baud) {
                                     
 	// USARTDIV = 72MHz/115200 = 625 = 0x0271
 	//USART2->BRR  = (72000000/baud); // Set baudrate
-	USART2->BRR  = 0x0271; // Set baudrate 115200
+	//USART2->BRR  = 0x0271; // Set baudrate 115200
+	USART2->BRR  = 0x0138; // Set baudrate 230400
 
 	SET_BITS(USART2->CR1, (USART_CR1_RE | USART_CR1_TE));  	// Transmitter and Receiver enable
 	

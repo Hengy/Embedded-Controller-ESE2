@@ -63,7 +63,7 @@ volatile static uint8_t enc_update = 0;	// Encoder update flag
 
 // LCD & Serial update flag
 volatile static uint8_t update_flag = 0;
-volatile static uint8_t send_update = 10;
+volatile static uint8_t send_update = 2;
 #define STATUSMSGLEN		13
 
 // Serial UART global variables
@@ -275,7 +275,7 @@ uint16_t CAM_HOME(void) {
 	LCDprintf("      ");
 	delay_ms(5);
 	
-	return total_steps;
+	return total_steps+40;
 }
 
 void send_status(void) {
@@ -456,7 +456,7 @@ int main(void){
 					
 						if ((current_LR_steps - 40) > 0) {
 							DRV8884_DIR_CCW;
-							step_num = 40;
+							step_num = 41;
 							DRV8884_enable();
 							DRV8884_wake();
 							current_LR_steps-= 40;

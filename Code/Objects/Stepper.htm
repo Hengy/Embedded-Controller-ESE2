@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Stepper.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Stepper.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Fri Oct 04 13:46:41 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Tue Oct 08 13:42:20 2019
 <BR><P>
 <H3>Maximum Stack Usage =        324 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1127,7 +1127,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul
 </UL>
 
-<P><STRONG><a name="[bc]"></a>CAM_HOME</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, main.o(i.CAM_HOME))
+<P><STRONG><a name="[bc]"></a>CAM_HOME</STRONG> (Thumb, 194 bytes, Stack size 8 bytes, main.o(i.CAM_HOME))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
 <LI>Call Chain = CAM_HOME &rArr; LCDprintf &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1176,7 +1176,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_set_ch4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_TIM15_IRQHandler
 </UL>
 
 <P><STRONG><a name="[ce]"></a>DRV8814_set_speed_right</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, drv8814.o(i.DRV8814_set_speed_right))
@@ -1185,7 +1184,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_set_ch3
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_TIM15_IRQHandler
 </UL>
 
 <P><STRONG><a name="[ee]"></a>DRV8814_sleep</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drv8814.o(i.DRV8814_sleep))
@@ -1427,12 +1425,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[25]"></a>TIM1_BRK_TIM15_IRQHandler</STRONG> (Thumb, 114 bytes, Stack size 8 bytes, main.o(i.TIM1_BRK_TIM15_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIM1_BRK_TIM15_IRQHandler &rArr; DRV8814_set_speed_right
+<P><STRONG><a name="[25]"></a>TIM1_BRK_TIM15_IRQHandler</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, main.o(i.TIM1_BRK_TIM15_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM1_BRK_TIM15_IRQHandler
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8884_disable
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8814_set_speed_right
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8814_set_speed_left
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f303xe.o(RESET)
 </UL>
