@@ -14,3 +14,4 @@ Switch mode power supply adheres to SMPS layout best practices, including small 
 
 Majority of components are SMD. PCB is capable of being oven reflowed on both sides - bottom first.
 
+![PCB](https://github.com/Hengy/Embedded-Controller-ESE2/blob/master/controller%203D.png)
