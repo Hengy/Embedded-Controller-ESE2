@@ -12,6 +12,6 @@ PCB features include thermally enhanced features for motor drivers, thermistors 
 
 Switch mode power supply adheres to SMPS layout best practices, including small loop area.
 
-Majority of components are SMD. PCB is capable of being oven reflowed on both sides - bottom first.
+Majority of components are SMD. PCB is capable of being oven reflowed on both sides - bottom first. Hand soldering is possible.
 
 ![PCB](https://github.com/Hengy/Embedded-Controller-ESE2/blob/master/controller%203D.png)
